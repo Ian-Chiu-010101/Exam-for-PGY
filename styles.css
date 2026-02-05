@@ -72,3 +72,24 @@ h1 { margin: 0; font-size: 22px; }
   text-align: left;
   word-break: break-word;
 }
+
+/* 固定選項文字顏色，避免變藍/點完變黑 */
+.opt,
+.opt:visited,
+.opt:active,
+.opt:focus {
+  color: #e7eef7;
+  text-decoration: none;
+}
+
+/* 若選項內容裡有 a / span 等子元素，強制繼承顏色 */
+.opt a,
+.opt a:visited,
+.opt a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+.opt * {
+  color: inherit;
+}
