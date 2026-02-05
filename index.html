@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>題庫</title>
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <main class="container">
+    <header class="header">
+      <h1>題庫</h1>
+      <div class="meta">
+        <span id="loadStatus">載入中…</span>
+        <span id="progress"></span>
+      </div>
+    </header>
+
+    <section class="controls">
+      <button id="btnNew" class="btn primary">下一題（隨機）</button>
+      <button id="btnToggleWrong" class="btn">錯題模式：關</button>
+      <button id="btnShowAnswer" class="btn">顯示正解</button>
+      <button id="btnResetWrong" class="btn danger">清除錯題紀錄</button>
+    </section>
+
+    <section class="card">
+      <div class="qhead">
+        <div class="qid" id="qid"></div>
+        <div class="tags" id="tags"></div>
+      </div>
+      <h2 class="stem" id="stem"></h2>
+      <div class="options" id="options"></div>
+
+      <div class="feedback" id="feedback"></div>
+
+      <details class="explain" id="explainBox">
+        <summary>詳解</summary>
+        <div id="explanation"></div>
+      </details>
+    </section>
+
+    <footer class="footer">
+      <small>提示：點選選項後立即判定；正確選項會亮綠，錯誤選項會亮紅；錯題會自動記錄。</small>
+    </footer>
+  </main>
+
+  <script src="./app.js"></script>
+</body>
+</html>
