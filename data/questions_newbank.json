@@ -2434,10 +2434,262 @@
     "answer": "A",
     "explanation": "急性顏面麻痺需先區分周邊性（LMN）與中樞性（UMN）。額頭受累較支持周邊性，但臨床上仍可能有不完全表現，因此需整合病史與神經學檢查。耳後疼痛與疱疹/耳道病灶需考慮 Ramsay Hunt。處置方面，Bell palsy 常在早期使用類固醇可改善預後；是否加抗病毒取決於臨床情境（疑 HSV/VZV）。不論原因，眼睛保護（人工淚液、眼罩）很重要。\n\n(A) 正確。\n(B) 不佳：眼睛保護與追蹤仍重要。\n(C) 不佳：細菌不是最常見原因。\n(D) 不佳：是否影像需看危險徵象與整體評估，不能用單一症狀排除。\n\n延伸考點：Ramsay Hunt 的臨床表現（耳痛、疱疹、聽力/眩暈）；中樞性顏面麻痺常合併其他神經缺損；角膜保護與眼科轉介時機。",
     "tags": ["neurology", "facial palsy", "Bell palsy", "Ramsay Hunt", "steroids", "eye care"]
+  },
+
+
+
+  {
+    "id": "NTUPGY_V1_Q0179",
+    "stem": "72 歲男性因發燒、咳嗽與意識變差住院，血壓 92/54，乳酸 3.8 mmol/L。已給予初始輸液後血壓仍偏低。下列何者較符合敗血性休克的早期處置重點？",
+    "options": {
+      "A": "若已輸液仍低血壓，可先觀察數小時等待抗生素生效，再決定是否需要升壓藥",
+      "B": "血壓偏低主要由疼痛造成，優先使用高劑量鎮靜止痛即可改善灌流",
+      "C": "在合理輸液後仍低血壓且乳酸偏高時，需考慮及早使用升壓藥（常以 norepinephrine 為基礎）並同步完成早期抗生素與感染源控制，並以動態指標評估補液反應",
+      "D": "只要給了廣效抗生素就能等同完成敗血症治療，後續血流動力監測的效益有限"
+    },
+    "answer": "C",
+    "explanation": "敗血性休克的核心是「早期抗生素 + 復甦 + 源頭控制」。若經合理輸液後仍低血壓（或乳酸升高反映灌流不足），通常會及早啟動升壓藥（norepinephrine 常作為一線）以維持灌流，同時加速抗生素給藥與安排感染源控制（引流、手術、移除感染裝置等）。補液需要動態評估（例如被動抬腿、超音波、脈壓變化等）避免過量。\n\n(A) 不佳：延後升壓可能使器官灌流不足。\n(B) 不佳：鎮靜可能惡化血壓。\n(D) 不佳：血流動力與源頭控制同等重要。\n\n延伸考點：MAP 目標個別化（慢性高血壓者）；乳酸趨勢監測；早期抗生素與培養採檢的平衡。",
+    "tags": ["critical care", "sepsis", "septic shock", "norepinephrine", "lactate", "source control"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0180",
+    "stem": "58 歲女性因頭暈就醫，心電圖顯示 QTc 延長。近期開始使用抗精神病藥，並有嘔吐導致低鉀、低鎂。下列何者較符合 torsades de pointes 的風險與處置方向？",
+    "options": {
+      "A": "QT 延長多半不會造成臨床問題，因此只需門診追蹤即可",
+      "B": "若發生 torsades，首選是立即給予 β-blocker 並持續觀察，電解質不需特別處理",
+      "C": "抗精神病藥造成 QT 延長時，最主要處置是增加同類藥物劑量以穩定心律",
+      "D": "QT 延長合併低鉀低鎂會提高 torsades 風險；處置常包含停用/調整致 QT 延長藥物、矯正 K/Mg（Mg 常為急性處置之一），必要時採用提高心率的策略（overdrive pacing/isoproterenol）視情境處理"
+    },
+    "answer": "D",
+    "explanation": "torsades de pointes 常與 QT 延長相關，誘因包含致 QT 藥物、低鉀、低鎂、心動過緩等。處置重點是移除誘因、矯正電解質（靜脈鎂常作為急性處置），以及在反覆發作者透過提高心率（臨時 pacing 或 isoproterenol）減少 pause-dependent torsades。若不穩定則依 ACLS 進行電擊。\n\n(A) 不佳：QT 延長在有誘因時可能導致惡性心律不整。\n(B) 不佳：矯正電解質是關鍵。\n(C) 不佳：加重誘因。\n\n延伸考點：QT 測量與校正陷阱；常見致 QT 藥物清單與交互作用；低鎂常伴低鉀且需同時處理。",
+    "tags": ["cardiology", "QT prolongation", "torsades", "hypokalemia", "hypomagnesemia", "drug-induced"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0181",
+    "stem": "46 歲男性慢性 B 型肝炎，近期因淋巴瘤開始接受 rituximab 合併化療。下列何者較符合 HBV reactivation 的預防策略？",
+    "options": {
+      "A": "在高風險免疫抑制（如 anti-CD20）下，通常會在治療前評估 HBV 血清學與病毒量，並考慮預防性抗病毒治療（如 entecavir/tenofovir）於免疫治療期間及之後一段時間持續，並監測肝功能與 HBV DNA",
+      "B": "只要目前肝功能正常，就可忽略 HBV 狀態，化療後再追蹤即可",
+      "C": "HBV reactivation 多與細菌感染相關，因此以抗生素預防為主較合理",
+      "D": "HBV 抗病毒藥僅在黃疸出現後才需要，提早使用通常沒有意義"
+    },
+    "answer": "A",
+    "explanation": "rituximab 等 B 細胞抑制治療屬 HBV reactivation 高風險。臨床策略是在免疫治療前完成 HBV 檢測（HBsAg、anti-HBc、HBV DNA），高風險族群常採預防性抗病毒（entecavir/tenofovir 等）並持續至治療後一段時間，降低暴發性肝炎風險；同時追蹤 ALT 與 HBV DNA。\n\n(B) 不佳：正常肝功能不等於低風險。\n(C) 不佳：機轉為病毒再活化。\n(D) 不佳：延後治療風險較高。\n\n延伸考點：HBsAg(-)/anti-HBc(+) 仍可能 reactivation；預防 vs pre-emptive 監測策略差異；與 HCV/HDV 共同感染的注意事項。",
+    "tags": ["hepatology", "HBV reactivation", "rituximab", "chemotherapy", "antiviral prophylaxis", "ID"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0182",
+    "stem": "29 歲女性懷孕 32 週，主訴劇烈搔癢（夜間較明顯），無明顯皮疹。抽血顯示膽酸上升、肝酵素輕度上升。下列何者較符合最可能診斷與管理方向？",
+    "options": {
+      "A": "較支持妊娠急性脂肪肝，管理以立即剖腹產為主，不需再做其他評估",
+      "B": "較支持妊娠肝內膽汁滯留（ICP），需以 ursodeoxycholic acid 等改善症狀與膽酸，並以胎兒風險分層討論監測與分娩時機",
+      "C": "較支持 HELLP，因為搔癢常是其最早表現，通常不需看血小板或溶血指標",
+      "D": "較支持孕期皮膚過敏反應，膽酸上升多屬偶發，與胎兒風險關聯不大"
+    },
+    "answer": "B",
+    "explanation": "ICP 常在孕晚期出現以搔癢為主、皮疹不典型，合併膽酸上升與肝酵素異常。管理著重症狀與膽酸控制（常用 UDCA），並把胎兒風險納入：膽酸越高，胎兒不良事件風險可能上升，因此會依膽酸程度、孕週與臨床狀況討論監測與分娩時機。\n\n(A) 不佳：AFLP 多伴噁心嘔吐、低血糖、凝血異常等。\n(C) 不佳：HELLP 以溶血、肝酵素上升、血小板下降為核心。\n(D) 不佳：膽酸上升具有臨床意義。\n\n延伸考點：與妊娠皮膚病（PUPPP、pemphigoid gestationis）鑑別；分娩後追蹤與再發風險；維生素 K 與凝血評估在重度膽汁滯留的角色。",
+    "tags": ["OBGYN", "ICP", "bile acids", "pruritus", "UDCA", "pregnancy"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0183",
+    "stem": "65 歲男性因急性上腹痛，血清 lipase 明顯上升，CT 顯示急性胰臟炎。48 小時後出現低血壓與呼吸惡化，CT 顯示胰周液體集合但尚無明顯壞死證據。下列何者較符合急性期處置與感染判斷？",
+    "options": {
+      "A": "胰臟炎早期出現液體集合多提示感染，常規需立即給予廣效抗生素並預防性引流",
+      "B": "急性期處置以支持療法為主（補液、止痛、早期腸內營養），是否使用抗生素需看是否有感染證據；單純無菌性液體集合通常不會因影像就啟動抗生素或介入",
+      "C": "若血壓下降，優先限制輸液以避免胰臟水腫，並延後營養到完全無痛後再開始",
+      "D": "只要 lipase 上升即代表壞死性胰臟炎，治療上以早期手術清創較常被採用"
+    },
+    "answer": "B",
+    "explanation": "急性胰臟炎多以支持療法為核心：適度補液、止痛與早期腸內營養。抗生素不建議常規預防性使用；只有在懷疑感染（感染性壞死、膽管炎、肺炎等）時才使用。影像見液體集合不等於感染，介入通常採「延後、分階段（step-up）」策略，特別在壞死性或感染性情境。\n\n(A) 不佳：預防性抗生素/早期引流不符合多數情境。\n(C) 不佳：低血壓仍需復甦，營養延後會增加風險。\n(D) 不佳：lipase 不等於壞死；早期手術清創多已被較保守策略取代。\n\n延伸考點：修正 Atlanta 分類（APFC、ANC、pseudocyst、WON）；感染性壞死線索（氣體、臨床敗血）；ERCP 在膽源性胰臟炎合併膽管炎的角色。",
+    "tags": ["GI", "pancreatitis", "fluid collection", "antibiotics", "step-up approach", "supportive care"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0184",
+    "stem": "52 歲男性因慢性下背痛與晨僵、活動後改善，且有反覆虹彩炎病史。X 光顯示薦髂關節變化。下列何者較符合僵直性脊椎炎（axSpA）的治療重點？",
+    "options": {
+      "A": "治療以長期臥床休息為核心，可降低脊椎僵硬與疼痛",
+      "B": "以 NSAID 與運動/物理治療作為基礎，若症狀或發炎持續可評估生物製劑（如 TNF inhibitor、IL-17 inhibitor），並注意眼部與腸皮膚共病",
+      "C": "只要影像出現變化就直接使用化療藥物，因為發炎通常與腫瘤相關",
+      "D": "虹彩炎與下背痛多為偶發共存，不需要納入同一系統性診斷考量"
+    },
+    "answer": "B",
+    "explanation": "axSpA 的治療以控制發炎與維持活動度為主。NSAID 與規律運動/物理治療是基礎；對活動性疾病持續者可考慮生物製劑（TNF 或 IL-17 抑制）。同時需評估與管理共病（虹彩炎、乾癬、IBD）。\n\n(A) 不佳：臥床會加重僵硬。\n(C) 不佳：化療不符合疾病機轉。\n(D) 不佳：虹彩炎是重要脊椎關節炎相關表現。\n\n延伸考點：HLA-B27 的意義與限制；影像（MRI）在早期診斷的角色；NSAID 的腎胃風險與保護策略。",
+    "tags": ["rheumatology", "axSpA", "ankylosing spondylitis", "uveitis", "NSAID", "biologics"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0185",
+    "stem": "74 歲男性因間歇性血尿就醫，CT urography 顯示腎盂內充填缺損，尿液細胞學可疑。下列何者較符合上泌尿道尿路上皮癌（UTUC）的評估與治療規劃概念？",
+    "options": {
+      "A": "只要看到充填缺損即可直接當作腎結石處理，後續不必做內視鏡或細胞學評估",
+      "B": "UTUC 需整合影像、尿細胞學與必要時的輸尿管鏡檢/切片，並依風險分層（腫瘤大小、分級、侵襲疑慮、多灶、腎功能）決定腎輸尿管全切或保腎策略",
+      "C": "血尿在老年多與前列腺肥大相關，因此只要治療 BPH 就能合理解釋此影像",
+      "D": "UTUC 的治療通常以單純膀胱灌注為主，腎輸尿管手術多不在考量內"
+    },
+    "answer": "B",
+    "explanation": "UTUC 的診斷常依 CT urography、尿細胞學，再配合輸尿管鏡檢與切片確認分級/範圍。治療採風險分層：高風險（高分級、較大、侵襲疑慮、多灶等）常考慮腎輸尿管全切（含膀胱袖口）；低風險且需保腎者可考慮內視鏡治療/局部策略，但需嚴密追蹤。\n\n(A) 不佳：充填缺損需鑑別腫瘤。\n(C) 不佳：BPH 不解釋腎盂充填缺損。\n(D) 不佳：灌注治療多是膀胱癌策略，UTUC 的主軸不同。\n\n延伸考點：UTUC 與膀胱癌的同步/異時性風險；術後膀胱內復發預防策略（依實務）；腎功能對治療選擇的影響。",
+    "tags": ["urology", "UTUC", "hematuria", "CT urography", "ureteroscopy", "risk stratification"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0186",
+    "stem": "58 歲女性因慢性腎病合併貧血，Hb 9.6 g/dL，MCV 正常，鐵指標顯示 TSAT 18%、ferritin 120 ng/mL。下列何者較符合 CKD anemia 的評估與治療方向？",
+    "options": {
+      "A": "CKD anemia 需評估鐵缺乏與發炎狀態，先優化鐵補充（口服或靜脈依情境）後再評估 ESA 的適應症與目標 Hb，並監測血壓與血栓風險",
+      "B": "只要 Hb 低於 10 就直接輸血作為長期策略，避免 ESA 副作用",
+      "C": "ferritin 正常即可排除功能性缺鐵，因此補鐵通常不在考量內",
+      "D": "ESA 的目標是把 Hb 推到接近正常高值，通常越高越好以改善運動耐受"
+    },
+    "answer": "A",
+    "explanation": "CKD anemia 常由 EPO 不足、鐵利用障礙與慢性發炎共同造成。TSAT 偏低提示可用鐵不足或功能性缺鐵，治療通常先優化鐵（口服或 IV，視吸收與嚴重度），再依症狀、Hb、風險評估 ESA。Hb 目標需避免過高（與血栓/中風風險相關），並監測血壓、鐵指標與反應。\n\n(B) 不佳：反覆輸血有同種免疫與鐵過載等問題。\n(C) 不佳：ferritin 受發炎影響，不能單獨排除缺鐵。\n(D) 不佳：Hb 目標需個別化，過度矯正有風險。\n\n延伸考點：功能性缺鐵（TSAT 低、ferritin 正常或偏高）；IV iron 的感染疑慮與監測；新型 HIF-PHI 的概念與限制（依地區可近性）。",
+    "tags": ["renal", "CKD anemia", "iron", "ESA", "TSAT", "ferritin"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0187",
+    "stem": "43 歲男性因急性胸痛與呼吸困難就醫，胸片顯示右側大量胸水。胸水檢查：protein 3.8 g/dL、LDH 升高，胸水 pH 7.18、葡萄糖偏低。下列何者較符合此胸水的臨床意義與處置方向？",
+    "options": {
+      "A": "此較像單純心因性胸水，可先以利尿劑治療並觀察胸水自然吸收",
+      "B": "若胸水為滲出液即可排除感染，因此不需要抗生素或引流",
+      "C": "胸水 pH 偏低與葡萄糖偏低支持複雜性副肺炎胸水/膿胸的可能，通常需要抗生素並評估是否需胸管引流或進一步介入",
+      "D": "只要胸水量大就適合反覆抽胸水即可，胸水生化檢驗對決策影響有限"
+    },
+    "answer": "C",
+    "explanation": "滲出性胸水合併低 pH、低葡萄糖與較高 LDH，需考慮複雜性副肺炎胸水或膿胸。這類胸水常需要抗生素並評估胸管引流（必要時 fibrinolytic 或 VATS），以達到感染源控制。單靠反覆抽吸可能不足以處理分隔或膿胸。\n\n(A) 不佳：心因性多為漏出液且 pH/葡萄糖不呈此型態。\n(B) 不佳：反而提示感染/發炎。\n(D) 不佳：胸水生化與影像分隔會影響是否需要胸管。\n\n延伸考點：Light’s criteria 的限制；影像（超音波）評估分隔；結核性與惡性胸水在 pH/葡萄糖上的差異趨勢。",
+    "tags": ["pulmonary", "pleural effusion", "empyema", "parapneumonic", "chest tube", "Light criteria"]
+  },
+
+  
+  {
+    "id": "NTUPGY_V1_Q0188",
+    "stem": "59 歲男性因反覆腹痛與水樣腹瀉，近期曾住院並使用過廣效抗生素。糞便檢驗提示 C. difficile。下列何者較符合初期治療與感染管制的概念？",
+    "options": {
+      "A": "治療以止瀉藥為主，抗生素相關腹瀉多可自行恢復，接觸隔離可視情況省略",
+      "B": "確立或高度懷疑 C. difficile 時，需啟動接觸隔離與手部清潔策略（含肥皂水），並依嚴重度選擇口服 vancomycin 或 fidaxomicin 等治療，同時檢視並停用不必要抗生素",
+      "C": "只要糞便檢驗陽性就代表一定需要靜脈 metronidazole 單方作為標準治療",
+      "D": "C. difficile 主要靠空氣傳播，因此以 N95 與負壓病房為主要感染管制措施"
+    },
+    "answer": "B",
+    "explanation": "C. difficile 感染的核心包含：感染管制（接觸隔離、環境消毒、手部清潔需肥皂水以去除孢子）、抗生素管理（停用不必要抗生素與抑酸藥評估），以及依嚴重度選擇治療。多數初發非重症與重症治療以口服 vancomycin 或 fidaxomicin 為主；靜脈 metronidazole 多不作為單方首選，僅在特定情境輔助。\n\n(B) 正確。\n(A) 不佳：止瀉藥可能延長毒素滯留，且隔離重要。\n(C) 不佳：治療路徑不符合現代趨勢。\n(D) 不佳：以接觸傳播與孢子為主。\n\n延伸考點：重症/暴發型（ileus、toxic megacolon）的處置與手術評估；復發策略（fidaxomicin、bezlotoxumab、FMT 在特定情境）；檢驗方式與偽陽性（定殖）問題。",
+    "tags": ["ID", "C. difficile", "antibiotic-associated diarrhea", "contact isolation", "vancomycin", "stewardship"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0189",
+    "stem": "47 歲女性因反覆頭痛與血壓偏高，抽血顯示低鉀代謝性鹼中毒。腎素偏低，醛固酮偏高。下列何者較符合此內分泌狀態的診斷與下一步？",
+    "options": {
+      "A": "較支持原發性醛固酮增多症，後續可做確認性測試並進行影像與側化評估（如腎上腺靜脈採血在合適情境），以決定手術或礦物皮質素受體拮抗劑治療",
+      "B": "此最符合腎性失鹽症候群，治療以限制鹽分攝取為主即可",
+      "C": "腎素偏低代表腎上腺功能不足，因此可直接補充類固醇與鉀，不需進一步檢查",
+      "D": "若醛固酮偏高，多與甲狀腺機能異常相關，優先處理甲狀腺即可"
+    },
+    "answer": "A",
+    "explanation": "高血壓 + 低鉀代謝性鹼中毒 + 低腎素 + 高醛固酮，典型支持原發性醛固酮增多症（PA）。流程通常是篩檢（ARR）、確認性測試（例如鹽水負荷等，依中心流程），再進入分型：影像與側化（AVS）以區分單側腺瘤（可考慮手術）與雙側增生（多以 MRA 治療）。\n\n(A) 正確。\n(B) 不佳：輪廓不符。\n(C) 不佳：腎上腺不足常見低鈉高鉀。\n(D) 不佳：主要機轉不符。\n\n延伸考點：影像發現 incidentaloma 的陷阱（影像不等於側化）；MRA 的副作用與選擇（spironolactone vs eplerenone）；PA 與心血管事件風險。",
+    "tags": ["endocrine", "primary aldosteronism", "hypokalemia", "metabolic alkalosis", "ARR", "AVS"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0190",
+    "stem": "68 歲男性因進行性吞嚥困難，先為固體後進展到液體，體重下降。鋇劑吞嚥顯示食道末端鳥嘴狀狹窄。下列何者較符合鑑別與後續評估重點？",
+    "options": {
+      "A": "此影像較支持 achalasia，但在高齡與體重下降情境需警覺 pseudoachalasia（例如腫瘤），後續通常需上消化道內視鏡與食道壓力檢查整合判讀",
+      "B": "鳥嘴狀狹窄幾乎只見於 GERD，因此 PPI 試驗治療即可，不需進一步檢查",
+      "C": "吞嚥困難進展到液體通常支持口咽期問題，因此不必做食道相關檢查",
+      "D": "若鋇劑吞嚥典型，就可直接安排手術切除食道作為標準治療"
+    },
+    "answer": "A",
+    "explanation": "Bird-beak sign 典型支持 achalasia，但高齡、快速進展與體重下降需提高對 pseudoachalasia（胃食道交界腫瘤等）的警覺。後續評估常包括內視鏡以排除腫瘤/狹窄，並以高解析食道壓力檢查（HRM）分類（Chicago classification）以指導治療（POEM、Heller myotomy、氣球擴張、Botox 等）。\n\n(A) 正確。\n(B) 不佳：GERD 不會典型造成鳥嘴狀狹窄。\n(C) 不佳：先固體後液體較支持食道結構/動力問題。\n(D) 不佳：治療需分型與確認診斷。\n\n延伸考點：achalasia 與食道癌風險；治療選擇與 GERD 後遺；HRM 的三型分類與臨床意義。",
+    "tags": ["GI", "achalasia", "barium swallow", "pseudoachalasia", "HRM", "dysphagia"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0191",
+    "stem": "55 歲男性因逐漸加重的下肢水腫與蛋白尿就醫。尿蛋白/肌酐比偏高，血清白蛋白下降，血脂上升。腎穿刺顯示膜性腎病變。下列何者較符合膜性腎病變的評估與治療概念？",
+    "options": {
+      "A": "膜性腎病變常與腫瘤、感染、藥物或自身抗體（如 PLA2R）相關，需評估繼發原因與風險分層；治療包含支持療法（RAAS、降脂、抗凝風險評估）與在高風險者考慮免疫治療",
+      "B": "一旦確診膜性腎病變就直接進行腎臟移除，可避免蛋白尿造成的併發症",
+      "C": "腎病症候群的高血脂代表肝炎，因此只要治療肝炎即可逆轉所有腎表現",
+      "D": "PLA2R 抗體若陰性即可排除膜性腎病變，因此腎穿刺結果可忽略"
+    },
+    "answer": "A",
+    "explanation": "膜性腎病變可為原發（常見 PLA2R 相關）或繼發（惡性腫瘤、HBV、SLE、藥物等）。診斷後需做繼發原因篩檢並做風險分層（蛋白尿程度、腎功能趨勢、抗體水平等）。治療基礎是支持療法：RAAS 抑制減少蛋白尿、控制血壓、降脂、疫苗與感染風險管理；腎病症候群有血栓風險需評估是否抗凝。對高風險或進行性者，才考慮免疫治療（如 rituximab、calcineurin inhibitor、cyclophosphamide/steroid regimen 等依情境）。\n\n(A) 正確。\n(B) 不佳：過度侵入且不合理。\n(C) 不佳：高血脂是腎病症候群的代謝反應。\n(D) 不佳：PLA2R 陰性不排除（仍可能其他抗體或繼發）。\n\n延伸考點：抗 PLA2R 的追蹤用法（疾病活動度/復發）；抗凝考量（白蛋白門檻、出血風險）；繼發原因的年齡分層篩檢策略。",
+    "tags": ["renal", "membranous nephropathy", "nephrotic syndrome", "PLA2R", "secondary causes", "immunosuppression"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0192",
+    "stem": "62 歲女性因慢性疲倦與夜間盜汗，觸診可見多處無痛性淋巴結腫大。血液檢查顯示淋巴球增多，周邊血塗片見 smudge cells。下列何者較符合 CLL 的評估與治療概念？",
+    "options": {
+      "A": "CLL 需要分期與風險評估（症狀、血球低下、器官腫大、遺傳變異如 del17p/TP53），許多病人在無明顯進展前採觀察；有治療指徵時再選擇標靶或免疫化療策略",
+      "B": "只要診斷 CLL 就需要立刻化療，因為延後治療會顯著降低存活率",
+      "C": "smudge cells 代表檢體污染，因此 CLL 的診斷需完全忽略周邊血資料",
+      "D": "淋巴球增多多支持急性感染，因此只要抗生素治療即可使淋巴結縮小"
+    },
+    "answer": "A",
+    "explanation": "CLL 常見無痛性淋巴結腫大、淋巴球增多與 smudge cells。治療採「適應症導向」：無症狀且穩定者常採 watchful waiting；出現進展性症狀（B symptoms）、明顯器官壓迫、快速惡化淋巴球增多、或骨髓衰竭造成貧血/血小板低下等，才啟動治療。治療選擇依 TP53/del17p、共病與年齡而異，現代常用 BTK inhibitor、BCL2 inhibitor 等標靶。\n\n(A) 正確。\n(B) 不佳：早期治療未必改善整體存活，且增加毒性。\n(C) 不佳：smudge cells 是常見線索之一。\n(D) 不佳：感染是鑑別，但此輪廓支持血液惡性疾病。\n\n延伸考點：CLL 的免疫低下與感染/疫苗策略；自體免疫性溶血/血小板低下併發症；Richter transformation 的警訊。",
+    "tags": ["hematology", "CLL", "lymphadenopathy", "smudge cells", "watchful waiting", "targeted therapy"]
+  },
+
+
+  
+  {
+    "id": "NTUPGY_V1_Q0193",
+    "stem": "57 歲男性因反覆胸悶與運動喘，心超顯示主動脈瓣狹窄，AVA 0.9 cm²，mean gradient 28 mmHg，LVEF 35%，左心室擴大。下列何者較符合此情境的鑑別與下一步評估方向？",
+    "options": {
+      "A": "此為典型高壓差重度 AS，下一步主要是以 gradient 為主決定手術，不太需要進一步確認嚴重度",
+      "B": "在低 EF、低壓差且 AVA 偏小的情境，需考慮 low-flow low-gradient severe AS 與 pseudo-severe AS 的鑑別，常以 dobutamine stress echo 或 CT calcium score 等協助分辨，並結合症狀與風險評估介入治療",
+      "C": "只要 AVA <1.0 就等同確診重度 AS，後續不必再做流量或壓差相關評估",
+      "D": "LVEF 下降多半代表擴張型心肌病為主因，因此主動脈瓣評估通常不會改變治療路徑"
+    },
+    "answer": "B",
+    "explanation": "低 EF 合併低壓差但 AVA 偏小，需鑑別 true severe AS（低流量導致壓差不高）與 pseudo-severe AS（瓣口看似小但實際狹窄不重）。dobutamine stress echo 可評估 contractile reserve 與壓差/AVA 變化；CT calcium scoring 也可輔助判定瓣膜鈣化負荷。確立為 true severe 且有症狀者，通常需評估 AVR（SAVR/TAVR）適應症與手術風險。\n\n(B) 正確。\n(A) 不佳：此並非典型高壓差重度。\n(C) 不佳：AVA 單一指標在低流量情境易誤判。\n(D) 不佳：瓣膜狹窄與心肌病變可能互相影響，分辨會影響治療決策。\n\n延伸考點：paradoxical low-flow low-gradient（EF 保留但 stroke volume 低）；dimensionless index；TAVR 適應症與術前 CT 評估要點。",
+    "tags": ["cardiology", "aortic stenosis", "low-flow low-gradient", "dobutamine stress echo", "CT calcium", "TAVR"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0194",
+    "stem": "63 歲女性因反覆暈厥就醫，心電圖顯示二度房室傳導阻滯，心跳 38–42/min。她近期開始使用 β-blocker 並合併輕度高鉀。下列何者較符合初期處置與鑑別思路？",
+    "options": {
+      "A": "此情境可先暫停可能影響傳導的藥物、矯正電解質並評估是否為可逆因素；若仍有症狀性緩脈或血流動力不穩，需依 ACLS 考慮 atropine、暫時性 pacing，並評估永久性節律器適應症",
+      "B": "只要是二度 AV block 就直接植入永久節律器，藥物與電解質因素通常不影響決策",
+      "C": "暈厥與心跳偏慢多屬血管迷走神經反應，通常不需心電圖監測或進一步評估",
+      "D": "二度 AV block 多與心肌缺血無關，因此不需要評估胸痛、心肌酵素或其他缺血線索"
+    },
+    "answer": "A",
+    "explanation": "二度 AV block 合併緩脈與暈厥需先穩定病人，同時辨識可逆因素：藥物（β-blocker、CCB、digoxin）、電解質（高鉀）、缺血或感染等。若症狀顯著或血流動力不穩，依 ACLS 可使用 atropine（對部分類型效果有限）、暫時性 pacing 或升壓支持；可逆因素處理後仍持續者，再評估永久節律器。\n\n(A) 正確。\n(B) 不佳：可逆因素與阻滯型態會影響決策。\n(C) 不佳：此輪廓需先排除心因性暈厥。\n(D) 不佳：缺血可造成傳導阻滯，仍需評估。\n\n延伸考點：Mobitz I vs II 的臨床意義；高鉀對傳導的 ECG 變化；pacing 的適應症與橋接策略。",
+    "tags": ["cardiology", "AV block", "bradycardia", "syncope", "pacing", "reversible causes"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0195",
+    "stem": "54 歲男性有肝硬化與腹水，近期出現發燒與腹痛，腹水檢查 PMN 320/µL。腎功能略變差。下列何者較符合自發性細菌性腹膜炎（SBP）的處置重點？",
+    "options": {
+      "A": "PMN 超過診斷閾值時需及早給予經驗性抗生素（常涵蓋腸道革蘭陰性菌），並評估是否需合併白蛋白以降低腎衰風險；後續依培養與臨床反應調整並考慮二級預防",
+      "B": "腹水感染多以手術清創為主，抗生素僅在血培養陽性時才需要",
+      "C": "只要腹水培養陰性就可排除 SBP，因此可先等待培養結果再決定是否治療",
+      "D": "SBP 的主要問題是門靜脈壓過高，因此優先加大利尿與限制輸液，抗生素可延後"
+    },
+    "answer": "A",
+    "explanation": "SBP 診斷多以腹水 PMN ≥250/µL 為核心，治療不應等待培養。經驗性抗生素（如第三代 cephalosporin 等，視院內菌種與抗藥性）需及早給予。合併腎功能惡化或高風險者，白蛋白可降低腎衰與死亡風險。治療後需追蹤 PMN 下降、培養結果與是否需要二級預防（反覆 SBP 風險高者）。\n\n(A) 正確。\n(B) 不佳：SBP 多為腹水內感染，通常以藥物治療為主。\n(C) 不佳：培養可陰性（culture-negative neutrocytic ascites）。\n(D) 不佳：抗生素與腎保護是急性期重點。\n\n延伸考點：SBP 與 secondary peritonitis 鑑別（多菌種、LDH、glucose 等）；GI 出血時的一級預防；腎功能監測與 hepatorenal physiology。",
+    "tags": ["hepatology", "SBP", "ascites", "cirrhosis", "albumin", "antibiotics"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0196",
+    "stem": "36 歲女性產後 2 週出現呼吸困難、下肢水腫與端坐呼吸。心超顯示 LVEF 30%，無明顯瓣膜病。下列何者較符合此情境的診斷與治療框架？",
+    "options": {
+      "A": "考慮產後心肌病變（peripartum cardiomyopathy），治療以標準心衰治療為基礎並考量哺乳與藥物安全性，並評估血栓風險與後續懷孕風險諮詢",
+      "B": "產後心臟症狀多與焦慮相關，若心超顯示 EF 降低也多屬測量誤差，通常不需心衰治療",
+      "C": "此表現更符合肺炎，因此以抗生素治療為主，利尿與心衰藥物通常不太需要",
+      "D": "只要沒有瓣膜病就可排除心衰，因此可先不處理容量狀態"
+    },
+    "answer": "A",
+    "explanation": "peripartum cardiomyopathy 可在產前末期到產後數月出現心衰表現與 EF 下降，需排除其他心肌病或缺血原因。治療以 HFrEF 標準治療為基礎（利尿、β-blocker、RAAS 抑制等），但需考量哺乳期藥物安全與產後血流動力；部分病人有血栓風險需評估抗凝。後續需追蹤 EF 恢復情形並進行再懷孕風險諮詢。\n\n(A) 正確。\n(B) 不佳：EF 下降有臨床意義。\n(C) 不佳：不能忽略心衰處置。\n(D) 不佳：心衰可在無瓣膜病情境發生。\n\n延伸考點：bromocriptine 在特定中心的使用與證據；心衰用藥在孕期/哺乳期差異；ICD/穿戴式去顫器在短期 EF 低下的策略。",
+    "tags": ["cardiology", "peripartum cardiomyopathy", "HFrEF", "postpartum", "heart failure", "anticoagulation"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0197",
+    "stem": "50 歲男性長期飲酒，近來出現步態不穩、眼球震顫與意識混亂。家屬表示進食不佳。下列何者較符合此情境的急性處置優先順序？",
+    "options": {
+      "A": "優先給予葡萄糖以改善意識，硫胺素可在症狀穩定後再補充",
+      "B": "考慮 Wernicke encephalopathy，臨床上多會先給予硫胺素再補充葡萄糖與營養，並同時評估其他譫妄原因",
+      "C": "此為典型酒精戒斷，眼球震顫與步態不穩多屬偶發，處置以限制水分為主",
+      "D": "若意識混亂就可直接診斷肝性腦病變，硫胺素與營養評估多不影響處置"
+    },
+    "answer": "B",
+    "explanation": "眼球震顫/眼肌麻痺、步態不穩與意識改變的組合在營養不良或酒精使用者需高度懷疑 Wernicke encephalopathy。急性處置重點是及早給予硫胺素（常以靜脈），再補充葡萄糖與營養，以避免碳水化合物負荷加劇硫胺素缺乏造成神經傷害。同時仍需評估其他譫妄原因（感染、低血糖、電解質、戒斷、肝性腦病變等）。\n\n(B) 正確。\n(A) 不佳：先給葡萄糖可能惡化硫胺素缺乏相關腦病變。\n(C) 不佳：限制水分不對症。\n(D) 不佳：肝性腦病變是鑑別之一，但不能跳過 Wernicke 的急救性處置。\n\n延伸考點：Wernicke 的三聯徵不一定齊全；硫胺素補充劑量與療程（依中心）；Korsakoff syndrome 的記憶障礙後遺。",
+    "tags": ["neurology", "Wernicke encephalopathy", "thiamine", "alcohol use", "delirium", "nutrition"]
   }
-
-
-
 
 
 
