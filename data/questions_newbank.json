@@ -462,7 +462,141 @@
     "answer": "A",
     "explanation": "低度病變（CIN1）有自發消退可能，常採追蹤；高等級病變才更傾向治療。\n\n(D) 敘述合理，但本題在考『自然史』的核心點，A 更直接命中。",
     "tags": ["OBGYN", "CIN", "HPV", "natural history", "screening"]
+  },
+
+
+  
+  {
+    "id": "NTUPGY_V1_Q0021",
+    "stem": "70 歲男性 COPD，過去一年有 2 次因急性惡化需要口服類固醇/抗生素。平時使用 LAMA/LABA 規則吸入仍反覆喘與咳。抽血 eosinophils 320/µL。下列何者最符合後續吸入治療調整的思路？",
+    "options": {
+      "A": "加上 ICS 形成 triple therapy（LAMA/LABA/ICS），並同時評估肺炎風險與既往惡化型態",
+      "B": "將 LAMA/LABA 停掉，改成單用 ICS 以降低氣道發炎",
+      "C": "改用短效支氣管擴張劑作為維持治療，長效藥物改為按需使用",
+      "D": "因支氣管擴張試驗陰性，後續治療不需考慮任何抗發炎策略"
+    },
+    "answer": "A",
+    "explanation": "反覆惡化且 eosinophils 偏高的 COPD，增加 ICS（形成 triple therapy）常被視為合理升階選項之一，但需權衡肺炎風險與合併症。\n\n(A) 正確：符合以惡化史 + eosinophils 作為 ICS 受益機率的分層概念。\n(B) 不佳：ICS 單用在 COPD 並非常規策略，且可能增加風險。\n(C) 不佳：SABA 多為緩解用（rescue），不是主要維持治療。\n(D) 不佳：是否考慮 ICS 與 bronchodilator test 並非一對一關係，仍需看惡化史、eosinophils、是否有氣喘特徵等。",
+    "tags": ["pulmonary", "COPD", "GOLD", "ICS", "eosinophil", "exacerbation"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0022",
+    "stem": "65 歲女性，baseline creatinine 0.9 mg/dL。入院後 30 小時上升至 1.3 mg/dL，尿量約 0.4 mL/kg/hr 持續 8 小時。依 KDIGO AKI 分期，下列何者最合理？",
+    "options": {
+      "A": "Stage 1（符合 creatinine 與尿量任一項門檻即可）",
+      "B": "Stage 2（需 creatinine 約 2 倍或尿量低於 0.5 mL/kg/hr 持續 ≥12 小時）",
+      "C": "Stage 3（需 creatinine ≥3 倍或 ≥4.0 mg/dL，或需開始透析）",
+      "D": "不屬於 AKI，因為 creatinine 上升未達 0.5 mg/dL"
+    },
+    "answer": "A",
+    "explanation": "KDIGO AKI：creatinine ↑≥0.3 mg/dL/48h 或 ≥1.5 倍/7 天，或尿量 <0.5 mL/kg/hr ≥6 小時即可診斷；分期採 creatinine 或尿量任一條件。\n\n本題：0.9→1.3（+0.4，符合 ≥0.3/48h）且尿量 0.4 mL/kg/hr 持續 8 小時（符合 Stage 1 尿量門檻 6–12h）。\n(A) 正確。\n(B)(C) 不符倍數/時間門檻。\n(D) 錯在把診斷門檻記錯。",
+    "tags": ["renal", "AKI", "KDIGO", "staging", "urine output"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0023",
+    "stem": "56 歲男性疑似 prerenal AKI，近期因心衰竭使用 loop diuretic。下列哪一個指標通常較能在利尿劑干擾下協助分辨 prerenal vs intrinsic AKI？",
+    "options": {
+      "A": "FeUrea（尿素分率排泄）",
+      "B": "FeNa（鈉分率排泄）",
+      "C": "單次 urine sodium 絕對值",
+      "D": "血清鉀離子高低"
+    },
+    "answer": "A",
+    "explanation": "利尿劑會提高尿鈉，導致 FeNa/urine Na 可能失真；臨床上常用 FeUrea 作為替代參考（尤其懷疑 prerenal 的情境）。\n\n(A) 正確。\n(B)(C) 在利尿劑情境下鑑別力下降。\n(D) 血鉀受多因素影響，不能作為主要鑑別指標。",
+    "tags": ["renal", "AKI", "prerenal", "FeUrea", "diuretics"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0024",
+    "stem": "48 歲男性慢性 B 型肝炎：HBsAg(+)>6 個月，HBeAg(-)，HBV DNA 4,500 IU/mL，ALT 反覆高於正常上限（約 1.4 倍），彈性掃描顯示顯著纖維化（相當於 F2）。下列何者最符合治療決策？",
+    "options": {
+      "A": "可考慮啟動核苷（酸）類似物治療（例如 entecavir 或 tenofovir），並同時規劃長期追蹤與 HCC 監測",
+      "B": "HBV DNA 未達 20,000 IU/mL，通常不需治療，僅建議每 2–3 年追蹤一次",
+      "C": "先以短期類固醇降低 ALT，待 ALT 回到正常再決定是否需要抗病毒治療",
+      "D": "HBeAg(-) 代表疾病活動性低，主要以單次 HBV DNA 判斷即可"
+    },
+    "answer": "A",
+    "explanation": "HBeAg(-) 慢性 B 肝是否治療不應只用單一 DNA 門檻硬切；常見指引會以 HBV DNA（常用 >2,000 IU/mL）、ALT 異常、以及纖維化程度（顯著纖維化/肝硬化）整合判斷。\n\n本題：DNA >2,000 + ALT 持續高於 ULN + 顯著纖維化（F2）→符合治療指向。\n(A) 正確。\n(B) 不佳：忽略較低 DNA 仍可能進展，以及纖維化/ALT 的權重。\n(C) 不佳：類固醇可能促進病毒複製，且不是處理慢性 HBV 活動性的核心。\n(D) 不佳：HBeAg(-) 仍可能有活動性肝炎與纖維化進展，需整合多參數。",
+    "tags": ["GI", "hepatology", "HBV", "HBeAg negative", "tenofovir", "entecavir", "fibrosis"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0025",
+    "stem": "60 歲女性淋巴瘤準備使用 rituximab。檢驗：HBsAg(-)、anti-HBc(+)、anti-HBs(+)，HBV DNA 未檢出。下列何者最符合 HBV reactivation 的預防策略？",
+    "options": {
+      "A": "屬高風險免疫抑制情境，可考慮預防性抗病毒（例如 entecavir/tenofovir）並持續到治療結束後一段時間",
+      "B": "HBsAg 陰性代表無再活化風險，可不需追蹤 HBV 指標",
+      "C": "只需在出現黃疸或 ALT 顯著上升時才檢測 HBV DNA",
+      "D": "建議改用 lamivudine，因其耐藥風險相對較低且最適合長期預防"
+    },
+    "answer": "A",
+    "explanation": "HBsAg(-)/anti-HBc(+) 屬既往感染，遇到 B 細胞去除治療（rituximab）仍可能發生 HBV 再活化，因此常被列為高風險情境；多數建議在療程前即開始預防性抗病毒或至少採非常密集監測（高風險情境常偏向預防性治療）。\n\n(A) 正確。\n(B) 錯在低估 anti-HBc(+) 的風險。\n(C) 不佳：等到臨床肝炎表現才驗可能太晚。\n(D) 不佳：lamivudine 耐藥門檻較低；高風險情境多偏向高遺傳屏障藥物。",
+    "tags": ["GI", "hepatology", "HBV", "reactivation", "rituximab", "prophylaxis"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0026",
+    "stem": "32 歲女性篩檢結果：HPV 16(+)，細胞學 HSIL。無懷孕，追蹤配合度可。下列何者較符合風險導向管理的概念？",
+    "options": {
+      "A": "可選擇立即進一步診斷（colposcopy + biopsy），在特定高風險情境也可能考慮『不經切片先治療』的加速處置路徑",
+      "B": "先重複 Pap smear 6 個月，若仍 HSIL 才考慮 colposcopy",
+      "C": "先做 HPV 分型，若非 18 型就可改回一年後追蹤",
+      "D": "先以抗生素治療陰道炎，再做抹片確認是否為假陽性"
+    },
+    "answer": "A",
+    "explanation": "HPV16(+)+HSIL 代表 CIN3+ 風險高；風險導向指引對此類組合通常建議儘速 colposcopy/biopsy，並在某些條件下允許加速治療（expedited treatment）選項。\n\n(A) 正確。\n(B) 不佳：延後診斷可能錯過高級別病灶。\n(C) 不佳：HPV16 本身已屬最高風險分層之一。\n(D) 不佳：感染處理不能取代對高風險細胞學結果的診斷流程。",
+    "tags": ["OBGYN", "ASCCP", "HPV16", "HSIL", "colposcopy", "expedited treatment"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0027",
+    "stem": "28 歲女性：上一輪篩檢為 HPV(-)／Pap 正常。這次細胞學 LSIL，HPV(+)，無免疫抑制。下列何者較符合後續處置思路？",
+    "options": {
+      "A": "可考慮 1 年後重複 HPV 或 co-test；若持續異常再轉介 colposcopy",
+      "B": "直接子宮頸錐狀切除以避免漏診",
+      "C": "若無症狀，可直接回到常規篩檢間隔，不需特別追蹤",
+      "D": "改做子宮內膜切片以排除來源不明的細胞學異常"
+    },
+    "answer": "A",
+    "explanation": "低度細胞學異常在『先前有陰性 HPV/cotest』的背景下，短期（如 1 年）重測 HPV/cotest 是常見風險導向策略；若 1 年後仍異常，才更傾向 colposcopy。\n\n(A) 正確。\n(B) 不佳：過度侵入。\n(C) 不佳：仍需要風險導向的短期追蹤。\n(D) 不佳：LSIL 的工作重點在子宮頸風險分層，不是先做內膜取樣。",
+    "tags": ["OBGYN", "ASCCP", "LSIL", "HPV", "risk-based management"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0028",
+    "stem": "侵襲性乳癌行乳房保留手術合併全乳放療。病理報告切緣為「no tumor on ink」。下列何者較符合對切緣的解讀？",
+    "options": {
+      "A": "no tumor on ink 通常可視為可接受的陰性切緣；常規情況不需為了追求更寬切緣而再切",
+      "B": "侵襲癌需至少 5 mm 切緣才算陰性，否則應再切",
+      "C": "只要同側乳房復發風險存在，就應一律擴大切除到 1 cm 以上",
+      "D": "若切緣帶有 classic LCIS，等同陽性切緣，通常應再切"
+    },
+    "answer": "A",
+    "explanation": "對於侵襲性乳癌接受乳房保留手術合併全乳放療，『no tumor on ink』被廣泛接受作為陰性切緣；更寬的陰性切緣並未證實能進一步顯著降低同側復發。\n\n(A) 正確。\n(B)(C) 不佳：將「更寬切緣」硬性化，與共識趨勢不符。\n(D) 不佳：classic LCIS 在切緣通常不被視為必然需要再切的指標。",
+    "tags": ["breast", "margin", "BCS", "SSO-ASTRO", "no ink on tumor", "LCIS"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0029",
+    "stem": "DCIS 接受乳房保留手術合併全乳放療。關於切緣寬度的敘述，下列何者較符合共識型建議？",
+    "options": {
+      "A": "2 mm 的陰性切緣常被視為降低同側復發風險的合理目標；追求更寬切緣未必帶來額外明顯收益",
+      "B": "DCIS 與侵襲癌相同，以 no ink on tumor 作為唯一陰性切緣標準即可",
+      "C": "若切緣小於 10 mm，復發風險顯著上升，因此通常建議再切到 ≥10 mm",
+      "D": "只要計畫做放療，切緣寬度對復發風險影響可忽略"
+    },
+    "answer": "A",
+    "explanation": "針對 DCIS + 全乳放療的情境，多專科共識傾向以 2 mm 作為合理陰性切緣目標；更寬切緣對復發風險的額外下降幅度並不一致。\n\n(A) 正確。\n(B) 不佳：DCIS 的切緣共識與侵襲癌不完全相同。\n(C) 不佳：將 10 mm 當硬門檻過度化。\n(D) 不佳：放療可降低復發，但切緣仍具風險意義。",
+    "tags": ["breast", "DCIS", "margin", "SSO-ASTRO-ASCO", "whole-breast irradiation"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0030",
+    "stem": "急性下消化道出血住院病人，正在服用 aspirin 作為心血管二級預防，另合併 P2Y12 inhibitor（DAPT）。止血與生命徵象穩定後的用藥策略，下列何者較合理？",
+    "options": {
+      "A": "二級預防 aspirin 通常傾向持續或儘早恢復；P2Y12 inhibitor 的恢復時點依缺血/再出血風險與介入控制效果評估，常見目標是在一週內恢復，但需個別化",
+      "B": "為避免再出血，所有抗血小板藥物停用至少 4 週較安全",
+      "C": "若為近期置放冠狀動脈支架或近期 ACS，暫停 DAPT 通常比再出血風險更重要，因此可優先停藥",
+      "D": "只要血紅素回升，抗血小板恢復時點與內視鏡止血是否成功關聯不大"
+    },
+    "answer": "A",
+    "explanation": "下消化道出血情境下，二級預防 aspirin 多建議不中斷或儘早恢復；P2Y12 inhibitor（DAPT）通常在止血後盡量於 7 天內恢復，但仍需多專科評估缺血事件風險（尤其近期 ACS/支架）與再出血風險、以及止血效果。\n\n(A) 正確：呈現風險平衡與個別化。\n(B) 不佳：一刀切可能提高缺血事件風險。\n(C) 不佳：近期 ACS/支架反而是更不希望中斷 DAPT 的族群，需慎重多專科決策。\n(D) 不佳：止血成功與否直接影響恢復抗血小板的安全性。",
+    "tags": ["GI", "LGIB", "aspirin", "DAPT", "secondary prevention", "risk balance"]
   }
+
 
  
 
