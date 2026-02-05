@@ -1,10 +1,122 @@
 [
   {
-    "id": "NEWBANK_Q0001",
-    "stem": "題幹…",
-    "options": ["A ...", "B ...", "C ...", "D ..."],
+    "id": "NB_PGY_CORE_DER_0001",
+    "stem": "關於《病人自主權利法》之「預立醫療決定（AD）」可被啟動的臨床條件，下列何者最符合考試與實務的描述？",
+    "options": {
+      "A": "通常需先符合「末期病人」定義；若不屬末期，多半仍可由家屬同意來替代 AD 的啟動條件",
+      "B": "啟動條件主要取決於病人是否已失去行為能力；一旦失能，AD 常可直接作為拒絕維生治療的依據",
+      "C": "法規採「特定臨床狀態」框架：涵蓋末期病人、不可逆昏迷、永久植物人、極重度失智，以及主管機關公告之難以忍受疾病狀態等",
+      "D": "只要完成 ACP 並簽署 AD，之後不論何種急性病程（例如單純肺炎）都能以 AD 直接拒絕插管與抗生素"
+    },
+    "answer": "C",
+    "explanation": "這題考的是「啟動條件不是泛稱的失能或家屬同意」，而是病主法明確列出五款臨床條件（含末期、不可逆昏迷、永久植物人、極重度失智、主管機關公告之難以忍受疾病等），當病人臨到該等狀態時，才進入 AD 所規範的是否施行醫療介入之決策範圍。\n\n(A) 容易把病主法與安寧緩和醫療條例混在一起；病主法不是只限末期，且家屬同意並非用來「替代」法定臨床狀態。\n(B) 失去行為能力本身不等於落入五款狀態之一；病主法強調「狀態」而非單純「能力」。\n(C) 正確，完整對到五款架構。\n(D) 把 AD 當成對所有急性病的通用拒治工具，會忽略病主法的啟動門檻與程序要件。\n\n出處：病主法適用對象與五款臨床條件 [oai_citation:0‡三(4)：風免、血液、腫瘤、家醫.pdf](sediment://file_000000002f287208b54305827620b754)、AD/醫療介入定義與五種狀態描述 [oai_citation:1‡三(4)：風免、血液、腫瘤、家醫.pdf](sediment://file_000000002f287208b54305827620b754)"
+  },
+  {
+    "id": "NB_PGY_CORE_DER_0002",
+    "stem": "急診評估昏厥（syncope）病人時，若你打算使用 Canadian Syncope Risk Score（CSRS）輔助風險分層，下列哪個檢查「在典型 CSRS 構成要素中不屬常規納入項目」？",
+    "options": {
+      "A": "心電圖或心律相關異常的評估（例如 ECG 表現）",
+      "B": "收縮壓等生命徵象與臨床病史訊息",
+      "C": "心肌損傷指標（例如 troponin）",
+      "D": "腦波（EEG）"
+    },
+    "answer": "D",
+    "explanation": "CSRS 用於 ED syncope risk stratification，典型涵蓋病史、ECG/心律、收縮壓、troponin 等；EEG通常是「懷疑 seizure」時才考慮的檢查，而非 syncope score 的常規組成。\n\n(A)(B)(C) 都屬 CSRS 常見構成概念。\n(D) 正確：EEG 不在典型 CSRS 內。\n\n出處：CSRS 不包含 EEG 的整理 [oai_citation:2‡114台大PGY題目 詳解PDF.pdf](sediment://file_000000001b2471fa999c8c791697244e)"
+  },
+  {
+    "id": "NB_PGY_CORE_DER_0003",
+    "stem": "一位重症住院病人出現「non-thyroidal illness syndrome（euthyroid sick syndrome）」的典型實驗室型態時，下列哪個指標最有助於支持此診斷走向（相對於真正原發性甲狀腺疾病）？",
+    "options": {
+      "A": "reverse T3 偏高或相對升高",
+      "B": "anti-TPO 抗體陽性",
+      "C": "TSH 持續高度上升且 T4 同步明顯下降",
+      "D": "TSH 高度抑制且 free T4 長期顯著上升"
+    },
     "answer": "A",
-    "explanation": "詳解…",
-    "tags": ["tag1", "tag2"]
+    "explanation": "Euthyroid sick syndrome 常見表現為 T3 下降、T4 正常或下降、TSH 多為正常或偏低（恢復期可能短暫上升），且 reverse T3 是常被用來支持 NTIS 的方向性指標。\n\n(A) 正確：reverse T3 是常見考點。\n(B) 比較偏向自體免疫甲狀腺病的證據。\n(C) 更像原發性甲狀腺功能低下（或其他軸線問題），不符合 NTIS 常見輪廓。\n(D) 更像甲狀腺機能亢進或外源性甲狀腺素過量的方向。\n\n出處：NTIS/low T3 syndrome 與 reverse T3 重點 [oai_citation:3‡114台大PGY題目 詳解PDF.pdf](sediment://file_000000001b2471fa999c8c791697244e)"
+  },
+  {
+    "id": "NB_PGY_CORE_DER_0004",
+    "stem": "全甲狀腺切除術後 2 小時，病人主訴頸部緊繃、悶脹感與呼吸不適，觀察到敷料下似有腫脹；生命徵象尚可但病人焦慮。下列處置何者最符合「先做什麼」的臨床優先順序？",
+    "options": {
+      "A": "先安排氣管插管以確保 airway，之後再處理頸部腫脹原因",
+      "B": "優先評估並解除可能的頸部血腫壓迫（必要時床邊開傷口/剪線減壓，同步呼叫外科與麻醉），插管視情況協同進行",
+      "C": "先做頸部超音波或 CT 確認血腫範圍，再決定是否回開刀房",
+      "D": "先給予鎮靜藥物降低焦慮，觀察一段時間再評估是否需要介入"
+    },
+    "answer": "B",
+    "explanation": "考點是 post-thyroidectomy 最致命的急症之一是頸部血腫造成 airway compromise；關鍵不是「看到焦慮就先插管」，而是先解除壓迫（床邊減壓/拆敷料/剪線開傷口）以爭取通氣空間，並同步呼叫外科與麻醉；插管常因解剖扭曲更困難，所以減壓常是救命步驟。\n\n(A) 把插管當成單一路徑，忽略「先解除壓迫」的核心思維。\n(B) 正確：先減壓、同步呼援、airway 視情況協同。\n(C) 影像會延誤處置；此情境重點是快。\n(D) 鎮靜可能掩蓋惡化，且無法解決壓迫問題。\n\n出處：頸部血腫處置優先順序與『先減壓』重點 [oai_citation:4‡114台大PGY題目 詳解PDF.pdf](sediment://file_000000001b2471fa999c8c791697244e)"
+  },
+  {
+    "id": "NB_PGY_CORE_DER_0005",
+    "stem": "「快速反應的 acute phase reactant」若要用來動態追蹤發炎變化，臨床上最常被拿來做 serial monitoring 的指標通常是哪一個？",
+    "options": {
+      "A": "CRP（C-reactive protein）",
+      "B": "Ferritin",
+      "C": "Fibrinogen",
+      "D": "Haptoglobin"
+    },
+    "answer": "A",
+    "explanation": "急性期反應物很多，但若考『反應快、臨床最常用來監測發炎動態變化』，CRP 是最典型的答案（半衰期短、serial trend 好用）。\n\n(A) 正確：臨床常用來追蹤感染/發炎治療反應。\n(B) 會上升但臨床上常同時被用於 iron status 與 hyperinflammation（例如 HLH/Still’s）線索，且變因更多。\n(C) 上升相對較慢，常見於慢性發炎或凝血評估的一環。\n(D) 也是 acute phase reactant，但在一般臨床追蹤上不像 CRP 那麼常作為主要 serial 指標。\n\n出處：CRP 作為快速反應且常用監測指標 [oai_citation:5‡114台大PGY題目 詳解PDF.pdf](sediment://file_000000001b2471fa999c8c791697244e)"
+  },
+  {
+    "id": "NB_PGY_CORE_DER_0006",
+    "stem": "ABG：pH 7.09、PaCO2 80 mmHg、HCO3- 24 mEq/L。下列判讀何者最合理？",
+    "options": {
+      "A": "急性呼吸性酸中毒（代償尚不明顯）",
+      "B": "慢性呼吸性酸中毒（腎代償充分）",
+      "C": "原發代謝性酸中毒合併呼吸性代償不足",
+      "D": "混合性代謝性鹼中毒與呼吸性酸中毒，主因是腎臟保留 HCO3-"
+    },
+    "answer": "A",
+    "explanation": "pH 很低代表 acidemia，PaCO2 顯著升高代表 primary respiratory acidosis；HCO3- 仍接近正常（24）表示腎代償尚不明顯，較符合急性呼吸性酸中毒。\n\n(A) 正確：HCO3- 幾乎未上升，支持 acute。\n(B) 慢性通常會看到 HCO3- 顯著上升（腎代償），與本題不符。\n(C) 若是代謝性酸中毒，HCO3- 應顯著下降；本題 HCO3- 接近正常。\n(D) 題幹沒有支持代謝性鹼中毒的線索，且 HCO3- 並未高到像腎代償充分。\n\n出處：急性呼吸性酸中毒與急/慢性代償判讀重點 [oai_citation:6‡114台大PGY題目 詳解PDF.pdf](sediment://file_000000001b2471fa999c8c791697244e)"
+  },
+  {
+    "id": "NB_PGY_CORE_DER_0007",
+    "stem": "依 KDIGO 2012 對 AKI 的『診斷條件（任一符合即可）』，下列哪一個選項最不吻合該診斷門檻？",
+    "options": {
+      "A": "48 小時內血清 creatinine 上升約 0.3 mg/dL",
+      "B": "7 天內血清 creatinine 上升至 baseline 的約 1.5 倍以上（已知或推定發生於此期間）",
+      "C": "尿量低於 0.5 mL/kg/h，持續約 6 小時",
+      "D": "5 天內 creatinine 上升約 25%（其他條件不論）"
+    },
+    "answer": "D",
+    "explanation": "KDIGO 2012 AKI 診斷強調三條件擇一：Scr 48 小時內 ↑≥0.3 mg/dL、或 7 天內 ↑到 ≥1.5 倍 baseline、或尿量 <0.5 mL/kg/h 持續 ≥6 小時。\n\n(A)(B)(C) 都是 KDIGO 2012 診斷條件的典型敘述。\n(D) 常見把其他分類或概念混寫成『5 天 25%』，但不是 KDIGO 2012 的診斷門檻表述。\n\n出處：KDIGO 2012 AKI 診斷條件三選一 [oai_citation:7‡三(3)：腎內、感染.pdf](sediment://file_000000009a2072088260e0e481eb1c65)、同一重點在 PGY 整理中的再確認 [oai_citation:8‡114台大PGY題目 詳解PDF.pdf](sediment://file_000000001b2471fa999c8c791697244e)"
+  },
+  {
+    "id": "NB_PGY_CORE_DER_0008",
+    "stem": "一位育齡女性反覆在月經前後 24–72 小時出現氣胸，考慮 catamenial pneumothorax。下列敘述何者最貼近典型考點？",
+    "options": {
+      "A": "常與 thoracic endometriosis syndrome 相關，且在右側胸腔出現的比例較高；術後合併荷爾蒙抑制有助降低復發",
+      "B": "若合併 CA-125 上升，則可作為具高度特異性的診斷證據，通常可取代影像與內視鏡評估",
+      "C": "雖與月經相關，但大多仍與典型創傷性氣胸的機轉相同，因此側別分布通常沒有特徵",
+      "D": "臨床上多以單純觀察為主；只要氧氣治療，大多不易復發且很少需要手術"
+    },
+    "answer": "A",
+    "explanation": "Catamenial pneumothorax 多與 thoracic endometriosis syndrome 有關，典型特徵是右側胸腔較常見，時間點多在 menses 前後 24–72 小時；治療常涉及手術（如 VATS repair/pleurodesis）與術後 hormonal suppression 以降低復發。\n\n(A) 正確：把「右側、時間窗、治療策略」三個核心點串起來。\n(B) CA-125 可升高但不具特異性，不能當成『高特異性』診斷替代。\n(C) 不是創傷機轉，且側別具有考試鑑別度。\n(D) 復發率其實偏高，因此常會討論手術與荷爾蒙策略。\n\n出處：catamenial pneumothorax 右側常見、24–72 小時時間窗、手術合併荷爾蒙策略與 CA-125 非特異 [oai_citation:9‡114台大PGY題目 詳解PDF.pdf](sediment://file_000000001b2471fa999c8c791697244e)"
+  },
+  {
+    "id": "NB_PGY_CORE_DER_0009",
+    "stem": "慢性 B 型肝炎（chronic HBV）抗病毒治療的啟動，通常需要整合 ALT、HBV DNA 與肝纖維化/肝硬化狀態。下列哪一個情境『最符合』你手上整理檔案中呈現的治療啟動邏輯？",
+    "options": {
+      "A": "HBeAg(+) 病人，只要 ALT 輕度高於正常上限一次，就可直接啟動治療，不必考慮 HBV DNA 或纖維化程度",
+      "B": "HBeAg(+) 病人若 ALT 介於正常上限 2–5 倍，且 HBV DNA 約 ≥20,000 IU/mL（或有肝組織證據顯示活動性），通常屬可考慮/符合治療門檻的方向",
+      "C": "HBeAg(-) 病人只有在 HBV DNA ≥20,000 IU/mL 時才需要治療；若低於此值通常不需進一步評估",
+      "D": "只要 HBsAg(+) 超過 6 個月就等同需長期用藥，因為可最大幅度降低所有族群的 HCC 風險"
+    },
+    "answer": "B",
+    "explanation": "治療啟動不是看單一指標，而是 ALT + HBV DNA + 疾病嚴重度（纖維化/肝硬化）整合。你提供的內容中，HBeAg(+) 慢性 B 肝若 ALT 介於上限 2–5 倍且 HBV DNA 達到較高門檻（例如 ≥20,000 IU/mL）或有組織證據，屬符合/接近治療門檻的典型考點。\n\n(A) 過度簡化：單次輕度 ALT 上升不足以當作唯一啟動條件。\n(B) 正確：同時抓到 ALT 區間與 HBV DNA 門檻/組織證據的整合邏輯。\n(C) HBeAg(-) 的門檻與條件在你檔案中並非只看 20,000；亦會看 ALT 反覆異常與較低 DNA 門檻（如 2,000 IU/mL）等。\n(D) 把『慢性帶原』等同『一律用藥』不符合指南與實務風險分層。\n\n出處：HBeAg(+) ALT 2–5 倍 + HBV DNA 約 20,000 IU/mL 的治療啟動條件描述 [oai_citation:10‡三(2)：腸胃內、肝膽內、新陳代謝.pdf](sediment://file_00000000937c7206bb96731e8e833f53)；HBV 治療需整合 ALT/HBV DNA/纖維化與特定族群考量 [oai_citation:11‡台大PGY考點整理 - 複本.docx](sediment://file_00000000f71871fab34e47fe6f247d92)"
+  },
+  {
+    "id": "NB_PGY_CORE_DER_0010",
+    "stem": "一位 55 歲男性（無重大共病）詢問台灣公費癌症篩檢：你想以『考試要背的核心規格』快速整理他最相關的建議。下列哪一項敘述最符合你提供的整理檔？",
+    "options": {
+      "A": "大腸癌：50–未滿 75 歲民眾，通常每 2 年 1 次糞便潛血檢查屬常見核心規格",
+      "B": "乳癌：40–74 歲女性每年 1 次 mammography 是目前公費主流程",
+      "C": "子宮頸癌：25–29 歲女性每年 1 次 Pap smear 是最常見考試答案",
+      "D": "口腔癌：所有 30 歲以上民眾每年 1 次口腔黏膜檢查，與抽菸/檳榔史無關"
+    },
+    "answer": "A",
+    "explanation": "你提供的整理檔中，大腸癌公費篩檢核心規格之一是：50 歲以上至未滿 75 歲民眾，每 2 年 1 次糞便潛血檢查（FIT/FOBT）。\n\n(A) 正確：符合『年齡 + 頻率 + 工具』框架。\n(B) 你的檔案寫的是女性 40–74 歲每 2 年 1 次 mammography（並非每年）。\n(C) 你的檔案寫 25–29 歲女性常見是每 3 年 1 次（非每年）。\n(D) 口腔癌篩檢資格與檳榔/吸菸史密切相關，並非所有 30 歲以上民眾。\n\n出處：五大癌症篩檢整理（乳癌 40–74 每 2 年、子宮頸抹片 25–29 每 3 年等） [oai_citation:12‡台大PGY考點整理 - 複本.docx](sediment://file_00000000f71871fab34e47fe6f247d92) [oai_citation:13‡台大PGY考點整理 - 複本.docx](sediment://file_00000000f71871fab34e47fe6f247d92)；大腸癌/口腔癌等資格與頻率（國健署整理版本） [oai_citation:14‡三(4)：風免、血液、腫瘤、家醫.pdf](sediment://file_000000002f287208b54305827620b754)"
   }
 ]
