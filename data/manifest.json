@@ -1,26 +1,11 @@
 {
   "version": 1,
   "sources": [
-    { "id": "MED_03_CARD_PULM", "title": "三(1) 心內、胸內", "path": "data/books/MED_03_CARD_PULM.json", "enabled": true },
-    { "id": "MED_03_GI_HEP_ENDO", "title": "三(2) 腸胃內、肝膽內、新陳代謝", "path": "data/books/MED_03_GI_HEP_ENDO.json", "enabled": true },
-    { "id": "MED_03_REN_ID", "title": "三(3) 腎內、感染", "path": "data/books/MED_03_REN_ID.json", "enabled": true },
-    { "id": "MED_03_RHE_HEM_ONC_FM", "title": "三(4) 風免、血液、腫瘤、家醫", "path": "data/books/MED_03_RHE_HEM_ONC_FM.json", "enabled": true },
-
-    { "id": "MED_04_PED", "title": "四(1) 兒科", "path": "data/books/MED_04_PED.json", "enabled": false },
-    { "id": "MED_04_DERM", "title": "四(2) 皮膚", "path": "data/books/MED_04_DERM.json", "enabled": false },
-    { "id": "MED_04_PSY", "title": "四(3) 精神", "path": "data/books/MED_04_PSY.json", "enabled": false },
-
-    { "id": "MED_05_SURG_NEURO", "title": "五(1) 外科概、腦神外", "path": "data/books/MED_05_SURG_NEURO.json", "enabled": true },
-    { "id": "MED_05_CVS_COLO_ENDO_PLAST", "title": "五(2) 心外、大直外、內泌外、整外", "path": "data/books/MED_05_CVS_COLO_ENDO_PLAST.json", "enabled": true },
-    { "id": "MED_05_GI_HPBB_PANC_BREAST", "title": "五(3) 胃外、小腸外、肝外、膽外、胰外、乳外", "path": "data/books/MED_05_GI_HPBB_PANC_BREAST.json", "enabled": false },
-    { "id": "MED_05_THOR_PED_SURG", "title": "五(4) 胸外、兒外", "path": "data/books/MED_05_THOR_PED_SURG.json", "enabled": false },
-    { "id": "MED_05_URO_SURG", "title": "五(5) 泌尿外", "path": "data/books/MED_05_URO_SURG.json", "enabled": false },
-    { "id": "MED_05_ORTHO", "title": "五(6) 骨科", "path": "data/books/MED_05_ORTHO.json", "enabled": false },
-
-    { "id": "MED_06_OB", "title": "六(1上) 產科", "path": "data/books/MED_06_OB.json", "enabled": false },
-    { "id": "MED_06_GYN_REI", "title": "六(1下) 婦科、生殖內分泌", "path": "data/books/MED_06_GYN_REI.json", "enabled": false },
-    { "id": "MED_06_OPH", "title": "六(2) 眼科", "path": "data/books/MED_06_OPH.json", "enabled": false },
-    { "id": "MED_06_REHAB", "title": "六(3) 復健科", "path": "data/books/MED_06_REHAB.json", "enabled": false },
-    { "id": "MED_06_ANES_ENT", "title": "六(4) 麻醉、耳鼻喉", "path": "data/books/MED_06_ANES_ENT.json", "enabled": false }
+    {
+      "id": "NEWBANK_ALL",
+      "title": "新題庫（全部）",
+      "path": "data/questions_newbank.json",
+      "enabled": true
+    }
   ]
 }
