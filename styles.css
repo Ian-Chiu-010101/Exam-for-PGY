@@ -60,3 +60,40 @@ h1 { margin: 0; font-size: 22px; }
   opacity: 1;
   -webkit-text-fill-color: #e7eef7;
 }
+
+/* 選項：字體變大 + 靠左 + 更好換行 */
+.opt{
+  border: 1px solid #263244;
+  background:#101a26;
+  border-radius:12px;
+  padding:12px;
+  cursor:pointer;
+
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+
+  font-size: 20px;     /* 你要更大可改 21~22 */
+  line-height: 1.5;
+  text-align: left;
+}
+
+/* A/B/C/D 小方塊不變，但確保不被拉伸 */
+.opt .key{
+  flex: 0 0 auto;
+  width: 30px;
+  height: 30px;
+  border-radius: 7px;
+  text-align: center;
+  line-height: 30px;
+  background:#1c2b40;
+  color:#cfe3ff;
+  font-weight:700;
+}
+
+/* 選項文字區塊：確保靠左、可換行 */
+.opt span:last-child{
+  flex: 1 1 auto;
+  text-align: left;
+  word-break: break-word;
+}
