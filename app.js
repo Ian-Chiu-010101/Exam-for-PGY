@@ -1,4 +1,4 @@
-const STORE_KEY = "medquiz_wrong_v1";
+const STORE_KEY = "medquiz_wrong_v1_NEWBANK";
 
 let ALL = [];
 let pool = [];
