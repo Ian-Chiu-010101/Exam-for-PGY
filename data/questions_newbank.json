@@ -903,7 +903,207 @@
     "answer": "B",
     "explanation": "血壓穩定且 troponin 正常，雖有 RV 輕度擴大，整體較接近 intermediate-low risk 的概念；治療通常以抗凝為主，並依臨床狀態與氧合/心超變化決定監測強度。\n\n(A) 高風險 PE 通常指 hemodynamic instability。\n(B) 正確。\n(C) 確診 PE 多需抗凝以降低死亡與復發風險，除非有重大禁忌。\n(D) IVC filter 多用於抗凝禁忌或抗凝失敗的特定情境。",
     "tags": ["cardiopulmonary", "PE", "risk stratification", "anticoagulation", "RV dysfunction"]
+  },
+
+
+
+  
+  {
+    "id": "NTUPGY_V1_Q0066",
+    "stem": "55 歲男性胸悶 2 小時到院，心電圖為前壁 STEMI。已給予 aspirin + P2Y12 inhibitor。院內可於 60 分鐘內完成 primary PCI。下列何者較符合抗血小板與抗凝的策略概念？",
+    "options": {
+      "A": "已給 DAPT 後通常不再需要任何圍手術期抗凝，僅靠 DAPT 即可完成 PCI",
+      "B": "DAPT 為核心，但 PCI 過程仍常搭配程序性抗凝（如 UFH 或其他），並依出血/血栓風險調整",
+      "C": "若要做 primary PCI，溶栓通常仍是優先選項，PCI 僅作為補救",
+      "D": "P2Y12 inhibitor 建議等 PCI 後再開始，以降低穿刺點出血"
+    },
+    "answer": "B",
+    "explanation": "STEMI 的再灌流若以 primary PCI 進行，DAPT 是核心基石，但程序性抗凝（如 UFH，或依策略選擇其他抗凝）仍常用於降低導管相關血栓風險，並依個案出血/血栓風險調整。\n\n(A) DAPT 與抗凝在 PCI 中扮演不同角色。\n(B) 正確：反映常見臨床策略。\n(C) 溶栓多用於無法及時 PCI 的情境。\n(D) 多數情境會在 PCI 前給 P2Y12（或至少儘早），是否延後需看策略與風險，但不是普遍原則。",
+    "tags": ["cardiology", "STEMI", "PCI", "DAPT", "anticoagulation"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0067",
+    "stem": "慢性阻塞性肺病病人支氣管擴張試驗後 FEV1 上升 240 mL 且相對增加 13%。下列何者最貼近此結果在臨床上的解讀？",
+    "options": {
+      "A": "符合顯著可逆性（reversibility）的常用門檻，需將氣喘或氣喘重疊特徵納入鑑別與後續治療考量",
+      "B": "代表測試品質不佳，應直接判定為假陽性而忽略",
+      "C": "表示病人不可能是 COPD，因 COPD 不會出現 FEV1 改善",
+      "D": "只要達到此門檻即可直接使用 ICS 單方作為維持治療"
+    },
+    "answer": "A",
+    "explanation": "常用顯著 bronchodilator response 門檻之一為 FEV1 或 FVC 增加 ≥12% 且 ≥200 mL。此結果提示存在可逆性，需把氣喘、ACO（asthma-COPD overlap features）等可能性納入臨床整體判斷，但並不會自動排除 COPD。\n\n(A) 正確。\n(B) 需回看吹氣品質，但不能直接以此否定。\n(C) COPD 仍可能出現一定程度的可逆性。\n(D) 即使有可逆性，ICS 是否加入仍需看症狀、惡化史、eosinophils、氣喘特徵等，且 ICS 單用不是 COPD 常規。",
+    "tags": ["pulmonary", "COPD", "bronchodilator test", "reversibility", "ACO"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0068",
+    "stem": "肝硬化病人接受肝臟動態影像評估一顆 1.6 cm 結節：動脈期增強明顯，但門靜脈期未見明顯 washout，延遲期亦不典型。下列何者較符合後續評估方向？",
+    "options": {
+      "A": "在肝硬化背景下，僅有動脈期增強通常已足以直接診斷 HCC 並進入治療",
+      "B": "影像不典型時，可考慮補做另一種動態影像（CT↔MRI）或依風險評估安排切片/短期追蹤，以降低漏診與誤診",
+      "C": "AFP 若不高即可將此結節視為良性，回到常規超音波追蹤",
+      "D": "優先安排 FDG-PET 作為定論性檢查，再決定是否治療"
+    },
+    "answer": "B",
+    "explanation": "肝硬化結節若未符合典型 hallmarks（arterial hyperenhancement + washout ± capsule），多數策略會建議補做另一種動態影像或依風險採取短期追蹤/切片，以避免將非 HCC 病灶誤當 HCC 或漏掉早期 HCC。\n\n(A) 僅動脈期增強不足以在多數情境下定論。\n(B) 正確。\n(C) AFP 不能用來排除。\n(D) PET 對 HCC 敏感度不一致，不是首選定論工具。",
+    "tags": ["GI", "hepatology", "HCC", "indeterminate nodule", "CT", "MRI"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0069",
+    "stem": "28 歲女性，皮下瘀斑與鼻出血，血小板 12,000/µL。PT/aPTT 正常，周邊血抹片無明顯 schistocytes，腎功能正常。下列何者最符合初步鑑別與處置方向？",
+    "options": {
+      "A": "較符合 ITP 的輪廓，可評估出血嚴重度並考慮類固醇或 IVIG 等，並排除二次性原因",
+      "B": "較符合 DIC，通常 PT/aPTT 會正常且纖維蛋白原上升",
+      "C": "較符合 TTP，通常不需緊急處置，門診追蹤即可",
+      "D": "較符合 HIT，若沒有近期 heparin 暴露仍可先以 HIT 處理"
+    },
+    "answer": "A",
+    "explanation": "嚴重單純血小板低下、PT/aPTT 正常、無溶血證據與腎/神經症狀時，臨床輪廓更像 ITP；處置依出血與血小板數量，常見包括類固醇、IVIG（必要時），並評估是否有感染/自體免疫/藥物等二次性原因。\n\n(A) 正確。\n(B) DIC 常見 PT/aPTT 延長、D-dimer 上升、纖維蛋白原下降或消耗型變化。\n(C) TTP 屬急症，通常需緊急血漿置換等處置。\n(D) HIT 需要 heparin 暴露背景與血小板下降時序等條件支持。",
+    "tags": ["hematology", "ITP", "TTP", "DIC", "HIT", "PT", "aPTT"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0070",
+    "stem": "病人住院使用 heparin 第 7 天，血小板由 220,000/µL 降到 95,000/µL，合併下肢疼痛腫脹，超音波提示 DVT。下列何者較符合處置策略？",
+    "options": {
+      "A": "先補血小板到正常再繼續使用 heparin，以避免血栓惡化",
+      "B": "高度懷疑 HIT 時，通常停用所有 heparin 並改用非 heparin 抗凝（如 argatroban 或其他），同時送檢驗確認",
+      "C": "先觀察血小板 48 小時，若仍下降才考慮停 heparin",
+      "D": "改用 warfarin 立即高劑量起始，以加速抗凝效果"
+    },
+    "answer": "B",
+    "explanation": "HIT 的典型時序是 heparin 暴露後約 5–10 天血小板下降，且容易合併血栓事件。處置重點是立即停用所有 heparin，啟動非 heparin 抗凝，並送 PF4/功能性檢驗確認；warfarin 起始需更謹慎，通常要等血小板回升並在其他抗凝覆蓋下轉換。\n\n(A) 補血小板通常不解決免疫性血栓問題，且需依出血情境審慎。\n(B) 正確。\n(C) 延後處置可能增加血栓風險。\n(D) HIT 急性期直接高劑量 warfarin 可能增加壞死等風險，策略需更周延。",
+    "tags": ["hematology", "HIT", "heparin", "thrombosis", "argatroban", "4Ts"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0071",
+    "stem": "52 歲女性接受子宮頸癌篩檢：primary HPV test 陽性，分型為 HPV 18，細胞學 NILM。下列何者較符合後續處置方向？",
+    "options": {
+      "A": "HPV 18 與腺癌風險相關性較受重視，臨床上多傾向安排 colposcopy（必要時合併適當取樣）",
+      "B": "細胞學正常代表近期風險低，可安排 3 年後再篩檢",
+      "C": "改做 HPV 疫苗補打即可，後續僅需常規追蹤",
+      "D": "先重複 HPV 檢測兩次，若仍陽性才考慮 colposcopy"
+    },
+    "answer": "A",
+    "explanation": "在 primary HPV 策略下，HPV 16/18 常被視為較高風險分層；即使細胞學 NILM，許多風險導向策略仍傾向安排 colposcopy，以降低漏掉高級別病灶或腺體病變的風險。\n\n(A) 正確。\n(B) 單靠 NILM 可能低估 16/18 的風險。\n(C) 疫苗不等同處理既存高危感染。\n(D) 在 16/18 的分層下，直接 colposcopy 常比多次重測更貼近風險管理。",
+    "tags": ["OBGYN", "HPV18", "primary HPV screening", "NILM", "colposcopy"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0072",
+    "stem": "50 歲女性篩檢 mammography 顯示一個局部不對稱密度（focal asymmetry），未見明顯微鈣化。初步報告建議進一步評估。下列何者較符合常見的下一步？",
+    "options": {
+      "A": "安排診斷性 mammography 補照（如 spot compression/不同角度）並依需要加做超音波評估",
+      "B": "改以每年自我檢查追蹤，若摸到硬塊再就醫",
+      "C": "直接歸為 BI-RADS 2 並回到常規篩檢間隔",
+      "D": "先做乳房 MRI，若 MRI 未顯示顯著增強即可停止追蹤"
+    },
+    "answer": "A",
+    "explanation": "focal asymmetry 的處置常見為診斷性補照（spot compression、不同角度、比較前次片）以釐清是否為疊影或真實病灶，並視情況加做超音波。\n\n(A) 正確。\n(B) 不足以取代影像診斷流程。\n(C) 未完成診斷性評估前不宜直接定為良性。\n(D) MRI 在部分情境可輔助，但通常不作為 focal asymmetry 的第一步。",
+    "tags": ["breast", "mammography", "focal asymmetry", "diagnostic workup", "BI-RADS"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0073",
+    "stem": "71 歲男性燒燙傷（約 35% TBSA），復甦 6 小時後尿量仍偏低且乳酸下降不理想。下列何者較符合復甦調整的思路？",
+    "options": {
+      "A": "以目標導向調整輸液與評估其他低灌流原因（例如出血、心功能、腹腔室症候群），並以尿量/灌流指標作動態回饋",
+      "B": "尿量偏低多表示輸液過多，因此宜先大幅減少輸液以避免肺水腫",
+      "C": "直接改以高劑量利尿劑將尿量拉高作為主要目標，不需評估灌流",
+      "D": "乳酸下降不理想多屬正常現象，可延後到 24 小時後再處理"
+    },
+    "answer": "A",
+    "explanation": "燒燙傷復甦中，尿量與灌流指標（乳酸、周邊灌流、血壓等）用來回饋調整輸液；若反應不佳，需要同步思考其他低灌流原因（出血、心功能不全、腹腔室症候群、併發症）。\n\n(A) 正確。\n(B) 尿量偏低更常提示灌流不足或其他問題，不能直接推論輸液過多。\n(C) 以利尿劑硬拉尿量可能掩蓋灌流不足。\n(D) 延後處理可能錯失可逆低灌流。",
+    "tags": ["surgery", "burn", "resuscitation", "urine output", "lactate", "complications"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0074",
+    "stem": "66 歲男性突然右側無力與失語，最後正常時間約 6 小時前。到院後 CTA 顯示左側 M1 occlusion，CT perfusion 顯示仍有可救腦組織。下列何者較符合治療方向？",
+    "options": {
+      "A": "在合適影像篩選下，即使超過傳統 4.5 小時窗，仍可能考慮機械取栓並依團隊評估風險效益",
+      "B": "超過 4.5 小時窗後，所有再灌流治療多不再考慮，主要以支持性治療為主",
+      "C": "以靜脈溶栓為主即可，是否取栓不影響預後",
+      "D": "先給予高劑量抗凝再觀察神經症狀變化，必要時隔日取栓"
+    },
+    "answer": "A",
+    "explanation": "大血管阻塞（如 M1）在進階影像選擇下，機械取栓的治療窗可延伸到較晚（依指引與影像條件），重點在於仍有 salvageable tissue 的證據與整體風險效益評估。\n\n(A) 正確。\n(B) 過度保守，忽略影像選擇下的取栓機會。\n(C) IVT 與 EVT 適應症與效益不同，且 6 小時已超出傳統 IVT 時窗。\n(D) 先抗凝不是大血管阻塞的標準橋接策略，且可能增加出血風險。",
+    "tags": ["neuro", "stroke", "large vessel occlusion", "thrombectomy", "perfusion imaging"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0075",
+    "stem": "54 歲男性腸阻塞接受手術後第 3 天發燒、心跳上升、腹部壓痛增加。血壓略低。考慮腹腔感染與併發症。下列何者較符合此情境下的初步處理重點？",
+    "options": {
+      "A": "優先評估是否有吻合口漏或腹腔內膿瘍（影像/外科評估），並及早給予經驗性抗生素與復甦，必要時採取 source control",
+      "B": "以止痛與退燒為主，觀察 48 小時後再決定是否做影像檢查",
+      "C": "避免抗生素以免影響培養結果，等到培養確定後再開始治療",
+      "D": "先以類固醇抑制發炎反應，並延後任何侵入性處置"
+    },
+    "answer": "A",
+    "explanation": "術後早期發燒合併生命徵象變化與腹部壓痛，需把吻合口漏、腹腔內感染、膿瘍等列為重要鑑別。處置多為復甦、取得培養（不延誤）、及早廣效抗生素，並儘快完成 source control（引流或手術）。\n\n(A) 正確。\n(B) 可能延誤處置。\n(C) 培養重要但不應延誤抗生素與復甦。\n(D) 類固醇不處理 source control，且可能增加感染風險。",
+    "tags": ["surgery", "post-op", "intraabdominal infection", "anastomotic leak", "source control"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0076",
+    "stem": "42 歲男性蜂窩性組織炎合併膿瘍形成，切開引流後仍發燒且紅腫範圍擴大。下列何者較符合抗生素涵蓋的考量？",
+    "options": {
+      "A": "在有膿瘍或 MRSA 風險較高的情境，抗生素策略常需納入 MRSA 覆蓋，並依培養結果調整",
+      "B": "切開引流後通常不再需要抗生素，紅腫擴大多屬正常反應",
+      "C": "優先以 metronidazole 單獨治療，因膿瘍主要由厭氧菌造成",
+      "D": "優先使用抗病毒藥物，因蜂窩性組織炎常由病毒感染引起"
+    },
+    "answer": "A",
+    "explanation": "膿瘍切開引流是關鍵，但若仍持續發燒、紅腫擴大或有全身反應，常需合併抗生素。膿瘍情境下 MRSA 的機率上升，臨床常把 MRSA 覆蓋納入起始方案，再依培養與臨床反應去調整。\n\n(A) 正確。\n(B) 持續惡化需要重新評估。\n(C) 單用 metronidazole 覆蓋不足。\n(D) 病因不符。",
+    "tags": ["ID", "cellulitis", "abscess", "I&D", "MRSA", "antibiotics"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0077",
+    "stem": "30 歲女性接種 HPV 疫苗後詢問篩檢策略。下列何者較符合衛教重點？",
+    "options": {
+      "A": "疫苗可降低特定高危型感染與相關病變風險，但後續篩檢仍依年齡、既往結果與政策/指引規劃",
+      "B": "疫苗效果良好時，後續篩檢可完全停止，除非出現症狀",
+      "C": "若疫苗已覆蓋 9 價型別，後續只需做一次 HPV 檢測即可結束追蹤",
+      "D": "疫苗主要影響外陰部病灶，對子宮頸病變的影響相對有限，因此篩檢策略不需與疫苗狀態連動"
+    },
+    "answer": "A",
+    "explanation": "衛教的核心是：HPV 疫苗能降低風險，但不等同於取代篩檢。後續是否做抹片/HPV 檢測與間隔仍需依年齡、既往結果、免疫狀態與政策/指引安排。\n\n(A) 正確。\n(B)(C) 把篩檢中止以單一條件決定，風險管理上過度簡化。\n(D) 疫苗對子宮頸相關病變也有重要影響，說法不精準。",
+    "tags": ["OBGYN", "HPV vaccine", "screening", "patient education"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0078",
+    "stem": "67 歲男性前列腺肥大合併急尿與夜尿，已使用 α1-blocker 後尿流改善，但急尿仍明顯。殘尿量 60 mL。下列何者較符合後續用藥加成策略？",
+    "options": {
+      "A": "可考慮加用 β3 agonist 或抗膽鹼藥物改善儲尿症狀，並留意殘尿量與尿滯留風險",
+      "B": "急尿通常代表感染，優先加用長期抗生素較能改善症狀",
+      "C": "將 α1-blocker 停掉改用利尿劑，可降低夜尿並改善急尿",
+      "D": "以 opioids 作為主要治療，降低膀胱感覺以改善急尿"
+    },
+    "answer": "A",
+    "explanation": "BPH 治療後若阻塞症狀改善但仍有明顯儲尿症狀（急尿/頻尿/夜尿），臨床常加用 β3 agonist 或抗膽鹼藥物，但需監測殘尿量與尿滯留風險。\n\n(A) 正確。\n(B) 無感染證據時不宜以抗生素作主要策略。\n(C) 利尿劑可能加重頻尿/夜尿。\n(D) opioids 不作為 OAB/BPH 儲尿症狀的常規治療。",
+    "tags": ["urology", "BPH", "LUTS", "OAB", "beta-3 agonist", "anticholinergic"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0079",
+    "stem": "急性上消化道出血病人（疑似潰瘍），生命徵象穩定但 Hb 由 10.2 降至 8.3。下列何者較符合住院初期處置概念？",
+    "options": {
+      "A": "可考慮先給予 PPI（常以靜脈或高劑量策略視情境），並安排適時胃鏡評估與止血，輸血門檻依症狀與風險分層",
+      "B": "在未完成胃鏡前，通常避免任何抑酸治療以免影響視野",
+      "C": "若生命徵象穩定即可不需胃鏡，待 Hb 回升再門診追蹤",
+      "D": "輸血與否主要以單次 Hb 數值決定，通常 9 g/dL 以下都建議立即輸血"
+    },
+    "answer": "A",
+    "explanation": "上消化道出血初期處置多包括：評估循環與風險、抑酸治療（PPI）、安排胃鏡以診斷/止血，並依限制性輸血策略與病人心血管風險調整輸血門檻。\n\n(A) 正確。\n(B) PPI 常作為早期處置之一。\n(C) 多數情境仍需胃鏡釐清來源與復發風險。\n(D) 輸血門檻通常需個別化，並非單一數值硬切。",
+    "tags": ["GI", "UGIB", "PPI", "endoscopy", "transfusion threshold", "peptic ulcer"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0080",
+    "stem": "乳房影像報告中提到「architectural distortion」，但無明顯腫塊可觸及。下列何者較符合常見評估策略？",
+    "options": {
+      "A": "多會安排診斷性補照（含不同角度/放大/局部加壓），並視情況加做超音波或 tomosynthesis；若仍可疑則考慮取樣",
+      "B": "此類表現多屬手術或外傷疤痕，若病人否認手術史即可排除惡性可能",
+      "C": "若超音波未見對應病灶，即可回到常規篩檢，不需進一步處理",
+      "D": "此類表現典型代表良性纖維化，最適合以 2 年後追蹤 mammography 為主"
+    },
+    "answer": "A",
+    "explanation": "architectural distortion 在 mammography（尤其 tomosynthesis）上可能提示早期惡性病灶或放射狀瘢痕等，需要診斷性補照釐清；若仍疑慮，取樣是常見下一步。\n\n(A) 正確。\n(B) 疤痕是鑑別之一，但不能用單一否認史就排除。\n(C) 超音波無對應不代表低風險。\n(D) 直接拉長追蹤間隔可能延誤診斷。",
+    "tags": ["breast", "mammography", "architectural distortion", "tomosynthesis", "biopsy"]
   }
+
 
 
 
