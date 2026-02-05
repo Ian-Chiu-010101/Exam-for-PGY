@@ -729,7 +729,182 @@
     "answer": "A",
     "explanation": "卵圓、邊界清楚、平行皮膚（wider-than-tall）、後方回音增強、均質低回音較偏良性（常見如 fibroadenoma）；處置取決於年齡、臨床風險、影像一致性與追蹤可行性，可在低疑慮下採短期追蹤或選擇性取樣。\n\n(A) 正確。\n(B) 不佳：BI-RADS 5 常見是不規則、非平行、刺狀邊緣、後方衰減等特徵，且治療前通常仍需病理。\n(C) 不佳：葉狀腫瘤影像可能類似纖維腺瘤，但不會用『典型』直接推到全乳切除。\n(D) 不佳：MRI 有其適應症，但不是可觸及腫塊的必然取代工具。",
     "tags": ["breast", "ultrasound", "fibroadenoma", "BI-RADS", "benign features"]
+  },
+
+
+  
+  {
+    "id": "NTUPGY_V1_Q0051",
+    "stem": "67 歲男性有慢性穩定型心絞痛，長期 aspirin 作二級預防。因血便住院，內視鏡處置後止血情況穩定，血紅素不再下降。下列何者較符合抗血小板藥物後續處理的風險平衡原則？",
+    "options": {
+      "A": "先停用所有抗血小板藥物一段時間，再出血風險下降後再回復原方案",
+      "B": "若 aspirin 為二級預防用途，臨床常傾向持續或在短時間內恢復，並搭配降低再出血風險的措施",
+      "C": "改以 dipyridamole 單獨取代 aspirin，可兼顧出血與缺血風險",
+      "D": "改以低分子量肝素橋接，等糞便轉陰後再恢復 aspirin"
+    },
+    "answer": "B",
+    "explanation": "腸胃道出血止血後的抗血小板處理核心在於缺血事件風險與再出血風險的權衡。對於二級預防的 aspirin，多數情境會偏向不中斷或在止血後較短時間內恢復，並同步採取降低再出血風險的策略（例如評估病灶、必要時胃保護等）。\n\n(A) 將停藥時間拉長可能提高心血管事件風險，除非再出血風險極高且需多專科協調。\n(B) 正確：反映常見的風險平衡方向。\n(C) dipyridamole 不是穩定型冠心症二級預防的常規替代策略。\n(D) 肝素橋接在此情境未必能降低缺血風險，反而可能增加出血風險，且不是常規做法。",
+    "tags": ["GI", "antiplatelet", "aspirin", "secondary prevention", "bleeding", "risk balance"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0052",
+    "stem": "63 歲女性 COPD，平時使用 LAMA/LABA。近 1 年有 1 次住院惡化、2 次門診惡化，抽血 eosinophils 70/µL。她擔心加藥會增加肺炎風險。下列何者較符合吸入治療升階的思考？",
+    "options": {
+      "A": "eosinophils 偏低時，加上 ICS 的潛在受益通常較不明顯，可優先評估其他影響惡化的因素與用藥依從性",
+      "B": "可考慮加上 ICS，但需與病人討論效益不確定性與肺炎風險，並設定停用或調整的追蹤條件",
+      "C": "將維持治療改為 SABA 規則使用即可，多數病人症狀與惡化會改善",
+      "D": "改用長期口服類固醇作為維持治療，以降低惡化頻率"
+    },
+    "answer": "B",
+    "explanation": "在 COPD 的 follow-up 藥物調整中，惡化史是升階的重要驅動因子；eosinophils 偏低時，ICS 的平均受益較不一致，但在反覆惡化的個案仍可能被納入討論。臨床較合理的做法是與病人共享決策：說明可能受益與肺炎風險、同時檢視吸入技巧、依從性、疫苗與肺復健等，並建立回訪監測與調整策略。\n\n(A) eosi 低時受益可能較不明顯是常見概念，但本題強調反覆惡化且病人擔心肺炎，較完整的風險溝通與設定追蹤條件更貼近實務。\n(B) 正確：兼顧惡化史與不確定性，並把風險溝通納入決策。\n(C) SABA 主要用於緩解，不是維持治療核心。\n(D) 長期口服類固醇副作用大，並非 COPD 常規維持策略。",
+    "tags": ["pulmonary", "COPD", "ICS", "eosinophil", "exacerbation", "shared decision"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0053",
+    "stem": "52 歲男性 HBV：HBsAg(+)>6 個月，HBeAg(-)，HBV DNA 1,800 IU/mL，ALT 長期在正常上限附近波動（介於 0.9–1.1 倍 ULN），彈性掃描顯示 F0–F1。下列何者較符合處置策略？",
+    "options": {
+      "A": "直接啟動抗病毒治療並規劃長期終身用藥，因為 HBsAg 陽性本身即為治療適應症",
+      "B": "可先密切追蹤（ALT、HBV DNA、纖維化評估），並以 HCC 監測與生活型態介入為主，視後續活動性與纖維化變化再評估治療",
+      "C": "先以短期類固醇將 ALT 壓低，以降低未來肝硬化風險",
+      "D": "因 HBV DNA 低於 2,000 IU/mL，可將追蹤間隔拉長到每 3–5 年一次即可"
+    },
+    "answer": "B",
+    "explanation": "慢性 HBV 的治療決策通常整合 HBV DNA、ALT 活動性與纖維化程度。此個案 DNA 接近低活動範圍、ALT 多在正常上限附近且纖維化輕微，常見策略是規律追蹤與風險分層：觀察是否出現持續的 ALT 上升、DNA 上升或纖維化進展，同時依族群風險規劃 HCC 監測。\n\n(A) HBsAg 陽性不等同於必然需要立即治療。\n(B) 正確：符合低活動/低纖維化個案的監測策略。\n(C) 類固醇可能增加病毒複製，並非處理慢性 HBV 的常規。\n(D) 追蹤間隔過長可能錯失活動性改變或纖維化進展。",
+    "tags": ["GI", "hepatology", "HBV", "HBeAg negative", "monitoring", "fibrosis"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0054",
+    "stem": "急性胰臟炎住院第 5 天，病人仍發燒且白血球上升，CT 顯示胰周有含少量氣體的壞死性集合。下列何者較符合處置方向？",
+    "options": {
+      "A": "若臨床與影像支持感染性壞死，可考慮抗生素並評估延後介入的 step-up strategy（在病況允許下）",
+      "B": "所有壞死性胰臟炎在影像確認後應立即手術清創，以降低死亡率",
+      "C": "影像出現氣體多與腸氣混入相關，通常不影響處置選擇",
+      "D": "感染性壞死的判斷以 amylase 升高幅度為主，影像訊息參考性較低"
+    },
+    "answer": "A",
+    "explanation": "壞死性胰臟炎若懷疑感染（例如持續發燒、WBC 上升、影像見氣體），常見策略是抗生素與延後介入，待壞死壁成熟後採 step-up（經皮/內視鏡引流，必要時再清創）。早期立即手術清創在多數情境與 outcomes 不利。\n\n(A) 正確。\n(B) 早期手術清創通常風險高，並非首選。\n(C) 壞死區氣體常提高感染可能性，需要納入判斷。\n(D) amylase 並非感染性壞死的主要判斷依據。",
+    "tags": ["GI", "pancreatitis", "infected necrosis", "step-up", "CT", "antibiotics"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0055",
+    "stem": "24 歲男性運動後右膝劇痛腫脹，抽關節液見針狀負雙折光結晶，無明顯發燒。合併慢性腎臟病（eGFR 35）。下列何者較符合急性痛風性關節炎的治療選擇？",
+    "options": {
+      "A": "高劑量 NSAID 作為第一線，並持續使用到症狀完全消失後再加量幾天",
+      "B": "colchicine 可考慮但需調整劑量與留意腎功能/交互作用，或改以關節內類固醇作替代選項",
+      "C": "立即開始 allopurinol 並快速拉到目標尿酸，急性期症狀通常較快緩解",
+      "D": "以長期口服類固醇作維持治療以預防下一次發作"
+    },
+    "answer": "B",
+    "explanation": "急性痛風治療常見三類：NSAID、colchicine、類固醇（口服或關節內）。腎功能不佳時 NSAID 與 colchicine 的風險上升，colchicine 需劑量調整並注意交互作用；若單關節且可施作，關節內類固醇是實務上很常見且合理的替代方案。\n\n(A) eGFR 35 下 NSAID 需更謹慎，未必是最佳起手。\n(B) 正確：兼顧療效與腎功能限制。\n(C) 降尿酸治療多作為長期管理；急性期啟動/快速調整需非常謹慎，主要目標不是立即止痛消炎。\n(D) 長期口服類固醇副作用高，不是預防痛風發作的常規方式。",
+    "tags": ["rheumatology", "gout", "acute flare", "CKD", "colchicine", "intra-articular steroid"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0056",
+    "stem": "疑似急性缺血性中風到院 90 分鐘，血壓 192/108，NIHSS 9。非增強 CT 未見出血。下列何者較符合靜脈溶栓前的血壓處理策略？",
+    "options": {
+      "A": "先給予降壓治療將血壓降到可接受門檻後，再評估溶栓的適用性與風險",
+      "B": "為維持腦灌流，血壓偏高屬代償現象，溶栓前通常不處理血壓",
+      "C": "先給口服長效降壓藥，待 12 小時後血壓穩定再考慮溶栓",
+      "D": "血壓偏高會提高腦出血風險，因此優先做機械取栓，不需評估溶栓"
+    },
+    "answer": "A",
+    "explanation": "在時間窗內的缺血性中風若要給 IV thrombolysis，血壓通常需要控制到特定門檻以降低出血風險；常見做法是以靜脈降壓藥調整，達標後再進一步評估溶栓。\n\n(A) 正確。\n(B) 過度忽略溶栓出血風險。\n(C) 口服長效藥物起效慢且不利於時間敏感決策。\n(D) 取栓與溶栓不是互斥，需依影像與血管狀態分層；血壓處理也仍重要。",
+    "tags": ["neuro", "stroke", "IV thrombolysis", "blood pressure", "acute management"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0057",
+    "stem": "45 歲女性乳房超音波見一個不規則、邊緣呈角狀、走向非平行（taller-than-wide）的低回音腫塊，並伴後方回音衰減。下列何者較符合影像風險分層與處置方向？",
+    "options": {
+      "A": "偏向良性特徵，較適合歸為 BI-RADS 3，短期追蹤即可",
+      "B": "偏向可疑特徵，較可能落在 BI-RADS 4–5 範圍，通常需組織診斷以釐清",
+      "C": "此為典型乳腺炎表現，先給抗生素再追蹤影像即可",
+      "D": "先安排乳房 MRI，MRI 若未顯示明顯增強可暫緩切片"
+    },
+    "answer": "B",
+    "explanation": "不規則形狀、角狀/刺狀邊緣、非平行走向、後方衰減屬於偏可疑的超音波特徵，常導向 BI-RADS 4 或更高，並以組織診斷（core needle biopsy 等）確認。\n\n(A) BI-RADS 3 多為典型良性機率高的型態。\n(B) 正確。\n(C) 乳腺炎常見臨床紅腫熱痛與影像變化，但此題給的形態更像腫瘤風險特徵。\n(D) MRI 可作輔助，但不能取代對可疑病灶的取樣。",
+    "tags": ["breast", "ultrasound", "BI-RADS", "biopsy", "malignant features"]
+  },
+  
+    
+  {
+    "id": "NTUPGY_V1_Q0059",
+    "stem": "45 歲女性因夜尿與頻尿困擾，日間也有急尿，無排尿痛，尿液檢查無明顯感染。超音波測殘尿量 30 mL。下列何者較符合處置方向？",
+    "options": {
+      "A": "先以行為治療（膀胱訓練、限液、咖啡因調整）為基礎，必要時考慮 β3 agonist 或抗膽鹼藥物並監測副作用",
+      "B": "殘尿量偏低仍提示阻塞性尿滯留為主，因此優先使用 α1-blocker",
+      "C": "此類症狀多與慢性膀胱炎相關，較適合先給長期抗生素",
+      "D": "因夜尿突出，可優先使用 desmopressin，後續再視是否需要其他治療"
+    },
+    "answer": "A",
+    "explanation": "以急尿/頻尿為主且殘尿量不高時，臨床常以 overactive bladder 的框架處理：行為治療是基礎，藥物可選 β3 agonist 或抗膽鹼，並注意副作用與個別風險。\n\n(A) 正確。\n(B) 殘尿量低不支持明顯阻塞為主。\n(C) 無感染證據時，長期抗生素缺乏理由且可能帶來不良後果。\n(D) desmopressin 可在特定夜尿機轉（例如 nocturnal polyuria）考慮，但通常仍需先釐清成因並留意低鈉風險。",
+    "tags": ["urology", "OAB", "nocturia", "beta-3 agonist", "anticholinergic", "behavioral therapy"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0060",
+    "stem": "40 歲男性車禍後胸部挫傷，呼吸痛明顯。床邊超音波評估胸部：欲排除氣胸時，下列哪一個超音波發現較支持「無氣胸」？",
+    "options": {
+      "A": "lung point",
+      "B": "lung sliding 存在並可見 B-lines",
+      "C": "barcode/stratosphere sign",
+      "D": "absence of pleural movement 且 M-mode 呈現 stratosphere pattern"
+    },
+    "answer": "B",
+    "explanation": "氣胸超音波重點：若可見 lung sliding，尤其合併 B-lines，通常支持胸膜間仍有接觸，與明顯氣胸不相符。相對地，stratosphere/barcode sign、缺乏 sliding 會提高氣胸可能；lung point 對氣胸具有特異性。\n\n(A) lung point 常被視為氣胸相對特異的徵象。\n(B) 正確：sliding + B-lines 通常支持無氣胸。\n(C)(D) 皆偏向支持氣胸或至少需要更進一步評估的圖像。",
+    "tags": ["trauma", "ultrasound", "pneumothorax", "FAST", "lung sliding", "B-lines"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0061",
+    "stem": "55 歲男性疑似敗血症，已給予晶體液復甦後血壓仍偏低（MAP 58），乳酸仍高。下列何者較符合升壓劑選擇的常見策略？",
+    "options": {
+      "A": "以 norepinephrine 作為第一線升壓劑，並依反應調整或加用第二線藥物",
+      "B": "以 dopamine 作為第一線，因其能同時改善腎灌流並降低心律不整",
+      "C": "以 nitroprusside 作為第一線以改善微循環灌流",
+      "D": "以 furosemide 增加尿量作為主要目標，MAP 可視情況再處理"
+    },
+    "answer": "A",
+    "explanation": "在敗血性休克的升壓劑選擇上，norepinephrine 常作為第一線，用以提升血管張力與維持 MAP；若不足再依病況加用 vasopressin 或 epinephrine 等，並持續評估灌流與副作用。\n\n(A) 正確。\n(B) dopamine 的心律不整風險相對更需要注意，且不再是多數情境的第一線。\n(C) 血管擴張劑不符合低血壓休克的主要需求。\n(D) 尿量是灌流指標之一，但在低 MAP 下先利尿並不符合優先順序。",
+    "tags": ["ID", "sepsis", "shock", "vasopressor", "norepinephrine", "MAP"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0062",
+    "stem": "急性心包膜炎治療後症狀改善，但停藥後 3 週又出現胸痛與 CRP 上升。下列何者較符合降低復發風險的策略？",
+    "options": {
+      "A": "以 colchicine 搭配 NSAID/aspirin，並採較緩慢的減量策略，同時追蹤發炎指標與症狀",
+      "B": "改以長期抗凝作為主要治療，以避免心包內血栓形成",
+      "C": "立即改用高劑量 opioid 作為第一線，以減少胸痛引發的呼吸淺快",
+      "D": "以靜脈溶栓作為治療選項，以改善心包血流"
+    },
+    "answer": "A",
+    "explanation": "復發性心包膜炎的管理常見以 NSAID/aspirin 合併 colchicine，並強調足夠療程與較緩慢減量，搭配追蹤 CRP 與症狀，以降低再復發。\n\n(A) 正確。\n(B) 抗凝不是復發性心包膜炎的核心治療，且需考量出血風險。\n(C) opioid 可止痛但不處理發炎本質，且可能帶來不良反應。\n(D) 溶栓與心包膜炎治療方向不符。",
+    "tags": ["cardiology", "pericarditis", "recurrent", "colchicine", "NSAID", "CRP"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0063",
+    "stem": "65 歲男性 CKD（eGFR 28）使用 warfarin，近期 INR 3.2。因中風預防考慮改用 DOAC。下列何者較符合藥物選擇的注意事項？",
+    "options": {
+      "A": "所有 DOAC 在 eGFR <30 都具有相同安全性，劑量不需特別調整",
+      "B": "是否可改用 DOAC 需依腎功能、適應症與各藥物的腎排比例評估，部分情境可能仍偏向 warfarin 或需嚴格劑量調整",
+      "C": "eGFR 降低時 DOAC 的出血風險通常更低，因此較適合作為第一優先",
+      "D": "只需看 INR 是否偏高，INR 高就代表 DOAC 較安全"
+    },
+    "answer": "B",
+    "explanation": "DOAC 的腎排比例不同，eGFR <30 時可用性與劑量需要個別化，並取決於適應症（例如非瓣膜性 AF、VTE 等）與出血/血栓風險。有些情境可能仍偏向 warfarin，或需嚴格劑量調整與追蹤。\n\n(A) 過度簡化。\n(B) 正確。\n(C) 腎功能差時藥物累積風險需要特別注意，不能直接推論更安全。\n(D) INR 是 warfarin 監測指標，不等同 DOAC 安全性判斷依據。",
+    "tags": ["cardiology", "anticoagulation", "DOAC", "warfarin", "CKD", "eGFR"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0064",
+    "stem": "急性肺栓塞病人血壓穩定，CT 顯示肺動脈血栓負荷中等，心超提示 RV 輕度擴大，troponin 正常。下列何者較符合風險分層與治療方向？",
+    "options": {
+      "A": "屬於高風險 PE，較適合優先考慮全身溶栓",
+      "B": "可歸為中低風險範疇，通常以抗凝治療為主，並依臨床變化調整監測強度",
+      "C": "troponin 正常代表 PE 影響不大，可不需抗凝並安排門診追蹤",
+      "D": "建議優先置放 IVC filter 以避免血栓移動，抗凝視情況再評估"
+    },
+    "answer": "B",
+    "explanation": "血壓穩定且 troponin 正常，雖有 RV 輕度擴大，整體較接近 intermediate-low risk 的概念；治療通常以抗凝為主，並依臨床狀態與氧合/心超變化決定監測強度。\n\n(A) 高風險 PE 通常指 hemodynamic instability。\n(B) 正確。\n(C) 確診 PE 多需抗凝以降低死亡與復發風險，除非有重大禁忌。\n(D) IVC filter 多用於抗凝禁忌或抗凝失敗的特定情境。",
+    "tags": ["cardiopulmonary", "PE", "risk stratification", "anticoagulation", "RV dysfunction"]
   }
+
 
 
  
