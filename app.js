@@ -1,30 +1,76 @@
-const STORE_KEY = "medquiz_wrong_v1_NEWBANK";
+// ======================
+// Storage keys (隔離)
+// ======================
+const WRONG_KEY = "medquiz_wrong_v1_NEWBANK";
+const SAVED_KEY = "medquiz_saved_v1_NEWBANK";
 
+// ======================
+// State
+// ======================
 let ALL = [];
 let pool = [];
 let current = null;
 let answered = false;
-let wrongOnly = false;
 
+// mode: "all" | "wrong" | "saved"
+let mode = "all";
+
+// ======================
+// Wrong store
+// ======================
 function getWrongMap() {
-  try { return JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); }
+  try { return JSON.parse(localStorage.getItem(WRONG_KEY) || "{}"); }
   catch { return {}; }
 }
-function setWrongMap(map) { localStorage.setItem(STORE_KEY, JSON.stringify(map)); }
+function setWrongMap(map) { localStorage.setItem(WRONG_KEY, JSON.stringify(map)); }
 function incWrong(id) {
   const m = getWrongMap();
   m[id] = (m[id] || 0) + 1;
   setWrongMap(m);
 }
-function clearWrong() { localStorage.removeItem(STORE_KEY); }
+function clearWrong() { localStorage.removeItem(WRONG_KEY); }
 
+// ======================
+// Saved store (收藏/手動儲存)
+// 用 Set<string> 存 id，序列化成 array
+// ======================
+function getSavedSet() {
+  try {
+    const arr = JSON.parse(localStorage.getItem(SAVED_KEY) || "[]");
+    return new Set(Array.isArray(arr) ? arr : []);
+  } catch {
+    return new Set();
+  }
+}
+function setSavedSet(set) {
+  localStorage.setItem(SAVED_KEY, JSON.stringify([...set]));
+}
+function isSaved(id) {
+  return getSavedSet().has(id);
+}
+function toggleSaved(id) {
+  const s = getSavedSet();
+  if (s.has(id)) s.delete(id);
+  else s.add(id);
+  setSavedSet(s);
+  return s.has(id);
+}
+
+// ======================
+// Loader / Normalize
+// ======================
 function normalizeQuestions(data, sourceId = "UNKNOWN") {
   if (!Array.isArray(data)) throw new Error(`[${sourceId}] 題庫必須是陣列`);
+
   data.forEach((q, i) => {
-    if (!q.id || !q.stem || !q.options || !q.answer) {
-      throw new Error(`[${sourceId}] 第 ${i+1} 題缺少必要欄位（id/stem/options/answer）`);
+    if (!q || !q.id || !q.stem || !q.options || !q.answer) {
+      throw new Error(`[${sourceId}] 第 ${i + 1} 題缺少必要欄位（id/stem/options/answer）`);
+    }
+    if (typeof q.options !== "object") {
+      throw new Error(`[${sourceId}] 第 ${i + 1} 題 options 必須是 object（例如 {A:"",B:""}）`);
     }
   });
+
   return data;
 }
 
@@ -41,7 +87,7 @@ async function loadFromManifest() {
   const merged = [];
   const idSet = new Set();
 
-  // 新增：統計
+  // A：去重統計
   let totalIn = 0;
   let dupCount = 0;
   const dupIds = [];
@@ -54,7 +100,7 @@ async function loadFromManifest() {
       totalIn += 1;
       if (idSet.has(q.id)) {
         dupCount += 1;
-        if (dupIds.length < 20) dupIds.push(q.id); // 最多記 20 個避免太長
+        if (dupIds.length < 20) dupIds.push(q.id);
         continue;
       }
       idSet.add(q.id);
@@ -62,44 +108,69 @@ async function loadFromManifest() {
     }
   }
 
-  // 新增：把統計掛到 merged 上，或直接回傳一個物件
   merged._meta = { totalIn, uniqueOut: merged.length, dupCount, dupIds };
   return merged;
 }
 
-  const enabled = manifest.sources.filter(s => s.enabled);
-  if (enabled.length === 0) return [];
+// ======================
+// UI helpers
+// ======================
+function $(id) { return document.getElementById(id); }
 
-  const merged = [];
-  const idSet = new Set();
-
-  for (const src of enabled) {
-    const path = `${src.path}?v=${Date.now()}`;
-    const data = await fetchJson(path);
-    const qs = normalizeQuestions(data, src.id);
-
-    for (const q of qs) {
-      if (idSet.has(q.id)) continue; // 去重：同 id 只保留第一個
-      idSet.add(q.id);
-      merged.push(q);
-    }
-  }
-  return merged;
+function setFeedback(msg, type = "") {
+  const el = $("feedback");
+  if (!el) return;
+  el.className = "feedback" + (type ? ` ${type}` : "");
+  el.textContent = msg || "";
 }
 
+function updateProgress() {
+  const el = $("progress");
+  if (!el) return;
+  const wrongCount = Object.keys(getWrongMap()).length;
+  const savedCount = getSavedSet().size;
+  el.textContent = `總題數：${ALL.length}｜錯題：${wrongCount}｜收藏：${savedCount}｜模式：${mode}`;
+}
+
+function updateModeButtons() {
+  const btnWrong = $("btnToggleWrong");
+  const btnSavedMode = $("btnToggleSaved");
+
+  if (btnWrong) btnWrong.textContent = `錯題模式：${mode === "wrong" ? "開" : "關"}`;
+  if (btnSavedMode) btnSavedMode.textContent = `收藏模式：${mode === "saved" ? "開" : "關"}`;
+}
+
+function updateSaveButton() {
+  const btn = $("btnSave");
+  if (!btn) return;
+  if (!current) { btn.textContent = "收藏本題"; return; }
+  btn.textContent = isSaved(current.id) ? "取消收藏" : "收藏本題";
+}
+
+// ======================
+// Pool / Random
+// ======================
 function buildPool() {
   const wrongMap = getWrongMap();
-  if (!wrongOnly) {
+  const savedSet = getSavedSet();
+
+  if (mode === "all") {
     pool = [...ALL];
-  } else {
+  } else if (mode === "wrong") {
     pool = ALL.filter(q => wrongMap[q.id]);
+  } else if (mode === "saved") {
+    pool = ALL.filter(q => savedSet.has(q.id));
   }
-  if (wrongOnly && pool.length === 0) {
-    wrongOnly = false;
-    document.getElementById("btnToggleWrong").textContent = "錯題模式：關";
+
+  if ((mode === "wrong" || mode === "saved") && pool.length === 0) {
+    const prev = mode;
+    mode = "all";
+    updateModeButtons();
     pool = [...ALL];
-    setFeedback("錯題池目前是空的，已切回全題模式。", "no");
+    setFeedback(`${prev === "wrong" ? "錯題池" : "收藏池"}目前是空的，已切回全題模式。`, "no");
   }
+
+  updateProgress();
 }
 
 function pickRandom() {
@@ -107,142 +178,156 @@ function pickRandom() {
   return pool[Math.floor(Math.random() * pool.length)];
 }
 
-function setFeedback(msg, type = "") {
-  const el = document.getElementById("feedback");
-  el.className = "feedback" + (type ? ` ${type}` : "");
-  el.textContent = msg || "";
-}
-
+// ======================
+// Render
+// ======================
 function renderQuestion(q) {
   current = q;
   answered = false;
 
-  document.getElementById("qid").textContent = q.id;
-  document.getElementById("stem").textContent = q.stem;
-  document.getElementById("tags").textContent = Array.isArray(q.tags) ? q.tags.join(" · ") : "";
-  document.getElementById("explainBox").open = false;
-  document.getElementById("explanation").textContent = q.explanation || "";
+  $("qid").textContent = q.id;
+  $("stem").textContent = q.stem;
+  $("tags").textContent = Array.isArray(q.tags) ? q.tags.join(" · ") : "";
 
-  const optWrap = document.getElementById("options");
+  const explainBox = $("explainBox");
+  if (explainBox) explainBox.open = false;
+  $("explanation").textContent = q.explanation || "";
+
+  const optWrap = $("options");
   optWrap.innerHTML = "";
 
-  q.options.forEach(opt => {
-    const div = document.createElement("div");
-    div.className = "opt";
-    div.dataset.key = opt.key;
-
-    const key = document.createElement("span");
-    key.className = "key";
-    key.textContent = opt.key;
-
-    const txt = document.createElement("span");
-    txt.textContent = opt.text;
-
-    div.appendChild(key);
-    div.appendChild(txt);
-    div.addEventListener("click", () => onChoose(opt.key));
-    optWrap.appendChild(div);
+  const keys = Object.keys(q.options);
+  keys.forEach(k => {
+    const btn = document.createElement("button");
+    btn.className = "opt";
+    btn.textContent = `${k}. ${q.options[k]}`;
+    btn.onclick = () => onPick(k, btn);
+    optWrap.appendChild(btn);
   });
 
-  updateMeta();
-  setFeedback("", "");
-}
-
-function lockOptionsAndReveal(correctKey, chosenKey = null) {
-  const nodes = [...document.querySelectorAll(".opt")];
-  nodes.forEach(n => {
-    n.classList.add("disabled");
-    const k = n.dataset.key;
-    if (k === correctKey) n.classList.add("correct");
-    if (chosenKey && k === chosenKey && chosenKey !== correctKey) n.classList.add("wrong");
-    n.style.pointerEvents = "none";
-  });
-}
-
-function onChoose(key) {
-  if (!current || answered) return;
-  answered = true;
-
-  const correct = current.answer;
-  if (key === correct) {
-    setFeedback("✅ 正確", "ok");
-  } else {
-    setFeedback(`❌ 錯誤。正確答案是 ${correct}`, "no");
-    incWrong(current.id);
-  }
-  lockOptionsAndReveal(correct, key);
-  document.getElementById("explainBox").open = true;
-  updateMeta();
+  setFeedback("");
+  updateSaveButton();
 }
 
 function revealAnswer() {
   if (!current) return;
-  if (!answered) {
-    answered = true;
-    setFeedback(`正確答案是 ${current.answer}`, "no");
-    lockOptionsAndReveal(current.answer, null);
-    document.getElementById("explainBox").open = true;
-    updateMeta();
-  }
-}
+  const correct = String(current.answer).trim();
 
-function updateMeta() {
-  const wrongMap = getWrongMap();
-  const wrongCount = Object.keys(wrongMap).length;
-  const total = ALL.length;
-  const mode = wrongOnly ? `錯題模式（池：${pool.length}）` : "全題模式";
-  document.getElementById("progress").textContent = `總題數 ${total}｜錯題 ${wrongCount}｜${mode}`;
-}
-
-function nextQuestion() {
-  buildPool();
-  const q = pickRandom();
-  if (!q) {
-    setFeedback("題庫是空的或錯題池為空。", "no");
-    return;
-  }
-  renderQuestion(q);
-}
-
-function toggleWrongMode() {
-  wrongOnly = !wrongOnly;
-  document.getElementById("btnToggleWrong").textContent = wrongOnly ? "錯題模式：開" : "錯題模式：關";
-  nextQuestion();
-}
-
-async function main() {
-  const status = document.getElementById("loadStatus");try {
-  ALL = await loadFromManifest();
-
-  const meta = ALL._meta || {};
-  let msg = `載入成功：${ALL.length} 題（manifest）`;
-
-  if (meta.totalIn != null) {
-    if (meta.dupCount > 0) {
-      msg += `｜輸入: ${meta.totalIn}｜重複ID: ${meta.dupCount}｜例: ${meta.dupIds.join(", ")}`;
-    } else {
-      msg += `｜輸入: ${meta.totalIn}｜無重複ID`;
-    }
-  }
-
-  status.textContent = msg;
-
-  buildPool();
-  nextQuestion();
-} catch (e) {
-  status.textContent = `載入失敗：${e.message}`;
-  setFeedback("請檢查 data/manifest.json、各 source path 與 JSON 格式。", "no");
-}
-
-  document.getElementById("btnNew").addEventListener("click", nextQuestion);
-  document.getElementById("btnToggleWrong").addEventListener("click", toggleWrongMode);
-  document.getElementById("btnShowAnswer").addEventListener("click", revealAnswer);
-  document.getElementById("btnResetWrong").addEventListener("click", () => {
-    clearWrong();
-    setFeedback("已清除錯題紀錄。", "ok");
-    updateMeta();
-    if (wrongOnly) nextQuestion();
+  const buttons = Array.from($("options").querySelectorAll(".opt"));
+  buttons.forEach(btn => {
+    const letter = btn.textContent.split(".")[0].trim();
+    if (letter === correct) btn.classList.add("correct");
   });
+}
+
+// ======================
+// Answer logic
+// ======================
+function onPick(choice, btn) {
+  if (!current || answered) return;
+  answered = true;
+
+  const correct = String(current.answer).trim();
+  const buttons = Array.from($("options").querySelectorAll(".opt"));
+
+  buttons.forEach(b => b.disabled = true);
+
+  if (String(choice).trim() === correct) {
+    btn.classList.add("correct");
+    setFeedback("✅ 正確", "ok");
+  } else {
+    btn.classList.add("wrong");
+    // mark correct
+    buttons.forEach(b => {
+      const letter = b.textContent.split(".")[0].trim();
+      if (letter === correct) b.classList.add("correct");
+    });
+    setFeedback(`❌ 錯誤；正解是 ${correct}`, "bad");
+    incWrong(current.id);
+    updateProgress();
+  }
+}
+
+// ======================
+// Init / Events
+// ======================
+async function main() {
+  try {
+    const loadStatus = $("loadStatus");
+    if (loadStatus) loadStatus.textContent = "載入中…";
+
+    const merged = await loadFromManifest();
+    ALL = merged;
+    buildPool();
+
+    // 顯示 A 的去重統計
+    if (loadStatus) {
+      const meta = merged._meta;
+      if (meta) {
+        const extra = meta.dupCount > 0
+          ? `｜重複：${meta.dupCount}（例：${meta.dupIds.join(", ")}）`
+          : "";
+        loadStatus.textContent = `載入完成：${meta.totalIn} → ${meta.uniqueOut}${extra}`;
+      } else {
+        loadStatus.textContent = `載入完成：${ALL.length}`;
+      }
+    }
+
+    const first = pickRandom();
+    if (first) renderQuestion(first);
+    updateModeButtons();
+    updateProgress();
+
+    // buttons
+    $("btnNew")?.addEventListener("click", () => {
+      buildPool();
+      const q = pickRandom();
+      if (q) renderQuestion(q);
+    });
+
+    $("btnToggleWrong")?.addEventListener("click", () => {
+      mode = (mode === "wrong") ? "all" : "wrong";
+      updateModeButtons();
+      buildPool();
+      const q = pickRandom();
+      if (q) renderQuestion(q);
+    });
+
+    $("btnToggleSaved")?.addEventListener("click", () => {
+      mode = (mode === "saved") ? "all" : "saved";
+      updateModeButtons();
+      buildPool();
+      const q = pickRandom();
+      if (q) renderQuestion(q);
+    });
+
+    $("btnSave")?.addEventListener("click", () => {
+      if (!current) return;
+      const nowSaved = toggleSaved(current.id);
+      setFeedback(nowSaved ? "已收藏本題。" : "已取消收藏。", "no");
+      updateSaveButton();
+      // 如果你現在在收藏模式，取消收藏可能讓 pool 變空，要重建一次
+      if (mode === "saved") buildPool();
+      updateProgress();
+    });
+
+    $("btnShowAnswer")?.addEventListener("click", () => {
+      revealAnswer();
+    });
+
+    $("btnResetWrong")?.addEventListener("click", () => {
+      clearWrong();
+      setFeedback("已清除錯題紀錄。", "no");
+      buildPool();
+      updateProgress();
+    });
+
+  } catch (err) {
+    console.error(err);
+    const loadStatus = $("loadStatus");
+    if (loadStatus) loadStatus.textContent = "載入失敗";
+    setFeedback(String(err?.message || err), "bad");
+  }
 }
 
 main();
