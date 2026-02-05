@@ -218,6 +218,13 @@ function revealAnswer() {
     const letter = btn.textContent.split(".")[0].trim();
     if (letter === correct) btn.classList.add("correct");
   });
+
+  // ✅ 自動打開詳解（按「顯示正解」也展開）
+  const box = $("explainBox");
+  if (box) {
+    box.open = true;
+    box.scrollIntoView({ behavior: "smooth", block: "start" });
+  }
 }
 
 // ======================
@@ -230,6 +237,7 @@ function onPick(choice, btn) {
   const correct = String(current.answer).trim();
   const buttons = Array.from($("options").querySelectorAll(".opt"));
 
+  // 保留 disabled 沒問題（CSS 會處理文字不消失）
   buttons.forEach(b => b.disabled = true);
 
   if (String(choice).trim() === correct) {
@@ -245,6 +253,13 @@ function onPick(choice, btn) {
     setFeedback(`❌ 錯誤；正解是 ${correct}`, "bad");
     incWrong(current.id);
     updateProgress();
+  }
+
+  // ✅ 按完選項自動跳出詳解 + 捲到詳解
+  const box = $("explainBox");
+  if (box) {
+    box.open = true;
+    box.scrollIntoView({ behavior: "smooth", block: "start" });
   }
 }
 
