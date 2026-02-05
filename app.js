@@ -259,7 +259,7 @@ function onPick(choice, btn) {
   const box = $("explainBox");
   if (box) {
     box.open = true;
-    box.scrollIntoView({ behavior: "smooth", block: "start" });
+    
   }
 }
 
