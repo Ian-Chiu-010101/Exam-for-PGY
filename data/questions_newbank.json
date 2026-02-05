@@ -595,6 +595,140 @@
     "answer": "A",
     "explanation": "下消化道出血情境下，二級預防 aspirin 多建議不中斷或儘早恢復；P2Y12 inhibitor（DAPT）通常在止血後盡量於 7 天內恢復，但仍需多專科評估缺血事件風險（尤其近期 ACS/支架）與再出血風險、以及止血效果。\n\n(A) 正確：呈現風險平衡與個別化。\n(B) 不佳：一刀切可能提高缺血事件風險。\n(C) 不佳：近期 ACS/支架反而是更不希望中斷 DAPT 的族群，需慎重多專科決策。\n(D) 不佳：止血成功與否直接影響恢復抗血小板的安全性。",
     "tags": ["GI", "LGIB", "aspirin", "DAPT", "secondary prevention", "risk balance"]
+  },
+
+
+
+  
+  {
+    "id": "NTUPGY_V1_Q0031",
+    "stem": "58 歲男性 B 型肝炎相關肝硬化，例行監測發現肝臟 2.3 cm 結節。動態 CT 顯示：動脈期顯著增強、門靜脈期 washout、延遲期有 capsule appearance。AFP 45 ng/mL。下列何者最合理？",
+    "options": {
+      "A": "影像特徵符合典型 HCC，若背景為肝硬化可在多數情境下直接以影像診斷並進一步分期/治療規劃",
+      "B": "AFP 未達 200，影像即使典型仍不足以診斷，應先切片再決定治療",
+      "C": "建議先做 FDG-PET，若陰性再安排切片",
+      "D": "capsule appearance 代表良性病灶可能性高，優先採 3 個月追蹤超音波"
+    },
+    "answer": "A",
+    "explanation": "在肝硬化背景下，動態影像出現典型 hallmarks（arterial hyperenhancement + washout，合併 capsule appearance）時，多數指引允許以影像學直接診斷 HCC，並進入 staging 與治療規劃。\n\n(A) 正確：命中「背景 + 典型影像」即可靠影像診斷的邏輯。\n(B) 不佳：AFP 不是影像診斷能否成立的硬性門檻；小型或部分 HCC 可 AFP 不高。\n(C) 不佳：PET 不是 HCC 的首選診斷工具。\n(D) 不佳：capsule appearance 反而常被視為支持 HCC 的特徵之一；在 2 cm 以上且典型表現下不宜只追蹤。",
+    "tags": ["GI", "hepatology", "HCC", "dynamic CT", "washout", "capsule", "cirrhosis"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0032",
+    "stem": "急診評估胸痛：心電圖顯示下壁 STEMI，病人距離症狀發作約 2 小時。院內無法於 120 分鐘內完成 primary PCI。下列何者較符合再灌流策略的原則？",
+    "options": {
+      "A": "優先考慮 fibrinolysis（若無禁忌）並規劃後續轉診/冠攝影策略",
+      "B": "因為下壁 STEMI 的死亡率較低，通常可先觀察並待隔日再做 coronary angiography",
+      "C": "在無法 primary PCI 時，選擇性先給予 heparin 與抗血小板即可，是否溶栓取決於 troponin 是否上升",
+      "D": "若血壓穩定、胸痛減輕，通常不需再灌流治療"
+    },
+    "answer": "A",
+    "explanation": "STEMI 再灌流的核心是「盡快恢復血流」。若無法在建議時間窗內完成 primary PCI，且發作時間仍在早期（如 12 小時內），在無禁忌下採 fibrinolysis 並規劃後續介入（如 pharmacoinvasive strategy）是常見策略。\n\n(A) 正確。\n(B) 不佳：延後再灌流可能增加心肌壞死與併發症。\n(C) 不佳：troponin 不是決定 STEMI 是否再灌流的前提；ECG 已確立。\n(D) 不佳：症狀緩解不等於再灌流完成或風險消失。",
+    "tags": ["cardiology", "STEMI", "reperfusion", "fibrinolysis", "PCI timing"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0033",
+    "stem": "急性冠症候群（ACS）開始 DAPT 後，臨床上最常需要特別注意的藥物交互作用組合為何？",
+    "options": {
+      "A": "clopidogrel 與部分 PPI（CYP2C19 代謝路徑）可能存在交互作用疑慮，需依病人出血/缺血風險選擇策略",
+      "B": "ticagrelor 與 antacid 可能造成嚴重 QT prolongation，建議避免併用",
+      "C": "aspirin 與 H2RA 會造成 aspirin 抗血小板作用完全失效，因此不建議合併",
+      "D": "prasugrel 與 acetaminophen 併用會顯著增加血栓風險，因此應改用 NSAID"
+    },
+    "answer": "A",
+    "explanation": "臨床常被考的交互作用是 clopidogrel 與部分 PPI（特別是可能影響 CYP2C19 的類別）之代謝路徑疑慮；實務上會依 GI 出血風險與缺血風險平衡選擇 PPI 種類或策略。\n\n(A) 正確。\n(B) 不佳：ticagrelor 與 antacid 的 QT 風險不是常見核心。\n(C) 不佳：H2RA 不會讓 aspirin 作用「完全失效」。\n(D) 不佳：此敘述不合理且方向錯誤。",
+    "tags": ["cardiology", "ACS", "DAPT", "clopidogrel", "PPI", "drug interaction"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0034",
+    "stem": "右下肢蜂窩性組織炎，紅腫熱痛，未見膿瘍，無嚴重免疫抑制史。下列哪個抗生素策略最符合「先以常見致病菌為主」的思路？",
+    "options": {
+      "A": "以 β-lactam 類覆蓋 streptococci/MSSA（如 cephalexin 或 amoxicillin-clavulanate 等）為主，並依 MRSA 風險再調整",
+      "B": "一律優先使用 vancomycin 以避免漏掉 MRSA，門診也建議靜脈給藥",
+      "C": "以 metronidazole 為主，因蜂窩性組織炎多由厭氧菌造成",
+      "D": "以 fluconazole 為主，並加上局部抗黴菌藥膏"
+    },
+    "answer": "A",
+    "explanation": "無膿瘍的典型 cellulitis 常見致病菌以 β-hemolytic streptococci 與 MSSA 為主；MRSA 覆蓋通常依風險（如膿瘍、反覆 MRSA、注射藥物使用、近期住院等）再加上。\n\n(A) 正確。\n(B) 不佳：過度擴大覆蓋與不必要的 IV。\n(C) 不佳：厭氧菌不是典型無膿瘍 cellulitis 的首要。\n(D) 不佳：黴菌不是常見病因。",
+    "tags": ["ID", "cellulitis", "antibiotics", "MRSA risk", "strep", "MSSA"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0035",
+    "stem": "病人長期使用 levodopa 治療帕金森氏症，近期因噁心想吐至急診求助。下列哪一個止吐藥在一般情境下較應避免，因可能惡化巴金森症狀？",
+    "options": {
+      "A": "metoclopramide",
+      "B": "ondansetron",
+      "C": "doxylamine/pyridoxine（視症狀與族群）",
+      "D": "低劑量 diphenhydramine（需考量鎮靜與抗膽鹼副作用）"
+    },
+    "answer": "A",
+    "explanation": "metoclopramide 具中樞 D2 拮抗作用，可能導致或惡化 parkinsonism（也可能引發 EPS）。相對地，ondansetron 為 5-HT3 antagonist，通常不會以同樣機轉惡化。\n\n(A) 正確。\n(B) 通常可用。\n(C) 常用於特定族群（例如妊娠噁心），機轉不以 D2 拮抗為主。\n(D) 不以 D2 拮抗為主，但仍要注意鎮靜、跌倒風險與抗膽鹼副作用。",
+    "tags": ["neuro", "parkinsonism", "antiemetic", "D2 antagonist", "EPS"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0036",
+    "stem": "急性心包膜炎（acute pericarditis）病人胸痛在坐起前傾時改善，EKG 見廣泛 ST elevation。下列何者最符合治療策略？",
+    "options": {
+      "A": "NSAID 或 aspirin 為主，合併 colchicine 降低復發；依危險徵象決定住院與進一步評估",
+      "B": "一開始即常規使用溶栓治療，以避免漏掉 STEMI",
+      "C": "以長期口服抗凝劑作為核心治療，直到 ST elevation 完全消失",
+      "D": "一開始即高劑量類固醇作為第一線，並避免 NSAID 以免影響心肌修復"
+    },
+    "answer": "A",
+    "explanation": "典型 acute pericarditis 的第一線多為 NSAID/aspirin，並常合併 colchicine 以降低復發；是否住院需看高風險特徵（如發燒、免疫抑制、心包積液/心包填塞疑慮、抗凝使用等）。\n\n(A) 正確。\n(B) 不佳：溶栓是 STEMI 再灌流策略，非心包膜炎常規。\n(C) 不佳：抗凝不是核心治療，且某些情境可能增加出血/心包積血風險。\n(D) 不佳：類固醇通常非第一線，且可能增加復發（除非特定適應症）。",
+    "tags": ["cardiology", "pericarditis", "ECG", "NSAID", "colchicine"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0037",
+    "stem": "急性胰臟炎後第 4 週影像見一個邊界清楚、壁薄、內含均質液體的集合，位於胰臟旁，無明顯壞死成分。下列何者最符合其命名？",
+    "options": {
+      "A": "pancreatic pseudocyst",
+      "B": "acute peripancreatic fluid collection",
+      "C": "acute necrotic collection",
+      "D": "walled-off necrosis"
+    },
+    "answer": "A",
+    "explanation": "依 revised Atlanta classification：\n- <4 週、無壞死：acute peripancreatic fluid collection。\n- ≥4 週、無壞死、壁成熟、均質液體：pancreatic pseudocyst。\n- 有壞死：早期為 acute necrotic collection，≥4 週成熟壁者為 walled-off necrosis。\n\n本題為 ≥4 週、均質液體、無壞死 → pseudocyst。\n\n(A) 正確。\n(B)(C)(D) 不符合時間與內容物特徵。",
+    "tags": ["GI", "pancreatitis", "revised Atlanta", "pseudocyst", "WON"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0038",
+    "stem": "缺血性腦中風評估：下列何者最符合急診到院後的初始流程重點？",
+    "options": {
+      "A": "先快速評估 ABC、血糖與 NIHSS，並安排非增強腦部 CT 排除出血；視時間窗與禁忌評估是否給予靜脈溶栓及/或取栓",
+      "B": "到院後優先做腦部 MRI（含 DWI）再決定是否進一步檢查，CT 可後補",
+      "C": "先給予高劑量 heparin 作為橋接治療，再安排影像排除出血",
+      "D": "若症狀改善，通常可延後影像檢查至 24 小時後以降低輻射暴露"
+    },
+    "answer": "A",
+    "explanation": "急性中風的核心是「快」：排除低血糖與出血（非增強 CT），同步嚴謹評估神經學缺損（NIHSS）與時間窗，決定 IV thrombolysis 與 mechanical thrombectomy 的適用。\n\n(A) 正確。\n(B) MRI 很有用但在急性流程上常受可近性與時間限制，CT 仍是第一線排除出血。\n(C) 不佳：先抗凝在未排除出血前風險高。\n(D) 不佳：症狀改善不代表安全，仍需排除出血與評估再灌流機會。",
+    "tags": ["neuro", "stroke", "acute management", "CT", "thrombolysis", "thrombectomy"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0039",
+    "stem": "兒童原始反射（primitive reflexes）與消失時間：下列何者屬於較可能持續到較大月齡甚至接近學步期、而非早期即消失的反射？",
+    "options": {
+      "A": "parachute reflex",
+      "B": "rooting reflex",
+      "C": "palmar grasp reflex",
+      "D": "sucking reflex"
+    },
+    "answer": "A",
+    "explanation": "parachute reflex 屬於保護性反射，通常在較大月齡出現後會持續存在；相對地，rooting、palmar grasp、sucking 多屬新生兒早期反射，會在數月內逐步整合消失（消失時間依反射不同）。\n\n(A) 正確。\n(B)(C)(D) 通常較早消失，若持續存在需評估神經發展問題。",
+    "tags": ["peds", "development", "primitive reflex", "parachute"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0040",
+    "stem": "乳房影像：一個界線清楚的卵圓形腫塊，呈平行皮膚走向（wider-than-tall）、後方回音增強，內部均勻低回音，無明顯不規則刺狀邊緣。下列何者最符合其可能性與處置方向？",
+    "options": {
+      "A": "較偏良性特徵（如 fibroadenoma），若符合低疑慮影像型態，可考慮短期追蹤或依臨床風險安排取樣",
+      "B": "高度疑似惡性（BI-RADS 5），應直接安排手術切除不需先做 core biopsy",
+      "C": "此種超音波表現典型代表葉狀腫瘤，建議立即全乳切除",
+      "D": "只要摸得到腫塊，就必須一律以 MRI 取代超音波與 mammography"
+    },
+    "answer": "A",
+    "explanation": "卵圓、邊界清楚、平行皮膚（wider-than-tall）、後方回音增強、均質低回音較偏良性（常見如 fibroadenoma）；處置取決於年齡、臨床風險、影像一致性與追蹤可行性，可在低疑慮下採短期追蹤或選擇性取樣。\n\n(A) 正確。\n(B) 不佳：BI-RADS 5 常見是不規則、非平行、刺狀邊緣、後方衰減等特徵，且治療前通常仍需病理。\n(C) 不佳：葉狀腫瘤影像可能類似纖維腺瘤，但不會用『典型』直接推到全乳切除。\n(D) 不佳：MRI 有其適應症，但不是可觸及腫塊的必然取代工具。",
+    "tags": ["breast", "ultrasound", "fibroadenoma", "BI-RADS", "benign features"]
   }
 
 
