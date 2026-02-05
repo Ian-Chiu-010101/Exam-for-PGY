@@ -1,0 +1,10 @@
+[
+  {
+    "id": "NEWBANK_Q0001",
+    "stem": "題幹…",
+    "options": ["A ...", "B ...", "C ...", "D ..."],
+    "answer": "A",
+    "explanation": "詳解…",
+    "tags": ["tag1", "tag2"]
+  }
+]
