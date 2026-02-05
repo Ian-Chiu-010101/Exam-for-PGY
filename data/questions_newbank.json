@@ -199,7 +199,271 @@
     },
     "answer": "B",
     "explanation": "Thiazide 常見副作用光譜包含低血鈉、低血鉀、高尿酸，以及可能的血糖/血脂代謝影響；臨床上『高齡、女性、低體重、同時使用其他影響鈉的藥物』是 thiazide-related hyponatremia 的常見高風險組合。\n\n(A) 錯：thiazide 可能升高尿酸，痛風病人要留意。\n(B) 正確：把風險族群 + 需要追蹤的臨床決策點說出來。\n(C) 錯：thiazide 通常降低尿鈣排泄（這反而是常見考點）。\n(D) 錯：thiazide 可能使血糖控制變差（方向不是改善）。\n\n出處：你提供的 thiazide 副作用整理（低鈉/低鉀/高尿酸/代謝效應）與常見臨床陷阱。"
+  },
+
+
+  
+  {
+    "id": "NTUPGY_V1_Q0001",
+    "stem": "35 歲女性無症狀，篩檢性 mammography 發現一簇細小不規則 microcalcifications，超音波未見明顯對應腫塊。依一般臨床流程，下列何者較符合下一步處置？",
+    "options": {
+      "A": "以超音波追蹤 6 個月，若無變化即可回到常規篩檢",
+      "B": "安排診斷性 mammography 補照（含放大/局部加壓）並評估是否需立體定位切片",
+      "C": "先做乳房 MRI 以提高敏感度，MRI 陰性即可暫不處置",
+      "D": "改以自我乳房檢查（BSE）加強監測即可"
+    },
+    "answer": "B",
+    "explanation": "microcalcifications 對超音波敏感度較差，流程上通常先做診斷性補照確認型態與分佈，再視疑慮程度（常落在 BI-RADS 4–5）安排 tissue diagnosis（如立體定位切片）。\n\n(A) 若影像特徵偏良性、可歸 BI-RADS 3 才較常用短期追蹤；但題幹給的是『不規則 microcalcifications 一簇』且 US 無對應，較難直接安心追蹤。\n(B) 正確：符合『疑似鈣化 → 診斷性補照 → 必要時定位切片』路徑。\n(C) MRI 可作輔助，但不能取代對鈣化的評估與必要時取樣。\n(D) BSE 不能替代影像篩檢與診斷流程。",
+    "tags": ["breast", "BI-RADS", "microcalcifications", "mammography", "stereotactic biopsy"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0002",
+    "stem": "乳房影像報告 BI-RADS 4B（moderate suspicion）。下列何者最貼近『合理的下一步』？",
+    "options": {
+      "A": "以 6 個月追蹤影像為主，除非腫塊變大才切片",
+      "B": "以 tissue diagnosis 為主（如 core needle biopsy／立體定位切片），再依結果規劃 staging/治療",
+      "C": "先給經驗性抗生素 1–2 週，改善後可免除切片",
+      "D": "直接安排手術切除，不需術前組織診斷"
+    },
+    "answer": "B",
+    "explanation": "BI-RADS 4 的核心是『需要組織診斷』，4B 亦然。\n\n(A) 較像 BI-RADS 3 的策略。\n(B) 正確。\n(C) 抗生素不能取代病理診斷；除非臨床高度疑似感染且影像支持。\n(D) 某些情境可直接切除，但一般仍建議先取得病理以利治療規劃。",
+    "tags": ["breast", "BI-RADS", "biopsy", "core needle biopsy"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0003",
+    "stem": "關於子宮頸癌篩檢與公費政策，下列何者較符合你整理檔中的重點描述？",
+    "options": {
+      "A": "25–29 歲女性：子宮頸抹片每 3 年 1 次；≥30 歲女性：抹片每年 1 次（衛教常提至少每 3 年 1 次）",
+      "B": "所有 ≥30 歲女性一律以 HPV 檢測取代抹片，抹片已非主流工具",
+      "C": "當次 HPV 檢測陰性代表近期風險較低，但後續仍需依年齡、既往結果與政策建議安排篩檢",
+      "D": "HPV 檢測公費對象為 30 歲以上每年 1 次"
+    },
+    "answer": "A",
+    "explanation": "整理重點：25–29 歲抹片每 3 年 1 次；≥30 歲補助偏向每年 1 次（衛教亦常提至少每 3 年 1 次）。\n\n(B) 整理檔是新增特定年齡一次性 HPV，不是全面取代。\n(C) 敘述本身合理，但題目問的是『最符合整理重點』，A 更精準命中頻率與年齡。\n(D) 與整理檔不符（35/45/65 當年度一次）。",
+    "tags": ["OBGYN", "cervical cancer", "screening", "Pap smear", "HPV test"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0004",
+    "stem": "35 歲女性 Pap smear：ASC-US。下列何者『相對不合適』作為初步處置策略？",
+    "options": {
+      "A": "安排高危險型 HPV 檢測作為 triage，再決定是否需 colposcopy",
+      "B": "短期重複抹片追蹤，持續異常再 colposcopy",
+      "C": "直接 colposcopy ± biopsy 以釐清是否有 CIN",
+      "D": "直接安排子宮頸錐狀切除作為初始處置，以免漏診"
+    },
+    "answer": "D",
+    "explanation": "ASC-US 多採 HPV triage、短期追蹤或 colposcopy；錐狀切除通常是確立較高等級病灶（CIN2+）後才考慮。\n\n(A)(B)(C) 皆可能在不同情境合理。\n(D) 過度侵入，通常不作為 ASC-US 的初始處置。",
+    "tags": ["OBGYN", "Pap smear", "ASC-US", "HPV triage", "colposcopy", "CIN"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0005",
+    "stem": "子宮頸切片：CIN2。下列何者較貼近常見處置原則？",
+    "options": {
+      "A": "以抹片追蹤為主，除非 CIN2 持續超過 5 年才治療",
+      "B": "考慮以子宮頸錐狀切除為主（視年齡、懷孕計畫與病灶範圍等調整）",
+      "C": "先施打 HPV 疫苗即可，多數病灶會自行逆轉",
+      "D": "直接全子宮切除通常是首選，避免復發"
+    },
+    "answer": "B",
+    "explanation": "CIN2+ 通常建議治療，常見以 excisional treatment（conization/LEEP）為主。\n\n(A) 更像 CIN1 的觀察路徑。\n(C) 疫苗不取代既存 CIN2 的治療。\n(D) 子宮切除不是大多數 CIN2 的首選。",
+    "tags": ["OBGYN", "CIN2", "conization", "LEEP"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0006",
+    "stem": "COPD 病人（FEV1 43% predicted；bronchodilator test negative）之長期治療策略，下列何者最可能被視為『敘述不夠精準/過度概括』？",
+    "options": {
+      "A": "長效支氣管擴張劑（LABA/LAMA）通常是維持治療的基石",
+      "B": "吸入型類固醇（ICS）在 COPD 應避免使用，因為會增加肺炎風險",
+      "C": "戒菸、肺復健與疫苗可降低惡化風險並改善症狀/運動耐受",
+      "D": "COPD（尤其吸菸背景）與肺癌風險上升有流行病學相關性"
+    },
+    "answer": "B",
+    "explanation": "ICS 在 COPD 不是『全面禁用』而是『選擇性使用』，需權衡 pneumonia 風險與潛在效益（如反覆惡化、eosinophils 較高或 asthma features）。\n\n(A)(C)(D) 為較合理的敘述。",
+    "tags": ["pulmonary", "COPD", "GOLD", "ICS", "exacerbation", "eosinophil"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0007",
+    "stem": "COPD 病人已使用 LABA/LAMA 3 個月仍症狀不穩，抽血 eosinophil 5%（WBC 9500）。下列何者較符合加治療思路？",
+    "options": {
+      "A": "考慮加上 ICS（形成 triple therapy 的方向），並評估肺炎風險",
+      "B": "優先加上 leukotriene modifier，通常對 COPD 的症狀最有幫助",
+      "C": "優先加上短效 β2 agonist 作為長期控制藥",
+      "D": "因支氣管擴張試驗陰性，通常不考慮任何抗發炎策略"
+    },
+    "answer": "A",
+    "explanation": "eosinophil 絕對值約 475/µL（>300）常被視為較可能從 ICS 受益的族群之一，尤其仍有症狀/惡化。\n\n(B) 偏氣喘。\n(C) SABA 多為 PRN。\n(D) bronchodilator test 的意義在可逆性，不等於沒有發炎成分。",
+    "tags": ["pulmonary", "COPD", "eosinophil", "ICS", "triple therapy"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0008",
+    "stem": "肝硬化病人接受 HCC 監測，超音波發現 0.8 cm nodule。較常見的下一步策略為何？",
+    "options": {
+      "A": "直接安排切片確認，因為 1 cm 以下影像學無法評估",
+      "B": "安排 3–4 個月後追蹤超音波，觀察是否長大或出現特徵",
+      "C": "安排 FDG-PET，若陰性即可改回一年後追蹤",
+      "D": "以 AFP 作為主要依據，若未明顯上升即可延後追蹤"
+    },
+    "answer": "B",
+    "explanation": "小於 1 cm 的結節通常先短期追蹤影像（約 3–4 個月）觀察變化；達到可評估大小後再以 dynamic CT/MRI 進一步診斷。\n\n(A) 小結節切片有取樣誤差且不一定是第一步。\n(C) PET 不是首選。\n(D) AFP 不能作為唯一依據。",
+    "tags": ["GI", "hepatology", "HCC", "screening", "ultrasound", "AFP"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0009",
+    "stem": "疑似 HCC 的影像學典型表現（hallmarks）較符合下列何者？",
+    "options": {
+      "A": "動脈期低顯影、門靜脈期持續增強",
+      "B": "動脈期高顯影，門靜脈/延遲期 washout",
+      "C": "僅在延遲期出現環狀增強，動脈期通常無明顯變化",
+      "D": "影像只要看到任何增強即可診斷，大小不是重點"
+    },
+    "answer": "B",
+    "explanation": "典型 HCC：動脈期 hyperenhancement + 門靜脈/延遲期 washout。\n\n(A) 與典型相反。\n(C) 需考慮其他腫瘤譜系。\n(D) 是否可免切片仍依背景與影像典型性等條件。",
+    "tags": ["GI", "hepatology", "HCC", "dynamic CT", "MRI", "washout"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0010",
+    "stem": "針對 HPV 疫苗與子宮頸篩檢的衛教敘述，下列何者最恰當？",
+    "options": {
+      "A": "接種 HPV 疫苗後，仍建議依年齡與既往結果持續做子宮頸相關篩檢，因疫苗未涵蓋所有型別且可能已有既往感染",
+      "B": "接種疫苗後，若近期抹片正常，後續多數情況可大幅延長篩檢間隔或依政策與風險調整",
+      "C": "若當次 HPV 檢測為陰性，後續追蹤可依個人風險、年齡與政策建議調整，而非固定單一路徑",
+      "D": "疫苗主要降低子宮頸癌風險，但對癌前病變的發生率影響可能因型別涵蓋與接種時點而異"
+    },
+    "answer": "A",
+    "explanation": "核心考點：疫苗不取代篩檢（型別涵蓋不完全、接種前可能已有感染）。\n\n(B) 描述方向可接受，但較不如 A 直接命中『不取代篩檢』這個高頻重點。\n(C) 也是合理的風險導向敘述，但同樣較偏泛化。\n(D) 用『可能因…而異』避免武斷，敘述本身可接受，但並不是最常考的單點答案。",
+    "tags": ["OBGYN", "HPV vaccine", "cervical screening", "patient education"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0011",
+    "stem": "下消化道出血住院病人因心血管二級預防而使用 aspirin，且原本正在使用 DAPT。止血後安排用藥策略時，下列何者較貼近常見風險平衡做法？",
+    "options": {
+      "A": "若 aspirin 用於二級預防，常傾向不中斷；DAPT 於止血後依缺血/再出血風險分層，可能在數天內恢復",
+      "B": "抗血小板藥物皆建議停用至少 1 個月，以降低再出血",
+      "C": "生命徵象穩定即可不需評估上消化道來源，直接安排門診大腸鏡",
+      "D": "RBC scan 能兼具定位與止血，因此可作首選"
+    },
+    "answer": "A",
+    "explanation": "考點是二級預防 aspirin 常不中斷；DAPT 的恢復時間需權衡缺血與再出血風險，止血後『數天內』是常見方向。\n\n(B) 過度一刀切。\n(C) 仍需依病況與懷疑來源決定檢查。\n(D) RBC scan 主要定位，不能止血。",
+    "tags": ["GI", "lower GI bleeding", "aspirin", "DAPT", "risk balance"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0012",
+    "stem": "大量下消化道出血、腸道準備不足導致 colonoscopy 視野不佳且仍懷疑持續出血。下列何者較合理？",
+    "options": {
+      "A": "立即重複同一支 colonoscope 再做一次通常就能改善視野並止血",
+      "B": "考慮 CT angiography 或 angiography（可合併栓塞），依出血速率與資源決定",
+      "C": "改做 RBC scan 並立刻內視鏡止血",
+      "D": "先觀察一段時間再決定，並密切監測血紅素與生命徵象"
+    },
+    "answer": "B",
+    "explanation": "若疑似 ongoing bleeding 且 colonoscopy 無法進行/視野差，CT angiography 或 angiography（可介入栓塞）是常見下一步。\n\n(A) 不一定能改善。\n(C) RBC scan 不能止血。\n(D) 若出血趨勢或不穩，單觀察風險高。",
+    "tags": ["GI", "lower GI bleeding", "CTA", "angiography", "embolization"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0013",
+    "stem": "若要預測輸液後是否會增加心搏出量（volume responsiveness），下列敘述何者較符合一般觀念？",
+    "options": {
+      "A": "CVP 越低越能預測輸液反應性，因此可作單一決策依據",
+      "B": "SVV/PPV 這類動態指標在特定條件下通常比單一靜態 CVP 更具預測力",
+      "C": "Allen test 正常代表動脈導管幾乎不會有缺血併發症",
+      "D": "PAC 已被證實可普遍改善 outcomes，因此重症病人多建議常規置放"
+    },
+    "answer": "B",
+    "explanation": "動態指標（SVV/PPV）在適當條件下更能反映 preload responsiveness；CVP 作為單一指標預測力有限。\n\n(A)(C)(D) 均屬過度概括或不精準。",
+    "tags": ["anesthesia", "ICU", "hemodynamic monitoring", "SVV", "PPV", "CVP"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0014",
+    "stem": "燒燙傷輸液：Parkland formula 的核心計算與給液節奏，下列何者正確？",
+    "options": {
+      "A": "總量 = 4 mL × 體重(kg) × %TBSA；前 8 小時給總量的一半，其餘 16 小時給剩下一半",
+      "B": "總量 = 2 mL × 體重(kg) × %TBSA；前 12 小時給一半，後 12 小時給一半",
+      "C": "總量固定 3–4 公升即可，與 TBSA 無關，主要看血壓",
+      "D": "前 8 小時給 1/3，後 16 小時給 2/3，以降低肺水腫"
+    },
+    "answer": "A",
+    "explanation": "Parkland：4 mL/kg/%TBSA；前 8 小時（自受傷起算）給一半，後 16 小時給另一半，再依尿量/灌流調整。",
+    "tags": ["surgery", "burn", "Parkland", "fluid resuscitation"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0015",
+    "stem": "燒燙傷復甦中，以尿量作為 resuscitation endpoint 的敘述，何者較合理？",
+    "options": {
+      "A": "成人多以約 0.5 mL/kg/hr 的尿量目標作為灌流指標之一，但仍需整合其他臨床參數",
+      "B": "尿量達標即可，不必再看乳酸或周邊灌流",
+      "C": "尿量目標固定 100 mL/hr，與體重無關",
+      "D": "尿量下降時可優先加 albumin，通常比調整晶體液更重要"
+    },
+    "answer": "A",
+    "explanation": "成人常用目標 ~0.5 mL/kg/hr，但仍需整合 hemodynamics、乳酸、周邊灌流等。",
+    "tags": ["surgery", "burn", "resuscitation", "urine output"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0016",
+    "stem": "HCC 篩檢與腫瘤標記的敘述，下列何者較貼近考點？",
+    "options": {
+      "A": "AFP 對 HCC 特異度高，可作單一篩檢工具",
+      "B": "超音波常作第一線篩檢；AFP 明顯上升可提高懷疑，但小型 HCC 可能 AFP 正常",
+      "C": "PIVKA-II 已取代影像學成為第一線診斷工具",
+      "D": "AFP 偏低時 HCC 機率很低，因此可延後影像檢查"
+    },
+    "answer": "B",
+    "explanation": "超音波為第一線；AFP 不能單獨排除/診斷，小型 HCC 可能正常。",
+    "tags": ["GI", "hepatology", "HCC", "AFP", "PIVKA-II", "screening"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0017",
+    "stem": "肝硬化病人超音波發現約 1.2 cm nodule。較符合流程的下一步為何？",
+    "options": {
+      "A": "直接安排全肝切除以避免延誤",
+      "B": "安排 dynamic CT 或 MRI 評估是否具典型 hallmarks",
+      "C": "先做 FDG-PET，陰性後可改回一年後追蹤超音波",
+      "D": "AFP 未明顯上升時可暫緩進一步影像，先觀察半年"
+    },
+    "answer": "B",
+    "explanation": "達到可評估大小後通常以 dynamic CT/MRI 看典型表現；AFP 不能當唯一門檻。",
+    "tags": ["GI", "hepatology", "HCC", "dynamic CT", "MRI"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0018",
+    "stem": "COPD 治療決策，下列何者最能反映現代指引思路？",
+    "options": {
+      "A": "主要看 FEV1 分級決定藥物階梯，症狀與惡化史影響相對小",
+      "B": "治療整合症狀量表、惡化史、eosinophils 與是否有 asthma features；ICS 屬於有指標才加",
+      "C": "ICS 對 COPD 只有害處，因此一般不考慮",
+      "D": "支氣管擴張試驗陰性代表完全沒有發炎成分"
+    },
+    "answer": "B",
+    "explanation": "GOLD 不只看 FEV1；ICS 是選擇性使用，需結合惡化史與 eos 等。",
+    "tags": ["pulmonary", "COPD", "GOLD", "ICS", "eosinophil"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0019",
+    "stem": "子宮頸抹片：HSIL。下列何者最貼近『考試型簡化記法』的處置方向？",
+    "options": {
+      "A": "可先觀察一段時間再決定是否 colposcopy",
+      "B": "相對傾向直接 colposcopy（風險較高，不宜只用長期觀察）",
+      "C": "先做 HPV 檢測，陰性時多可回到常規篩檢",
+      "D": "先給抗生素治療，改善後再做抹片"
+    },
+    "answer": "B",
+    "explanation": "HSIL/ASC-H 風險較高，考試整理多直接指向 colposcopy ± biopsy。",
+    "tags": ["OBGYN", "Pap smear", "HSIL", "colposcopy"]
+  },
+  {
+    "id": "NTUPGY_V1_Q0020",
+    "stem": "子宮頸癌前病變與自然史：下列何者較符合常見敘述？",
+    "options": {
+      "A": "CIN1 在相當比例個案可於數年內自行消退，因此低度病變常採追蹤策略",
+      "B": "各級 CIN 病變皆應立即手術切除以降低進展風險",
+      "C": "HPV 與子宮頸癌相關性有限，因此 HPV typing 臨床上較少使用",
+      "D": "疫苗接種後是否需要篩檢可依年齡、既往結果與政策建議規劃，而不是用單一規則處理所有人"
+    },
+    "answer": "A",
+    "explanation": "低度病變（CIN1）有自發消退可能，常採追蹤；高等級病變才更傾向治療。\n\n(D) 敘述合理，但本題在考『自然史』的核心點，A 更直接命中。",
+    "tags": ["OBGYN", "CIN", "HPV", "natural history", "screening"]
   }
+
  
 
 ]
