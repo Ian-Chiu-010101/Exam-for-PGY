@@ -35,3 +35,28 @@ h1 { margin: 0; font-size: 22px; }
 
 .footer { margin-top: 14px; color:#8897a8; }
 .tags { opacity: 0.9; }
+
+/* 讓選項文字永遠是白色（避免瀏覽器預設深藍/disabled 變灰看不到） */
+.opt {
+  color: #e7eef7;
+}
+
+/* iOS/Safari 常見：disabled 會把文字變得很淡或直接改 text-fill */
+.opt:disabled {
+  color: #e7eef7;
+  opacity: 1;
+  -webkit-text-fill-color: #e7eef7;
+}
+
+/* 按下去（active）也維持文字顏色 */
+.opt:active {
+  color: #e7eef7;
+  -webkit-text-fill-color: #e7eef7;
+}
+
+/* 如果你有用到 .opt.disabled class，也一起保底 */
+.opt.disabled {
+  color: #e7eef7;
+  opacity: 1;
+  -webkit-text-fill-color: #e7eef7;
+}
