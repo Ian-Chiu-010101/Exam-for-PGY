@@ -35,12 +35,37 @@ async function fetchJson(url) {
 }
 
 async function loadFromManifest() {
-  const manifestUrl = `./data/manifest.json?v=${Date.now()}`;
-  const manifest = await fetchJson(manifestUrl);
+  const manifest = await fetchJson(`./data/manifest.json?v=${Date.now()}`);
+  const enabled = (manifest.sources || []).filter(s => s.enabled);
 
-  if (!manifest || !Array.isArray(manifest.sources)) {
-    throw new Error("manifest.json 格式錯誤：缺 sources[]");
+  const merged = [];
+  const idSet = new Set();
+
+  // 新增：統計
+  let totalIn = 0;
+  let dupCount = 0;
+  const dupIds = [];
+
+  for (const src of enabled) {
+    const data = await fetchJson(`${src.path}?v=${Date.now()}`);
+    const qs = normalizeQuestions(data, src.id);
+
+    for (const q of qs) {
+      totalIn += 1;
+      if (idSet.has(q.id)) {
+        dupCount += 1;
+        if (dupIds.length < 20) dupIds.push(q.id); // 最多記 20 個避免太長
+        continue;
+      }
+      idSet.add(q.id);
+      merged.push(q);
+    }
   }
+
+  // 新增：把統計掛到 merged 上，或直接回傳一個物件
+  merged._meta = { totalIn, uniqueOut: merged.length, dupCount, dupIds };
+  return merged;
+}
 
   const enabled = manifest.sources.filter(s => s.enabled);
   if (enabled.length === 0) return [];
@@ -186,16 +211,28 @@ function toggleWrongMode() {
 }
 
 async function main() {
-  const status = document.getElementById("loadStatus");
-  try {
-    ALL = await loadFromManifest();
-    status.textContent = `載入成功：${ALL.length} 題（manifest）`;
-    buildPool();
-    nextQuestion();
-  } catch (e) {
-    status.textContent = `載入失敗：${e.message}`;
-    setFeedback("請檢查 data/manifest.json、各 source path 與 JSON 格式。", "no");
+  const status = document.getElementById("loadStatus");try {
+  ALL = await loadFromManifest();
+
+  const meta = ALL._meta || {};
+  let msg = `載入成功：${ALL.length} 題（manifest）`;
+
+  if (meta.totalIn != null) {
+    if (meta.dupCount > 0) {
+      msg += `｜輸入: ${meta.totalIn}｜重複ID: ${meta.dupCount}｜例: ${meta.dupIds.join(", ")}`;
+    } else {
+      msg += `｜輸入: ${meta.totalIn}｜無重複ID`;
+    }
   }
+
+  status.textContent = msg;
+
+  buildPool();
+  nextQuestion();
+} catch (e) {
+  status.textContent = `載入失敗：${e.message}`;
+  setFeedback("請檢查 data/manifest.json、各 source path 與 JSON 格式。", "no");
+}
 
   document.getElementById("btnNew").addEventListener("click", nextQuestion);
   document.getElementById("btnToggleWrong").addEventListener("click", toggleWrongMode);
