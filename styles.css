@@ -1,0 +1,37 @@
+:root { font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Arial,"Noto Sans TC","PingFang TC","Heiti TC",sans-serif; }
+body { margin: 0; background: #0b0f14; color: #e7eef7; }
+.container { max-width: 860px; margin: 0 auto; padding: 18px; }
+.header { display:flex; align-items:flex-end; justify-content:space-between; gap:12px; }
+h1 { margin: 0; font-size: 22px; }
+.meta { display:flex; gap:12px; color:#a9b7c6; font-size: 13px; }
+
+.controls { display:flex; flex-wrap:wrap; gap:10px; margin: 14px 0; }
+.btn { border: 1px solid #2a3442; background:#121a24; color:#e7eef7; padding:10px 12px; border-radius:10px; cursor:pointer; }
+.btn:hover { background:#152132; }
+.btn.primary { border-color:#3a67ff; background:#1430a6; }
+.btn.primary:hover { background:#1737bd; }
+.btn.danger { border-color:#7a2b2b; background:#2a1414; }
+.btn.danger:hover { background:#331818; }
+
+.card { border: 1px solid #243040; background:#0f1620; border-radius:14px; padding:16px; }
+.qhead { display:flex; justify-content:space-between; align-items:center; gap:10px; color:#a9b7c6; font-size: 12px; }
+.stem { margin: 10px 0 12px; font-size: 18px; line-height: 1.35; }
+
+.options { display:grid; gap:10px; }
+.opt { border: 1px solid #263244; background:#101a26; border-radius:12px; padding:12px; cursor:pointer; }
+.opt:hover { background:#132033; }
+.opt .key { display:inline-block; width: 26px; height: 26px; border-radius: 7px; text-align:center; line-height:26px; margin-right: 10px; background:#1c2b40; color:#cfe3ff; font-weight:700; }
+.opt.correct { border-color:#1f7a3a; background:#0f2417; }
+.opt.wrong { border-color:#7a2b2b; background:#2a1414; }
+.opt.disabled { opacity:0.85; cursor:default; }
+
+.feedback { margin-top: 12px; min-height: 22px; color:#cbd8e6; }
+.feedback.ok { color:#7ee2a8; }
+.feedback.no { color:#ff9a9a; }
+
+.explain { margin-top: 12px; border-top: 1px dashed #2a3442; padding-top: 10px; color:#d7e3f0; }
+.explain summary { cursor:pointer; color:#a9b7c6; }
+#explanation { margin-top: 10px; white-space: pre-wrap; line-height: 1.45; }
+
+.footer { margin-top: 14px; color:#8897a8; }
+.tags { opacity: 0.9; }
