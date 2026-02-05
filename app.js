@@ -322,6 +322,14 @@ async function main() {
       updateProgress();
     });
 
+    $("btnResetSaved")?.addEventListener("click", () => {
+      localStorage.removeItem(SAVED_KEY);
+      setFeedback("已清除收藏。", "no");
+      buildPool();
+      updateProgress();
+      updateSaveButton();
+    });
+
   } catch (err) {
     console.error(err);
     const loadStatus = $("loadStatus");
