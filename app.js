@@ -164,32 +164,42 @@ function renderExplanation(exp) {
 
   // 舊格式：直接是字串
   if (typeof exp === "string") {
-    return `<div class="exp-sec"><div class="exp-body">${escapeHtml(exp)}</div></div>`;
+    return `<div class="exp-block">${escapeHtml(exp)}</div>`;
   }
 
-  // 新格式：物件（例如 {correct_reasoning, option_analysis, exam_tips}）
-  if (typeof exp === "object") {
-    const correct = exp.correct_reasoning
-      ? `<div class="exp-sec">
-           <div class="exp-title">核心解題</div>
-           <div class="exp-body">${escapeHtml(exp.correct_reasoning)}</div>
-         </div>`
-      : "";
+  // 新格式：物件
+  const correct = exp.correct_reasoning
+    ? `<div class="exp-sec"><div class="exp-title">核心解題</div><div class="exp-body">${escapeHtml(exp.correct_reasoning)}</div></div>`
+    : "";
 
-    const optionAnalysis = exp.option_analysis && typeof exp.option_analysis === "object"
-      ? `<div class="exp-sec">
-           <div class="exp-title">選項解析</div>
-           ${Object.entries(exp.option_analysis)
-             .map(([k, v]) => `<div class="exp-opt"><b>${escapeHtml(k)}</b>：${escapeHtml(v)}</div>`)
-             .join("")}
-         </div>`
-      : "";
+  const optionAnalysis = exp.option_analysis
+    ? `<div class="exp-sec"><div class="exp-title">選項解析</div>` +
+      Object.entries(exp.option_analysis)
+        .map(([k, v]) => `<div class="exp-opt"><b>${k}</b>：${escapeHtml(v)}</div>`)
+        .join("") +
+      `</div>`
+    : "";
 
-    const tips = Array.isArray(exp.exam_tips) && exp.exam_tips.length
-      ? `<div class="exp-sec">
-           <div class="exp-title">延伸考點</div>
-           <ul class="exp-list">
-             ${exp.exam_tips.map(t => `<li>${escapeHtml(t)}</li>`).join("")}
+  const tips = Array.isArray(exp.exam_tips) && exp.exam_tips.length
+    ? `<div class="exp-sec"><div class="exp-title">延伸考點</div><ul>` +
+      exp.exam_tips.map(t => `<li>${escapeHtml(t)}</li>`).join("") +
+      `</ul></div>`
+    : "";
+
+  return `${correct}${optionAnalysis}${tips}`;
+}
+
+// 需要有 escapeHtml，避免 XSS 或符號壞掉
+function escapeHtml(str) {
+  return String(str)
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+${exp.exam_tips.map(t => `<li>${escapeHtml(t)}</li>`).join("")}
            </ul>
          </div>`
       : "";
