@@ -8901,7 +8901,562 @@
       ]
     },
     "tags": ["pulmonary embolism", "postpartum", "D-dimer", "CTPA"]
+  },
+
+
+
+  
+  {
+    "id": "NBE_BANK_Q0094",
+    "category": "醫學五-整形外科/燒傷",
+    "stem": "36 歲男性被熱水燙傷，雙上肢與前胸大片紅腫起水泡，疼痛明顯。到院時生命徵象穩定，但因疼痛與焦慮呼吸較快。若以初步評估與液體復甦規劃為核心，下列敘述何者較符合臨床思路？",
+    "options": {
+      "A": "有水泡與疼痛多提示至少為部分層燒傷；體表面積估算可用 Rule of 9 或 Lund-Browder，液體復甦需結合 TBSA、體重與臨床反應（尿量/生命徵象）動態調整",
+      "B": "只要生命徵象穩定，就可不必估算 TBSA，液體復甦主要看病人主觀口渴程度即可",
+      "C": "燒傷疼痛明顯通常代表全層燒傷，因此應優先安排焦痂切開以避免腔室症候群",
+      "D": "燒傷的液體復甦多以高張鹽水為主以降低水腫，輸液速度可固定不需依尿量調整"
+    },
+    "answer": "A",
+    "explanation": {
+      "correct_reasoning": "部分層燒傷常見水泡與疼痛；全層燒傷反而可能痛覺下降。初期處置重點包含 TBSA 估算與依體重/面積規劃液體（常以晶體液為主），並用尿量與灌流指標做動態調整，而非固定速度或只看主觀口渴。",
+      "option_analysis": {
+        "A": "兼顧分層判讀、面積估算工具與『以臨床反應調整』的要點，符合實務。",
+        "B": "TBSA 直接影響復甦量與轉送/住院決策；僅依口渴不可靠。",
+        "C": "疼痛明顯較像部分層；焦痂切開多考慮環狀全層燒傷造成循環/通氣受限。",
+        "D": "高張鹽水並非常規核心；輸液需依尿量與血流動力調整，避免過量或不足。"
+      },
+      "exam_tips": [
+        "疼痛 + 水泡：多提示部分層燒傷；全層可能痛覺下降。",
+        "復甦：面積估算 + 動態監測尿量/灌流。"
+      ]
+    },
+    "tags": ["burn", "TBSA", "fluid resuscitation", "Parkland"]
+  },
+  {
+    "id": "NBE_BANK_Q0095",
+    "category": "醫學四-神經/癲癇藥物",
+    "stem": "30 歲女性計畫懷孕，既往局灶性癲癇控制良好，現用 valproate。她擔心用藥對胎兒影響並詢問調整策略。下列敘述何者較符合常見的風險溝通與用藥調整原則？",
+    "options": {
+      "A": "只要癲癇控制穩定就可持續 valproate，畸胎風險多屬理論推測，通常不需要調整",
+      "B": "valproate 與神經管缺陷等畸胎風險相關度較高，計畫懷孕時多會考慮改用相對風險較低的替代藥物並以單藥最低有效劑量為目標，同時補充葉酸與安排周產期評估",
+      "C": "為避免發作，最安全的方式是在備孕後立即停用所有抗癲癇藥並觀察是否復發",
+      "D": "若改藥，建議同時加用兩到三種抗癲癇藥以確保不發作，因多重用藥通常能降低畸胎風險"
+    },
+    "answer": "B",
+    "explanation": {
+      "correct_reasoning": "valproate 的致畸風險（包含神經管缺陷與神經發展影響）在臨床上被高度重視。備孕與妊娠規劃常以『單藥、最低有效劑量、選擇相對較低致畸風險藥物』為原則，並搭配葉酸補充與產前評估。改藥需提前規劃以避免突然停藥誘發發作。",
+      "option_analysis": {
+        "A": "把風險淡化不符合現代風險溝通；valproate 的致畸風險有臨床資料支持。",
+        "B": "符合常見原則：降低致畸風險、避免突然停藥、強調單藥最低有效劑量與葉酸。",
+        "C": "突然停藥可能造成癲癇復發與外傷/缺氧風險，對孕期也不利。",
+        "D": "多重用藥通常會增加不良反應與致畸風險，與目標相反。"
+      },
+      "exam_tips": [
+        "備孕癲癇：單藥、最低有效劑量、提前調藥；葉酸補充常被考。",
+        "valproate：致畸與神經發展風險較常被強調。"
+      ]
+    },
+    "tags": ["epilepsy", "pregnancy", "valproate", "teratogenicity", "folic acid"]
+  },
+  {
+    "id": "NBE_BANK_Q0096",
+    "category": "醫學三-感染/抗生素不良反應",
+    "stem": "62 歲男性因骨髓炎使用 vancomycin 住院，最近出現耳鳴與腎功能惡化。藥物濃度監測顯示暴露量偏高。下列哪個敘述較符合 vancomycin 治療監測與調整的概念？",
+    "options": {
+      "A": "vancomycin 的監測主要看單次 trough 值即可，若 trough 偏高但病人臨床穩定，通常不需要調整以免治療失敗",
+      "B": "耳毒性與腎毒性風險會隨暴露量上升而增加；臨床上可用 AUC/MIC 概念或濃度監測搭配腎功能變化調整劑量/給藥間隔，並評估合併腎毒性藥物",
+      "C": "腎功能惡化多半是感染造成，與 vancomycin 暴露量關聯有限，因此濃度監測的臨床價值較低",
+      "D": "若出現腎功能惡化，最佳策略通常是把 vancomycin 劑量加大以增加殺菌速度，縮短感染時間"
+    },
+    "answer": "B",
+    "explanation": {
+      "correct_reasoning": "vancomycin 的腎毒性與耳毒性風險與暴露量相關，近年更強調以 AUC-guided dosing 兼顧療效與安全。當腎功能惡化或濃度偏高時，需調整劑量或延長給藥間隔，並檢視是否合併其他腎毒性藥物（如 aminoglycosides、NSAIDs、造影劑等）。",
+      "option_analysis": {
+        "A": "僅看 trough 並忽略腎功能與總暴露，可能增加毒性風險；臨床上常需要調整。",
+        "B": "兼顧療效與毒性，並把調整策略與共用藥物風險納入，最符合監測概念。",
+        "C": "感染可影響腎功能，但 vancomycin 暴露量與腎毒性關聯是重要考點，不能忽視。",
+        "D": "出現毒性時加大劑量不合理，反而加重風險。"
+      },
+      "exam_tips": [
+        "vanco：AUC 導向監測越來越常見；腎功能變化要同步調整。",
+        "耳鳴/腎損：要想到暴露量與合併腎毒性藥物。"
+      ]
+    },
+    "tags": ["vancomycin", "AUC/MIC", "nephrotoxicity", "ototoxicity", "TDM"]
+  },
+  {
+    "id": "NBE_BANK_Q0097",
+    "category": "醫學五-外科/大腸直腸",
+    "stem": "72 歲男性，因阻塞型左側大腸癌入院，腹部膨脹、嘔吐、無法排氣排便。影像顯示左側結腸腫瘤造成明顯近端擴張，但未見自由氣。病人有慢性心衰與腎功能不佳。下列哪個策略較符合在高風險族群下「橋接到根治」的思路？",
+    "options": {
+      "A": "在具備條件下可考慮內視鏡放置結腸支架作為橋接，以解除阻塞、改善生理狀態與完成術前評估，再安排選擇性手術",
+      "B": "阻塞型大腸癌一律需立即做根治性切除合併一次性吻合，才能降低腫瘤擴散風險",
+      "C": "既然未見自由氣，就可先以鼻胃管減壓與瀉藥作為主要治療，多數情況腸道會自行恢復通暢",
+      "D": "對高風險病人最安全是先做全結腸切除，避免未來多處腫瘤造成再阻塞"
+    },
+    "answer": "A",
+    "explanation": {
+      "correct_reasoning": "左側阻塞型大腸癌在高風險病人可考慮支架（SEMS）作為橋接到選擇性手術：先解除急性阻塞與降低緊急手術風險，並讓病人有機會做完整分期與優化共病。是否採用需考量腫瘤位置、穿孔風險、腫瘤學考量與院所經驗。",
+      "option_analysis": {
+        "A": "符合橋接概念與高風險族群風險控管，也保留『具備條件』避免過度武斷。",
+        "B": "緊急手術的吻合失敗與併發症風險更高，且策略並非一律同一套。",
+        "C": "瀉藥在機械性阻塞可能加重風險；保守治療難以解決腫瘤造成的阻塞。",
+        "D": "全結腸切除屬過度手術，適應症需非常嚴格，不能以避免再阻塞作為常規理由。"
+      },
+      "exam_tips": [
+        "左側阻塞癌：SEMS 橋接到選擇性手術是常考策略之一，但要想到穿孔/腫瘤學爭議。",
+        "高風險共病：先解除阻塞、再優化狀態，能降低緊急手術併發症。"
+      ]
+    },
+    "tags": ["colorectal cancer", "large bowel obstruction", "SEMS", "bridge to surgery"]
+  },
+  {
+    "id": "NBE_BANK_Q0098",
+    "category": "醫學六-兒科/新生兒",
+    "stem": "出生 36 小時新生兒出現黃疸。總膽紅素 16 mg/dL，直接膽紅素 0.4 mg/dL。母親 O 型，嬰兒 A 型。Coombs test 陽性。下列哪個敘述較符合病因與處置思路？",
+    "options": {
+      "A": "較支持母胎 ABO 溶血；需依時齡與危險因子套用光照治療門檻，並監測貧血與溶血指標，必要時評估 IVIG 或換血",
+      "B": "此為生理性黃疸典型表現；因為直接膽紅素低，可完全不需要治療或追蹤",
+      "C": "Coombs 陽性常見於膽道閉鎖，因此應優先安排腹部超音波與手術評估",
+      "D": "ABO 溶血通常只會在出生後 1 週後才出現，因此此時間窗更支持母乳性黃疸"
+    },
+    "answer": "A",
+    "explanation": {
+      "correct_reasoning": "早發（<48 小時）間接型高膽紅素合併母胎血型不合與 Coombs 陽性支持免疫性溶血（ABO）。處置重點是依時齡與風險因子決定光照或更積極處置，並監測溶血與貧血，避免核黃疸。",
+      "option_analysis": {
+        "A": "整合時間窗、溶血線索與治療決策（nomogram/門檻），並保留必要時升級治療的選項。",
+        "B": "生理性黃疸多在 48 小時後較明顯；且 Coombs 陽性與早發高值提示病理性機率上升。",
+        "C": "膽道閉鎖常呈直接膽紅素上升與灰白便等線索；Coombs 陽性並非其典型重點。",
+        "D": "ABO 溶血可在出生後很早出現；母乳性黃疸通常較晚且缺乏 Coombs 陽性溶血線索。"
+      },
+      "exam_tips": [
+        "新生兒黃疸：<48 小時要先想病理性（溶血、感染等）。",
+        "治療：依時齡/風險因子套門檻（光照、IVIG、換血）。"
+      ]
+    },
+    "tags": ["neonatal jaundice", "ABO incompatibility", "Coombs", "phototherapy"]
+  },
+  {
+    "id": "NBE_BANK_Q0099",
+    "category": "醫學四-家醫/糖尿病",
+    "stem": "54 歲男性新診斷第 2 型糖尿病，HbA1c 8.7%。BMI 32。eGFR 58。既往有心肌梗塞。希望兼顧心血管風險與體重控制。下列哪個用藥策略較符合目前常見的整體風險導向思路？",
+    "options": {
+      "A": "以 sulfonylurea 作為第一線最能快速降糖，後續若體重增加再調整即可，心血管保護主要靠他汀與抗血小板",
+      "B": "在 metformin 耐受的前提下可作為基礎，並優先考慮具心血管獲益的 GLP-1 RA 或 SGLT2i（視腎功能與個別風險），以兼顧降糖、體重與心血管事件風險",
+      "C": "因為已有 MI，最重要是把 HbA1c 壓到正常值以下，因此建議立即多重胰島素治療以求最嚴格控制",
+      "D": "eGFR 58 代表腎功能偏差，口服降糖藥多不適合，建議只靠飲食運動並追蹤即可"
+    },
+    "answer": "B",
+    "explanation": {
+      "correct_reasoning": "在 ASCVD（既往 MI）患者，現代治療強調不只看 HbA1c，還要選擇具心血管獲益的藥物類別。metformin 常作為基礎；GLP-1 RA 有體重下降與心血管事件降低的證據，SGLT2i 也有心腎獲益（視 eGFR 門檻與個別情況）。",
+      "option_analysis": {
+        "A": "SU 可降糖但有低血糖與體重增加風險，且不具明確心血管獲益；在 ASCVD 情境下通常不是最優先的策略。",
+        "B": "符合風險導向：ASCVD 優先選 GLP-1 RA/SGLT2i，兼顧體重與心血管風險，並保留依腎功能與個別情境調整的彈性。",
+        "C": "過度嚴格控制可能增加低血糖等風險；是否需要立即胰島素需看症狀性高血糖、體重下降、酮症風險等。",
+        "D": "eGFR 58 仍有多種藥物可用；生活型態很重要但通常不足以取代整體風險策略。"
+      },
+      "exam_tips": [
+        "T2DM + ASCVD：選藥看心血管獲益，不只看 HbA1c。",
+        "GLP-1 RA：體重下降＋ASCVD；SGLT2i：心腎獲益（看 eGFR 門檻）。"
+      ]
+    },
+    "tags": ["type 2 diabetes", "ASCVD", "GLP-1 RA", "SGLT2 inhibitor", "metformin"]
+  },
+
+
+  
+  {
+    "id": "NBE_BANK_Q0100",
+    "category": "醫學四-內科/腫瘤/消化",
+    "stem": "58 歲男性，漸進性 dysphagia 3 個月，先固體後液體，合併體重下降。barium swallow 顯示中段 esophagus 不規則狹窄，邊緣呈 shouldering，近端擴張。下列哪個下一步最符合常見的診斷策略？",
+    "options": {
+      "A": "先做 chest X-ray 追蹤，若半年內惡化再安排內視鏡",
+      "B": "安排 EGD（upper endoscopy）並進行 biopsy 以確立診斷",
+      "C": "直接安排 PET/CT 以確認是否有 distant metastasis，若陰性再考慮是否需要 biopsy",
+      "D": "先給予 high-dose PPI 8 週後重複 barium swallow，再依結果決定是否需要內視鏡"
+    },
+    "answer": "B",
+    "explanation": {
+      "correct_reasoning": "影像呈現惡性狹窄的典型線索（irregular narrowing、shouldering、progressive dysphagia + weight loss）時，確診關鍵仍是 EGD + biopsy。後續分期才會進入 CT、PET/CT、EUS 等流程。",
+      "option_analysis": {
+        "A": "症狀與影像高度警示惡性，延後可能延誤分期與治療窗口。",
+        "B": "符合「先確診」的標準作法：以 endoscopic biopsy 取得病理。",
+        "C": "PET/CT 主要用途是分期與偵測 distant metastasis，通常在病理確立後更具決策意義。",
+        "D": "PPI trial 可用於部分 reflux/peptic stricture 鑑別，但此案例惡性徵象明顯，通常不以延後 biopsy 為優先。"
+      },
+      "exam_tips": [
+        "progressive dysphagia（先固後液）+ weight loss：優先想到 malignancy。",
+        "barium swallow 出現 shouldering / irregular stricture：下一步多是 EGD + biopsy。"
+      ]
+    },
+    "tags": ["esophageal cancer", "barium swallow", "shouldering", "EGD", "biopsy"]
+  },
+  {
+    "id": "NBE_BANK_Q0101",
+    "category": "醫學四-內科/腫瘤/消化",
+    "stem": "62 歲男性確診 esophageal squamous cell carcinoma。醫師計畫進一步做局部分期以評估 T stage 與 regional lymph node。下列哪項檢查通常最能提供 T stage（侵入深度）資訊？",
+    "options": {
+      "A": "EUS（endoscopic ultrasound）± FNA",
+      "B": "胸部 CT（contrast-enhanced CT）",
+      "C": "FDG PET/CT",
+      "D": "barium swallow（esophagram）"
+    },
+    "answer": "A",
+    "explanation": {
+      "correct_reasoning": "EUS 對 esophageal wall layers 分辨佳，臨床上常用於 T stage 與局部淋巴結評估，必要時可合併 FNA 取得結節病理。",
+      "option_analysis": {
+        "A": "最符合：能看清壁層、判斷侵入深度與鄰近 LN。",
+        "B": "CT 對遠端轉移、器官侵犯與較大 LN 有用，但 T stage 的精細度較 EUS 低。",
+        "C": "PET/CT 主要強項在偵測 distant metastasis 與部分治療反應，對精準 T stage 通常不如 EUS。",
+        "D": "吞鈀可顯示狹窄形態與黏膜不規則，但無法可靠分層判斷侵入深度。"
+      },
+      "exam_tips": [
+        "T stage 常考：EUS。",
+        "M stage 常考：CT / PET/CT（依情境與資源）。"
+      ]
+    },
+    "tags": ["EUS", "T staging", "esophageal squamous cell carcinoma", "regional lymph node"]
+  },
+  {
+    "id": "NBE_BANK_Q0102",
+    "category": "醫學四-內科/腫瘤/消化",
+    "stem": "55 歲男性，已由 biopsy 確診 esophageal adenocarcinoma。下一步希望排除 distant metastasis，以避免不必要的手術。下列何者較常被用於偵測 occult metastasis（例如骨、遠端淋巴結、肝外小轉移）？",
+    "options": {
+      "A": "EUS",
+      "B": "FDG PET/CT",
+      "C": "barium swallow",
+      "D": "呼吸功能測試（PFT）"
+    },
+    "answer": "B",
+    "explanation": {
+      "correct_reasoning": "PET/CT 的臨床價值之一是偵測 distant metastasis，協助決定是否能以根治意圖（curative intent）進入手術或放化療策略。",
+      "option_analysis": {
+        "A": "EUS 偏向局部 T/N 評估，不以全身轉移偵測為主要用途。",
+        "B": "較符合：可提升全身病灶偵測率，特別是遠端淋巴結與骨病灶。",
+        "C": "吞鈀偏向描述腔內形態，無法可靠評估遠端轉移。",
+        "D": "PFT 用於術前評估或治療耐受度評估，非轉移偵測工具。"
+      },
+      "exam_tips": [
+        "確診後分期：常見組合是 CT chest/abdomen（± pelvis）、EUS、PET/CT（視情境）。",
+        "PET/CT：重點常放在 M stage。"
+      ]
+    },
+    "tags": ["PET/CT", "distant metastasis", "staging", "esophageal adenocarcinoma"]
+  },
+  {
+    "id": "NBE_BANK_Q0103",
+    "category": "醫學四-內科/腫瘤/消化",
+    "stem": "下列關於 esophageal squamous cell carcinoma（SCC）與 esophageal adenocarcinoma 的敘述，何者較符合常見的流行病學與危險因子關聯？",
+    "options": {
+      "A": "SCC 較常與 GERD/Barrett’s esophagus 關聯，且多位於 distal esophagus",
+      "B": "Adenocarcinoma 常見於 distal esophagus/EGJ，與 GERD/Barrett’s esophagus 關聯較明顯",
+      "C": "Adenocarcinoma 多位於 upper esophagus，與 alcohol exposure 關聯較突出",
+      "D": "SCC 與 tobacco/alcohol 的關聯有限，主要由 H. pylori 造成"
+    },
+    "answer": "B",
+    "explanation": {
+      "correct_reasoning": "Adenocarcinoma 常見於 distal esophagus/EGJ，與 GERD、Barrett’s esophagus 關聯在考題中很常被強調；SCC 則較常與 tobacco/alcohol、部分黏膜慢性刺激相關，分布多在中上段較常見（依地區而異）。",
+      "option_analysis": {
+        "A": "GERD/Barrett’s 的典型關聯更偏向 adenocarcinoma。",
+        "B": "符合常考框架：distal/EGJ + GERD/Barrett’s。",
+        "C": "位置與危險因子描述較不典型。",
+        "D": "SCC 與 tobacco/alcohol 關聯常見；H. pylori 與胃癌的連結更常被考到。"
+      },
+      "exam_tips": [
+        "distal esophagus/EGJ：優先想到 adenocarcinoma + Barrett’s。",
+        "middle/upper esophagus：較常聯想到 SCC（搭配 alcohol/tobacco）。"
+      ]
+    },
+    "tags": ["squamous cell carcinoma", "adenocarcinoma", "Barrett's esophagus", "GERD", "risk factors"]
+  },
+  {
+    "id": "NBE_BANK_Q0104",
+    "category": "醫學四-內科/腫瘤/消化",
+    "stem": "49 歲女性，有長期 GERD 症狀。EGD 顯示 distal esophagus 有 Barrett’s esophagus（intestinal metaplasia）。下列敘述何者較符合 Barrett’s 的臨床意義？",
+    "options": {
+      "A": "Barrett’s 與 esophageal adenocarcinoma 風險增加相關，因此多需要依 dysplasia 分層安排 surveillance 或介入",
+      "B": "Barrett’s 等同於已經是 invasive cancer，因此應直接視為 T2 disease",
+      "C": "Barrett’s 與 SCC 關聯較強，因此重點是追蹤中上段食道",
+      "D": "Barrett’s 通常會自行逆轉，因此不必進一步處理或追蹤"
+    },
+    "answer": "A",
+    "explanation": {
+      "correct_reasoning": "Barrett’s 是 adenocarcinoma 的重要前驅狀態之一，臨床通常依是否有 dysplasia（low-grade / high-grade）決定 surveillance 間隔與是否採 endoscopic eradication therapy（如 RFA、EMR/ESD）。",
+      "option_analysis": {
+        "A": "符合：癌前病變概念 + 依 dysplasia 分層。",
+        "B": "Barrett’s 本身不等同 invasive cancer，需病理證實 dysplasia 或 carcinoma。",
+        "C": "Barrett’s 的核心連結在 adenocarcinoma（distal）。",
+        "D": "並非通常自行逆轉；風險分層與追蹤是常見做法。"
+      },
+      "exam_tips": [
+        "GERD → Barrett’s → adenocarcinoma：常見考題鏈。",
+        "Barrett’s 的管理：關鍵在 dysplasia 分層。"
+      ]
+    },
+    "tags": ["Barrett's esophagus", "intestinal metaplasia", "adenocarcinoma", "surveillance", "dysplasia"]
+  },
+  {
+    "id": "NBE_BANK_Q0105",
+    "category": "醫學四-內科/腫瘤/消化",
+    "stem": "66 歲男性，吞嚥困難合併聲音沙啞（hoarseness）。已知 esophageal cancer。下列哪個機轉較可能解釋 hoarseness？",
+    "options": {
+      "A": "腫瘤侵犯或壓迫 recurrent laryngeal nerve",
+      "B": "腫瘤造成 pyloric obstruction",
+      "C": "腫瘤引起 portal hypertension 造成 vocal cord edema",
+      "D": "腫瘤造成 laryngeal spasm 的反射性現象，與局部侵犯關聯較小"
+    },
+    "answer": "A",
+    "explanation": {
+      "correct_reasoning": "食道腫瘤（特別是上中段或縱膈侵犯）可能影響 recurrent laryngeal nerve，導致 hoarseness；也可提示局部 advanced disease。",
+      "option_analysis": {
+        "A": "解剖學上合理且常見考點：縱膈腫瘤/淋巴結侵犯 RLN。",
+        "B": "pylorus 屬胃出口，與聲音沙啞無直接關聯。",
+        "C": "portal HTN 與 vocal cord edema 不是典型關聯。",
+        "D": "反射性現象較不具代表性，臨床上更重視侵犯/壓迫的可能。"
+      },
+      "exam_tips": [
+        "esophageal cancer + hoarseness：想到 RLN involvement（提示局部侵犯）。",
+        "伴隨 cough/aspiration：也可考 tracheoesophageal fistula 或 aspiration pneumonia。"
+      ]
+    },
+    "tags": ["recurrent laryngeal nerve", "hoarseness", "local invasion", "esophageal cancer"]
+  },
+  {
+    "id": "NBE_BANK_Q0106",
+    "category": "醫學四-內科/腫瘤/消化",
+    "stem": "70 歲男性，esophageal cancer 治療中出現咳嗽加重，進食後特別明顯，反覆 aspiration pneumonia。下列哪個併發症需要優先考慮？",
+    "options": {
+      "A": "tracheoesophageal fistula",
+      "B": "acute pancreatitis",
+      "C": "Mallory-Weiss tear",
+      "D": "H. pylori-associated peptic ulcer"
+    },
+    "answer": "A",
+    "explanation": {
+      "correct_reasoning": "食道惡性腫瘤可侵蝕鄰近氣道，形成 tracheoesophageal fistula，典型表現為進食誘發咳嗽、反覆吸入性肺炎。",
+      "option_analysis": {
+        "A": "典型且需警覺：影響呼吸道、感染風險高。",
+        "B": "症狀不典型且病程連結較弱。",
+        "C": "多與劇烈嘔吐後上消化道出血相關，較非進食後咳嗽主訴。",
+        "D": "與進食後咳嗽及 aspiration pneumonia 的直接關聯有限。"
+      },
+      "exam_tips": [
+        "進食後咳嗽 + recurrent pneumonia：想到 fistula 或 aspiration。",
+        "局部侵犯相關症狀（hoarseness、fistula）常暗示 advanced disease。"
+      ]
+    },
+    "tags": ["tracheoesophageal fistula", "aspiration pneumonia", "esophageal cancer", "complication"]
+  },
+  {
+    "id": "NBE_BANK_Q0107",
+    "category": "醫學四-內科/腫瘤/消化",
+    "stem": "60 歲男性，既往有 achalasia 20 年。近半年 dysphagia 明顯惡化且體重下降。下列哪個敘述較符合常見的臨床推論？",
+    "options": {
+      "A": "achalas ia 長期可能增加 esophageal SCC 的風險，因此需警覺 pseudoachalasia 或合併 malignancy 的可能",
+      "B": "achalasia 通常會降低癌症風險，症狀惡化多半是自限性發作",
+      "C": "若有 weight loss，通常先考慮 functional dysphagia 而非 structural lesion",
+      "D": "此情境最可能是 GERD 造成 peptic stricture，與 achalasia 關聯不大"
+    },
+    "answer": "A",
+    "explanation": {
+      "correct_reasoning": "長期 achalasia 與食道癌（常被考 SCC）風險增加相關。當症狀突然/快速惡化、體重下降時，需提高警覺 pseudoachalasia（腫瘤造成的類 achalasia 表現）或合併 malignancy。",
+      "option_analysis": {
+        "A": "符合常考：長期 stasis/慢性刺激與癌化風險。",
+        "B": "與臨床警覺相反，且不符常見考點。",
+        "C": "weight loss + progressive dysphagia 使 structural cause（含 malignancy）更需要排除。",
+        "D": "peptic stricture 可造成 dysphagia，但在長期 achalasia 背景下，惡化與體重下降更需先排除 malignancy。"
+      },
+      "exam_tips": [
+        "achalasia 長期史 + 症狀惡化/體重下降：想到 pseudoachalasia / malignancy。",
+        "progressive dysphagia：優先排除腫瘤。"
+      ]
+    },
+    "tags": ["achalasia", "pseudoachalasia", "squamous cell carcinoma", "risk factor", "dysphagia"]
+  },
+  {
+    "id": "NBE_BANK_Q0108",
+    "category": "醫學四-內科/腫瘤/消化",
+    "stem": "64 歲男性，esophageal cancer 已確診。為評估是否有 adjacent structure invasion（例如 aorta involvement）以判斷可切除性（resectability），下列哪個影像線索較具提示性？",
+    "options": {
+      "A": "CT 顯示 esophagus 與 aorta 間 fat plane 消失或被抹除",
+      "B": "barium swallow 顯示吞鈀通過時間延長",
+      "C": "超音波顯示膽囊壁增厚",
+      "D": "平躺時 reflux 症狀加重"
+    },
+    "answer": "A",
+    "explanation": {
+      "correct_reasoning": "CT 在評估縱膈侵犯時，觀察腫瘤與鄰近大血管/脊椎之間的脂肪間隙（fat plane）是否保留是一個常見的判讀要點；消失可能支持外侵或緊密侵犯，影響 resectability 評估。",
+      "option_analysis": {
+        "A": "符合影像學常用的侵犯線索。",
+        "B": "吞鈀延長可能反映狹窄，但不足以判斷是否侵犯 aorta。",
+        "C": "與食道可切除性評估無直接關聯。",
+        "D": "reflux 症狀屬臨床表現，不能用來判定大血管侵犯。"
+      },
+      "exam_tips": [
+        "CT 評估侵犯：注意 fat plane、血管包繞、鄰近器官界線。",
+        "resectability 常與大血管、氣管支氣管、脊椎等鄰近結構侵犯相關。"
+      ]
+    },
+    "tags": ["CT", "fat plane", "aorta invasion", "resectability", "esophageal cancer"]
+  },
+  {
+    "id": "NBE_BANK_Q0109",
+    "category": "醫學四-內科/腫瘤/消化",
+    "stem": "barium swallow 顯示 distal esophagus 有不規則狹窄，邊緣 shouldering，呈現類似 apple-core appearance。下列哪個解讀最符合常見考點？",
+    "options": {
+      "A": "此表現較支持 benign peptic stricture，通常邊緣較平滑且漸進性變窄",
+      "B": "此表現較支持 malignancy，尤其在臨床合併 progressive dysphagia 與體重下降時",
+      "C": "此表現較支持 esophageal varices，因為 varicoid pattern 等同 apple-core",
+      "D": "此表現最常見於 eosinophilic esophagitis，且通常伴隨多發 ringed esophagus"
+    },
+    "answer": "B",
+    "explanation": {
+      "correct_reasoning": "shouldering 與不規則狹窄（apple-core 類形態）是吞鈀常考的惡性線索；結合典型症狀時，對 malignancy 的懷疑度提升。",
+      "option_analysis": {
+        "A": "peptic stricture 常被描述為較平滑、漸尖型狹窄；不規則與 shouldering 較偏向惡性。",
+        "B": "符合影像 + 臨床整合判讀。",
+        "C": "varices 可呈現蛇行或 varicoid 外觀，但與 shouldering/apple-core 的典型惡性狹窄不同。",
+        "D": "eosinophilic esophagitis 常見 ringed/feline esophagus 或縱向溝紋等，與此案例敘述不一致。"
+      },
+      "exam_tips": [
+        "benign stricture：較平滑、漸尖型（tapering）。",
+        "malignancy：irregular narrowing + shouldering。"
+      ]
+    },
+    "tags": ["apple-core", "shouldering", "barium swallow", "benign vs malignant stricture"]
+  },
+  {
+    "id": "NBE_BANK_Q0110",
+    "category": "醫學四-內科/腫瘤/消化",
+    "stem": "早期（early）esophageal carcinoma 在 barium swallow 可能呈現的型態，下列何者較符合常見描述？",
+    "options": {
+      "A": "plaque-like lesion 或小 polypoid lesion，伴隨局部黏膜不規則",
+      "B": "典型 long-segment smooth tapering，且多對稱性狹窄",
+      "C": "均勻擴張伴隨 bird-beak appearance",
+      "D": "明顯 corkscrew appearance，隨蠕動可快速改變形狀"
+    },
+    "answer": "A",
+    "explanation": {
+      "correct_reasoning": "早期病灶可能僅表現為局部黏膜或輕度隆起/斑塊樣變化（plaque-like、polypoid），不一定形成明顯長段狹窄。",
+      "option_analysis": {
+        "A": "符合早期癌在吞鈀的常見描述。",
+        "B": "較像部分良性狹窄或慢性炎症後變化的描述框架。",
+        "C": "bird-beak 常聯想到 achalasia。",
+        "D": "corkscrew 常聯想到 diffuse esophageal spasm。"
+      },
+      "exam_tips": [
+        "bird-beak：achalasia。",
+        "corkscrew：diffuse esophageal spasm。",
+        "早期癌：plaque-like / polypoid + mucosal irregularity。"
+      ]
+    },
+    "tags": ["early esophageal carcinoma", "barium swallow", "plaque-like lesion", "polypoid lesion"]
+  },
+  {
+    "id": "NBE_BANK_Q0111",
+    "category": "醫學四-內科/腫瘤/消化",
+    "stem": "62 歲男性，已完成 esophageal cancer 的 neoadjuvant therapy。若以 FDG PET/CT 評估代謝反應（metabolic response），下列哪個敘述較貼近臨床上常被用來描述「可能較佳反應」的概念？",
+    "options": {
+      "A": "原發腫瘤 FDG uptake 有明顯下降，常被視為較可能出現較佳治療反應的線索之一",
+      "B": "只要 PET/CT 陰性即可直接視為 pathological complete response，不需其他評估",
+      "C": "PET/CT 主要用於 T stage 分層，因此治療後通常不建議使用",
+      "D": "FDG uptake 上升通常代表治療效果更好，因為免疫細胞浸潤會增加代謝"
+    },
+    "answer": "A",
+    "explanation": {
+      "correct_reasoning": "PET/CT 在食道癌可用於治療後反應評估；代謝攝取下降常被視為較佳反應的訊號之一（但並不等同病理完全反應）。",
+      "option_analysis": {
+        "A": "較符合：metabolic response 可作為輔助指標。",
+        "B": "PET/CT 陰性不等同病理完全反應；仍需結合臨床、內視鏡/影像與手術病理（若有）。",
+        "C": "PET/CT 的強項多在偵測轉移與反應評估，不以精準 T stage 為主要用途。",
+        "D": "FDG 上升更常令人擔心 residual tumor 或進展；免疫相關解釋需非常謹慎，不能作為一般化推論。"
+      },
+      "exam_tips": [
+        "PET/CT：常考用途是 M stage 與反應評估（非精準 T stage）。",
+        "影像反應 ≠ 病理反應：題目常用來考過度推論。"
+      ]
+    },
+    "tags": ["PET/CT", "FDG", "neoadjuvant therapy", "response assessment", "esophageal cancer"]
+  },
+  {
+    "id": "NBE_BANK_Q0112",
+    "category": "醫學四-內科/腫瘤/消化",
+    "stem": "關於 esophageal cancer 的治療決策，下列哪個敘述較符合常見的「分期導向」思路？",
+    "options": {
+      "A": "只要確診 esophageal cancer，多數情況都直接手術切除即可，分期主要影響術後追蹤方式",
+      "B": "若為 very early disease（例如局限於 mucosa 的病灶），在合適條件下可能考慮 endoscopic resection 作為治療的一部分",
+      "C": "只要有 regional lymph node，就代表一定是 metastatic disease（stage IV），因此以 palliative care 為主",
+      "D": "有 dysphagia 代表一定屬於 advanced cancer，因此不需再區分 T/N/M"
+    },
+    "answer": "B",
+    "explanation": {
+      "correct_reasoning": "治療高度依賴 staging。very early/superficial lesions 在部分情境可採 endoscopic resection（如 EMR/ESD）作為治療或病理分期的重要步驟；局部晚期則常見 neoadjuvant CRT + surgery 或 definitive CRT 等策略（依 histology 與可切除性）。",
+      "option_analysis": {
+        "A": "分期會影響是否可手術、是否先做 neoadjuvant、是否以 definitive CRT 或 systemic therapy 為主。",
+        "B": "符合：早期病灶可能以 endoscopic approach 處理。",
+        "C": "regional LN 屬 N stage，不等同 distant metastasis（M1）。",
+        "D": "症狀不等同分期；仍需 T/N/M 分層來決策。"
+      },
+      "exam_tips": [
+        "N（regional LN）≠ M（distant metastasis）。",
+        "早期：可考 endoscopic resection；局部晚期：常考 neoadjuvant/definitive CRT。"
+      ]
+    },
+    "tags": ["staging", "endoscopic resection", "EMR", "ESD", "treatment strategy"]
+  },
+  {
+    "id": "NBE_BANK_Q0113",
+    "category": "醫學四-內科/腫瘤/消化",
+    "stem": "57 歲男性，esophageal cancer 確診後準備進行分期。下列哪個「檢查組合」較符合常見的整體分期評估方向（依資源與個案調整）？",
+    "options": {
+      "A": "EGD + biopsy 後，常見會搭配 CT chest/abdomen（± pelvis）、EUS，以及視情況 PET/CT",
+      "B": "只要做 barium swallow 即可完整分期，不必再做 cross-sectional imaging",
+      "C": "只要 PET/CT 為陰性即可省略 EUS，因為 PET/CT 可提供精準的 T stage",
+      "D": "分期主要靠 tumor marker，因此以 CEA/CA19-9 取代影像最具效率"
+    },
+    "answer": "A",
+    "explanation": {
+      "correct_reasoning": "常見流程是先以 EGD + biopsy 確診，接著以 CT 評估胸腹部與器官侵犯/轉移，EUS 評估 T/N，PET/CT 視情況用於偵測遠端轉移與治療反應。",
+      "option_analysis": {
+        "A": "符合常用的 staging 組合概念。",
+        "B": "吞鈀不具可靠的 T/N/M 分期能力。",
+        "C": "PET/CT 的強項通常不在精準 T stage，因此不宜用來完全取代 EUS。",
+        "D": "tumor marker 在食道癌並非主要分期工具，常用仍是病理與影像分期。"
+      },
+      "exam_tips": [
+        "確診：EGD + biopsy。",
+        "分期：CT（胸腹）+ EUS（T/N）+ PET/CT（偏 M、反應評估）。"
+      ]
+    },
+    "tags": ["staging workup", "CT", "EUS", "PET/CT", "EGD biopsy"]
+  },
+  {
+    "id": "NBE_BANK_Q0114",
+    "category": "醫學四-內科/腫瘤/消化",
+    "stem": "65 歲男性，長期 heavy alcohol use 與 smoking。出現 progressive dysphagia。若依常見考題邏輯推測較可能的 histology 與腫瘤位置，下列何者較貼近？",
+    "options": {
+      "A": "distal esophagus/EGJ 的 adenocarcinoma",
+      "B": "middle/upper esophagus 的 squamous cell carcinoma",
+      "C": "diffuse involvement 的 lymphoma",
+      "D": "僅限於 gastric antrum 的 adenocarcinoma"
+    },
+    "answer": "B",
+    "explanation": {
+      "correct_reasoning": "tobacco/alcohol 與 esophageal SCC 的關聯在考題中常被使用；SCC 的分布在中上段食道較常見（依地區與族群而變）。",
+      "option_analysis": {
+        "A": "distal/EGJ + GERD/Barrett’s 更常聯想到 adenocarcinoma。",
+        "B": "符合風險因子與典型位置的配對。",
+        "C": "食道 lymphoma 非典型首選配對。",
+        "D": "題幹焦點是 esophageal dysphagia，非胃竇病灶的典型呈現。"
+      },
+      "exam_tips": [
+        "alcohol/smoking：常用來提示 SCC。",
+        "GERD/Barrett’s：常用來提示 adenocarcinoma（distal/EGJ）。"
+      ]
+    },
+    "tags": ["squamous cell carcinoma", "alcohol", "smoking", "tumor location", "risk factor"]
   }
+
 
 
 
