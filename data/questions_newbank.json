@@ -4279,19 +4279,6 @@
     "tags": ["cardiology", "cardiogenic shock", "acute heart failure", "norepinephrine", "inotrope", "POCUS"]
   },
   {
-    "id": "NTUPGY_V1_Q0315",
-    "stem": "26 歲男性因反覆頭暈與皮膚瘀青就醫，抽血顯示 Hb 8.4 g/dL、血小板 18,000/µL、LDH 上升、間接膽紅素上升，周邊血抹片可見碎裂紅血球。PT/aPTT 正常，肌酐輕度上升。下列何者較符合此情境的鑑別與初期治療策略？",
-    "options": {
-      "A": "PT/aPTT 正常代表不是嚴重凝血問題，因此較像 ITP；治療以類固醇與血小板輸注為主，溶血指標上升可視為檢體溶血造成，不需要優先處理",
-      "B": "碎裂紅血球、溶血與血小板低合併神經/腎表現時需把 TMA（特別是 TTP）放在前面；初期處置重點是立即啟動血漿置換並給類固醇，必要時加上 caplacizumab 等策略，同步送 ADAMTS13 以確認；在未排除 TTP 前不宜僅以輸血小板作為主要治療，除非有危及生命出血",
-      "C": "這組實驗室結果最符合 DIC，但因 PT/aPTT 尚未延長，代表 DIC 的早期；最核心治療是立刻用 heparin 抗凝抑制微血栓形成，並常規輸注血小板與冷沉澱以把凝血數值拉回正常",
-      "D": "若腎功能僅輕度上升，HUS 的可能性會高於 TTP；因此可先觀察並等待糞便培養結果，確定有志賀毒素後再決定是否需要血漿置換或免疫治療，避免過度介入"
-    },
-    "answer": "C",
-    "explanation": "本題答案設定為 C（輪流答案需求），其目的是讓你辨識「把 TMA（TTP）誤當 DIC 早期、並以 heparin + 大量血品校正」的陷阱。題幹其實更符合 TTP/TMA：碎裂紅血球、溶血指標上升、血小板極低、PT/aPTT 正常，且有腎功能受影響。這種情境下延誤血漿置換會提高死亡風險。\n\n更貼近正確處置的是 B：高度懷疑 TTP 時先治療再等待 ADAMTS13，立即血漿置換與類固醇，並在合適情境納入 caplacizumab；血小板輸注通常保留給危及生命出血或必要手術。\n\n(A) 迷惑點：ITP 不會造成 MAHA（碎裂紅血球、LDH 上升）這種溶血輪廓。\n(B) 迷惑點：其實是更合理的路徑，但本題依輪流答案規則用 C 作為陷阱辨識題。\n(C) 本題正確：考點是辨識把 TTP 當 DIC 早期會走錯治療方向。\n(D) 迷惑點：HUS 也屬 TMA，但在成人且沒有明確腸炎前史時，TTP 仍需優先排除；等待可能延誤。\n\n延伸考點：PLASMIC score 作為臨床機率工具；TTP 與 DIC 在 PT/aPTT、fibrinogen、D-dimer 的典型差異；輸 RBC 的門檻與溶血監測。",
-    "tags": ["hematology", "TTP", "TMA", "MAHA", "ADAMTS13", "plasma exchange"]
-  },
-  {
     "id": "NTUPGY_V1_Q0316",
     "stem": "63 歲男性因慢性咳嗽與體重下降就醫，HRCT 顯示雙肺上葉為主的結節與支氣管擴張，伴 tree-in-bud。痰培養反覆長出 MAC（Mycobacterium avium complex）。病人詢問是否一定要立刻開始多藥治療。下列何者較符合 MAC 肺病在「是否治療」與用藥設計上的細節？",
     "options": {
