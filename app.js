@@ -148,6 +148,64 @@ function updateSaveButton() {
 }
 
 // ======================
+// Explanation renderer (修正 [object Object])
+// ======================
+function escapeHtml(str) {
+  return String(str ?? "")
+    .replaceAll("&", "&amp;")
+    .replaceAll("<", "&lt;")
+    .replaceAll(">", "&gt;")
+    .replaceAll('"', "&quot;")
+    .replaceAll("'", "&#039;");
+}
+
+function renderExplanation(exp) {
+  if (!exp) return "";
+
+  // 舊格式：直接是字串
+  if (typeof exp === "string") {
+    return `<div class="exp-sec"><div class="exp-body">${escapeHtml(exp)}</div></div>`;
+  }
+
+  // 新格式：物件（例如 {correct_reasoning, option_analysis, exam_tips}）
+  if (typeof exp === "object") {
+    const correct = exp.correct_reasoning
+      ? `<div class="exp-sec">
+           <div class="exp-title">核心解題</div>
+           <div class="exp-body">${escapeHtml(exp.correct_reasoning)}</div>
+         </div>`
+      : "";
+
+    const optionAnalysis = exp.option_analysis && typeof exp.option_analysis === "object"
+      ? `<div class="exp-sec">
+           <div class="exp-title">選項解析</div>
+           ${Object.entries(exp.option_analysis)
+             .map(([k, v]) => `<div class="exp-opt"><b>${escapeHtml(k)}</b>：${escapeHtml(v)}</div>`)
+             .join("")}
+         </div>`
+      : "";
+
+    const tips = Array.isArray(exp.exam_tips) && exp.exam_tips.length
+      ? `<div class="exp-sec">
+           <div class="exp-title">延伸考點</div>
+           <ul class="exp-list">
+             ${exp.exam_tips.map(t => `<li>${escapeHtml(t)}</li>`).join("")}
+           </ul>
+         </div>`
+      : "";
+
+    const fallback = (!correct && !optionAnalysis && !tips)
+      ? `<div class="exp-sec"><div class="exp-body">${escapeHtml(JSON.stringify(exp, null, 2))}</div></div>`
+      : "";
+
+    return `${correct}${optionAnalysis}${tips}${fallback}`;
+  }
+
+  // 其他型態（保底）
+  return `<div class="exp-sec"><div class="exp-body">${escapeHtml(String(exp))}</div></div>`;
+}
+
+// ======================
 // Pool / Random
 // ======================
 function buildPool() {
@@ -191,7 +249,12 @@ function renderQuestion(q) {
 
   const explainBox = $("explainBox");
   if (explainBox) explainBox.open = false;
-  $("explanation").textContent = q.explanation || "";
+
+  // ✅ 修正：explanation 可能是 object，不能用 textContent 直接塞
+  const expEl = $("explanation");
+  if (expEl) {
+    expEl.innerHTML = renderExplanation(q.explanation);
+  }
 
   const optWrap = $("options");
   optWrap.innerHTML = "";
@@ -237,7 +300,6 @@ function onPick(choice, btn) {
   const correct = String(current.answer).trim();
   const buttons = Array.from($("options").querySelectorAll(".opt"));
 
-  // 保留 disabled 沒問題（CSS 會處理文字不消失）
   buttons.forEach(b => b.disabled = true);
 
   if (String(choice).trim() === correct) {
@@ -245,7 +307,6 @@ function onPick(choice, btn) {
     setFeedback("✅ 正確", "ok");
   } else {
     btn.classList.add("wrong");
-    // mark correct
     buttons.forEach(b => {
       const letter = b.textContent.split(".")[0].trim();
       if (letter === correct) b.classList.add("correct");
@@ -255,11 +316,10 @@ function onPick(choice, btn) {
     updateProgress();
   }
 
-  // ✅ 按完選項自動跳出詳解 + 捲到詳解
+  // ✅ 按完選項自動跳出詳解
   const box = $("explainBox");
   if (box) {
     box.open = true;
-    
   }
 }
 
@@ -321,7 +381,6 @@ async function main() {
       const nowSaved = toggleSaved(current.id);
       setFeedback(nowSaved ? "已收藏本題。" : "已取消收藏。", "no");
       updateSaveButton();
-      // 如果你現在在收藏模式，取消收藏可能讓 pool 變空，要重建一次
       if (mode === "saved") buildPool();
       updateProgress();
     });
