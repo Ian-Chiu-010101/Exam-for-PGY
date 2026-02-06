@@ -31,7 +31,7 @@ function incWrong(id) {
 function clearWrong() { localStorage.removeItem(WRONG_KEY); }
 
 // ======================
-// Saved store (收藏/手動儲存)
+// Saved store (收藏)
 // 用 Set<string> 存 id，序列化成 array
 // ======================
 function getSavedSet() {
@@ -66,7 +66,7 @@ function normalizeQuestions(data, sourceId = "UNKNOWN") {
     if (!q || !q.id || !q.stem || !q.options || !q.answer) {
       throw new Error(`[${sourceId}] 第 ${i + 1} 題缺少必要欄位（id/stem/options/answer）`);
     }
-    if (typeof q.options !== "object") {
+    if (typeof q.options !== "object" || Array.isArray(q.options)) {
       throw new Error(`[${sourceId}] 第 ${i + 1} 題 options 必須是 object（例如 {A:"",B:""}）`);
     }
   });
@@ -87,7 +87,7 @@ async function loadFromManifest() {
   const merged = [];
   const idSet = new Set();
 
-  // A：去重統計
+  // 去重統計
   let totalIn = 0;
   let dupCount = 0;
   const dupIds = [];
@@ -164,42 +164,32 @@ function renderExplanation(exp) {
 
   // 舊格式：直接是字串
   if (typeof exp === "string") {
-    return `<div class="exp-block">${escapeHtml(exp)}</div>`;
+    return `<div class="exp-sec"><div class="exp-body">${escapeHtml(exp)}</div></div>`;
   }
 
-  // 新格式：物件
-  const correct = exp.correct_reasoning
-    ? `<div class="exp-sec"><div class="exp-title">核心解題</div><div class="exp-body">${escapeHtml(exp.correct_reasoning)}</div></div>`
-    : "";
+  // 新格式：物件（例如 {correct_reasoning, option_analysis, exam_tips}）
+  if (typeof exp === "object") {
+    const correct = exp.correct_reasoning
+      ? `<div class="exp-sec">
+           <div class="exp-title">核心解題</div>
+           <div class="exp-body">${escapeHtml(exp.correct_reasoning)}</div>
+         </div>`
+      : "";
 
-  const optionAnalysis = exp.option_analysis
-    ? `<div class="exp-sec"><div class="exp-title">選項解析</div>` +
-      Object.entries(exp.option_analysis)
-        .map(([k, v]) => `<div class="exp-opt"><b>${k}</b>：${escapeHtml(v)}</div>`)
-        .join("") +
-      `</div>`
-    : "";
+    const optionAnalysis = exp.option_analysis && typeof exp.option_analysis === "object"
+      ? `<div class="exp-sec">
+           <div class="exp-title">選項解析</div>
+           ${Object.entries(exp.option_analysis)
+             .map(([k, v]) => `<div class="exp-opt"><b>${escapeHtml(k)}</b>：${escapeHtml(v)}</div>`)
+             .join("")}
+         </div>`
+      : "";
 
-  const tips = Array.isArray(exp.exam_tips) && exp.exam_tips.length
-    ? `<div class="exp-sec"><div class="exp-title">延伸考點</div><ul>` +
-      exp.exam_tips.map(t => `<li>${escapeHtml(t)}</li>`).join("") +
-      `</ul></div>`
-    : "";
-
-  return `${correct}${optionAnalysis}${tips}`;
-}
-
-// 需要有 escapeHtml，避免 XSS 或符號壞掉
-function escapeHtml(str) {
-  return String(str)
-    .replaceAll("&", "&amp;")
-    .replaceAll("<", "&lt;")
-    .replaceAll(">", "&gt;")
-    .replaceAll('"', "&quot;")
-    .replaceAll("'", "&#039;");
-}
-
-${exp.exam_tips.map(t => `<li>${escapeHtml(t)}</li>`).join("")}
+    const tips = Array.isArray(exp.exam_tips) && exp.exam_tips.length
+      ? `<div class="exp-sec">
+           <div class="exp-title">延伸考點</div>
+           <ul class="exp-list">
+             ${exp.exam_tips.map(t => `<li>${escapeHtml(t)}</li>`).join("")}
            </ul>
          </div>`
       : "";
@@ -260,11 +250,9 @@ function renderQuestion(q) {
   const explainBox = $("explainBox");
   if (explainBox) explainBox.open = false;
 
-  // ✅ 修正：explanation 可能是 object，不能用 textContent 直接塞
+  // ✅ explanation 可能是 object，用 formatter
   const expEl = $("explanation");
-  if (expEl) {
-    expEl.innerHTML = renderExplanation(q.explanation);
-  }
+  if (expEl) expEl.innerHTML = renderExplanation(q.explanation);
 
   const optWrap = $("options");
   optWrap.innerHTML = "";
@@ -292,7 +280,6 @@ function revealAnswer() {
     if (letter === correct) btn.classList.add("correct");
   });
 
-  // ✅ 自動打開詳解（按「顯示正解」也展開）
   const box = $("explainBox");
   if (box) {
     box.open = true;
@@ -326,11 +313,8 @@ function onPick(choice, btn) {
     updateProgress();
   }
 
-  // ✅ 按完選項自動跳出詳解
   const box = $("explainBox");
-  if (box) {
-    box.open = true;
-  }
+  if (box) box.open = true;
 }
 
 // ======================
@@ -345,7 +329,7 @@ async function main() {
     ALL = merged;
     buildPool();
 
-    // 顯示 A 的去重統計
+    // 顯示去重統計
     if (loadStatus) {
       const meta = merged._meta;
       if (meta) {
@@ -363,7 +347,6 @@ async function main() {
     updateModeButtons();
     updateProgress();
 
-    // buttons
     $("btnNew")?.addEventListener("click", () => {
       buildPool();
       const q = pickRandom();
